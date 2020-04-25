@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		489FD77A2453F5E400E04771 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489FD7792453F5E400E04771 /* AppDelegate.swift */; };
-		489FD77C2453F5E400E04771 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489FD77B2453F5E400E04771 /* SceneDelegate.swift */; };
 		489FD77E2453F5E400E04771 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489FD77D2453F5E400E04771 /* ViewController.swift */; };
 		489FD7812453F5E400E04771 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 489FD77F2453F5E400E04771 /* Main.storyboard */; };
 		489FD7832453F5E600E04771 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 489FD7822453F5E600E04771 /* Assets.xcassets */; };
@@ -18,6 +17,8 @@
 		489FD7B62453FD0700E04771 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 489FD7B52453FD0700E04771 /* Login.storyboard */; };
 		489FD7BA2453FD3F00E04771 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489FD7B92453FD3F00E04771 /* LoginViewController.swift */; };
 		489FD7BC2453FD5D00E04771 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489FD7BB2453FD5D00E04771 /* LoginPresenter.swift */; };
+		C38C7EBD24540C1700AC3458 /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C38C7EBC24540C1600AC3458 /* Register.storyboard */; };
+		C38C7EBF245416C500AC3458 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38C7EBE245416C500AC3458 /* RegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +41,6 @@
 /* Begin PBXFileReference section */
 		489FD7762453F5E400E04771 /* CS-Living.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CS-Living.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		489FD7792453F5E400E04771 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		489FD77B2453F5E400E04771 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		489FD77D2453F5E400E04771 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		489FD7802453F5E400E04771 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		489FD7822453F5E600E04771 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -55,6 +55,8 @@
 		489FD7B52453FD0700E04771 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		489FD7B92453FD3F00E04771 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		489FD7BB2453FD5D00E04771 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		C38C7EBC24540C1600AC3458 /* Register.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
+		C38C7EBE245416C500AC3458 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,7 +118,6 @@
 				489FD7AB2453F6EF00E04771 /* Modules */,
 				489FD7AF2453F6EF00E04771 /* Service */,
 				489FD7B22453F6EF00E04771 /* Libraries */,
-				489FD77B2453F5E400E04771 /* SceneDelegate.swift */,
 				489FD77D2453F5E400E04771 /* ViewController.swift */,
 				489FD77F2453F5E400E04771 /* Main.storyboard */,
 				489FD7822453F5E600E04771 /* Assets.xcassets */,
@@ -161,6 +162,7 @@
 		489FD7AB2453F6EF00E04771 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				C38C7EB924540BD000AC3458 /* Register */,
 				489FD7B42453FCE800E04771 /* Login */,
 			);
 			path = Modules;
@@ -247,6 +249,31 @@
 			children = (
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		C38C7EB924540BD000AC3458 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				C38C7EBA24540BD700AC3458 /* Router */,
+				C38C7EBB24540BFD00AC3458 /* Presenter */,
+				C38C7EBC24540C1600AC3458 /* Register.storyboard */,
+				C38C7EBE245416C500AC3458 /* RegisterViewController.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		C38C7EBA24540BD700AC3458 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		C38C7EBB24540BFD00AC3458 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -356,6 +383,7 @@
 				489FD7862453F5E600E04771 /* LaunchScreen.storyboard in Resources */,
 				489FD7832453F5E600E04771 /* Assets.xcassets in Resources */,
 				489FD7812453F5E400E04771 /* Main.storyboard in Resources */,
+				C38C7EBD24540C1700AC3458 /* Register.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,7 +411,7 @@
 				489FD7BA2453FD3F00E04771 /* LoginViewController.swift in Sources */,
 				489FD77E2453F5E400E04771 /* ViewController.swift in Sources */,
 				489FD77A2453F5E400E04771 /* AppDelegate.swift in Sources */,
-				489FD77C2453F5E400E04771 /* SceneDelegate.swift in Sources */,
+				C38C7EBF245416C500AC3458 /* RegisterViewController.swift in Sources */,
 				489FD7BC2453FD5D00E04771 /* LoginPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -558,7 +586,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "CS-Living/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -575,7 +604,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "CS-Living/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

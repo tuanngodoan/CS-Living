@@ -1,25 +1,29 @@
 //
-//  LoginViewController.swift
+//  RegisterViewController.swift
 //  CS-Living
 //
-//  Created by ThanhTung on 4/25/20.
+//  Created by ngo.doan.tuan on 4/25/20.
 //
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class RegisterViewController: UIViewController {
 
-    @IBOutlet weak var backgroundImageView: UIImageView!
-    @IBOutlet weak var logoImageView: UIImageView!
-    @IBOutlet weak var companyLabel: UILabel!
+    @IBOutlet weak var avatarImageView: UIImageView!
+    @IBOutlet weak var pickerAvatarView: UIView!
     
-    @IBOutlet weak var textFieldView: UIView!
     @IBOutlet weak var userNameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var verifyPassTextField: UITextField!
     
-    @IBOutlet weak var loginButton: UIButton!
-    @IBOutlet weak var registerNewUserButton: UIButton!
-    @IBOutlet weak var forgotPasswordButton: UIButton!
+    @IBOutlet weak var fullNameTextField: UITextField!
+    @IBOutlet weak var phoneTextField: UITextField!
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var checkTermImage: UIImageView!
+    @IBOutlet weak var termLabel: UILabel!
+    
+    @IBOutlet weak var registerButton: UIButton!
+    @IBOutlet weak var backLoginLabel: UILabel!
     
     
     override func viewDidLoad() {
