@@ -1,0 +1,6 @@
+framework module Pods_CS_LivingTests {
+  umbrella header "Pods-CS-LivingTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

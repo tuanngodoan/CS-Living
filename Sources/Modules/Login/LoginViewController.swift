@@ -7,23 +7,59 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: BaseViewController {
 
+    private var presenter: LoginPresenter?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
+
+// MARK: - Init View
+extension LoginViewController {
+    override func initUI() {
+        
+    }
+}
+
+// MARK: - Init Data
+extension LoginViewController {
+    override func initData() {
+        self.login()
+    }
+}
+
+// MARK: - ConfigPresenter
+extension LoginViewController {
+    override func configPresenter() {
+        self.presenter = LoginPresenter.init(view: self)
+    }
+}
+
+// MARK: - Private func
+extension LoginViewController {
+    
+}
+
+// MARK: - Public func
+extension LoginViewController {
+    
+}
+
+// MARK: - API CALL
+extension LoginViewController {
+    func login() {
+        let params: [String: Any] = [kUserName: "string", kPassword: "string"]
+        self.presenter?.login(params: params)
+    }
+}
+
+// MARK: - LoginPresenterView
+extension LoginViewController: LoginPresenterView {
+    func authenticationCompleted(isSuccess: Bool) {
+        
+    }
+}
+
