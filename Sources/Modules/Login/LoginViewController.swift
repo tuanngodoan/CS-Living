@@ -9,7 +9,22 @@ import UIKit
 
 class LoginViewController: BaseViewController {
 
+
     private var presenter: LoginPresenter?
+
+    @IBOutlet weak var backgroundImageView: UIImageView!
+    @IBOutlet weak var logoImageView: UIImageView!
+    @IBOutlet weak var companyLabel: UILabel!
+    
+    @IBOutlet weak var textFieldView: UIView!
+    @IBOutlet weak var userNameTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    
+    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var registerNewUserButton: UIButton!
+    @IBOutlet weak var forgotPasswordButton: UIButton!
+    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
