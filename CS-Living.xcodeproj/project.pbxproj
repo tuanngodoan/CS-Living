@@ -12,6 +12,8 @@
 		1B7C3FE2245464E1002941BA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7C3FE1245464E1002941BA /* HomeViewController.swift */; };
 		1B7C3FE4245464EE002941BA /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B7C3FE3245464EE002941BA /* Home.storyboard */; };
 		1B8F931C2454709D00369FC1 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8F931A2454709D00369FC1 /* ForgotPasswordViewController.swift */; };
+		1BD06B3824548ED90024088F /* UpgradeAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD06B3724548ED90024088F /* UpgradeAccountViewController.swift */; };
+		1BD06B3D245492D50024088F /* FeeList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BD06B3C245492D50024088F /* FeeList.storyboard */; };
 		485C206624547865002E5040 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485C206424547864002E5040 /* RegisterViewController.swift */; };
 		485C206724547865002E5040 /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 485C206524547865002E5040 /* Register.storyboard */; };
 		489FD77A2453F5E400E04771 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489FD7792453F5E400E04771 /* AppDelegate.swift */; };
@@ -67,6 +69,8 @@
 		1B7C3FE1245464E1002941BA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		1B7C3FE3245464EE002941BA /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		1B8F931A2454709D00369FC1 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		1BD06B3724548ED90024088F /* UpgradeAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpgradeAccountViewController.swift; sourceTree = "<group>"; };
+		1BD06B3C245492D50024088F /* FeeList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FeeList.storyboard; sourceTree = "<group>"; };
 		1EA3390C88326F7FAF5D08A1 /* Pods-CS-Living-CS-LivingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CS-Living-CS-LivingUITests.debug.xcconfig"; path = "Target Support Files/Pods-CS-Living-CS-LivingUITests/Pods-CS-Living-CS-LivingUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		2114A7E1057B671534B90247 /* Pods_CS_LivingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CS_LivingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		279A11C361C3877A5C148927 /* Pods_CS_Living.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CS_Living.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -222,6 +226,54 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
+		1BD06B3424548EAC0024088F /* UpgradeAccount */ = {
+			isa = PBXGroup;
+			children = (
+				1BD06B3524548EBB0024088F /* Router */,
+				1BD06B3624548EC00024088F /* Presenter */,
+				1BD06B3724548ED90024088F /* UpgradeAccountViewController.swift */,
+			);
+			path = UpgradeAccount;
+			sourceTree = "<group>";
+		};
+		1BD06B3524548EBB0024088F /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		1BD06B3624548EC00024088F /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		1BD06B39245492B20024088F /* FeeList */ = {
+			isa = PBXGroup;
+			children = (
+				1BD06B3B245492C30024088F /* Router */,
+				1BD06B3A245492B80024088F /* Presenter */,
+				1BD06B3C245492D50024088F /* FeeList.storyboard */,
+			);
+			path = FeeList;
+			sourceTree = "<group>";
+		};
+		1BD06B3A245492B80024088F /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		1BD06B3B245492C30024088F /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 		489FD76D2453F5E400E04771 = {
 			isa = PBXGroup;
 			children = (
@@ -307,7 +359,9 @@
 		489FD7AB2453F6EF00E04771 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				1BD06B39245492B20024088F /* FeeList */,
 				1B7C3FDE245464AA002941BA /* Home */,
+				1BD06B3424548EAC0024088F /* UpgradeAccount */,
 				1B05C36F24547A6700E80F92 /* Register */,
 				489FD7B42453FCE800E04771 /* Login */,
 				1B05C37624547EC000E80F92 /* ForgotPassword */,
@@ -569,6 +623,7 @@
 				489FD7832453F5E600E04771 /* Assets.xcassets in Resources */,
 				1B7C3FE4245464EE002941BA /* Home.storyboard in Resources */,
 				489FD7812453F5E400E04771 /* Main.storyboard in Resources */,
+				1BD06B3D245492D50024088F /* FeeList.storyboard in Resources */,
 				485C206724547865002E5040 /* Register.storyboard in Resources */,
 				1B05C37424547A6700E80F92 /* Register.storyboard in Resources */,
 			);
@@ -711,6 +766,7 @@
 				489FD77C2453F5E400E04771 /* SceneDelegate.swift in Sources */,
 				48B70DC424541FB700E894D5 /* DefineText.swift in Sources */,
 				485C206624547865002E5040 /* RegisterViewController.swift in Sources */,
+				1BD06B3824548ED90024088F /* UpgradeAccountViewController.swift in Sources */,
 				489FD7BC2453FD5D00E04771 /* LoginPresenter.swift in Sources */,
 				1B05C37524547A6700E80F92 /* RegisterViewController.swift in Sources */,
 				48B70DC224541FA200E894D5 /* DefineMarco.swift in Sources */,
@@ -896,6 +952,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Sources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -914,6 +971,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Sources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
