@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -31,7 +31,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZVo-GI-tE1" userLabel="pickerImageView">
                                                 <rect key="frame" x="12" y="34" width="100" height="100"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="O0n-ZK-EHt">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="selectCamera" translatesAutoresizingMaskIntoConstraints="NO" id="O0n-ZK-EHt">
                                                         <rect key="frame" x="30" y="39.5" width="40" height="40"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40" id="7LV-4K-ACk"/>
@@ -70,7 +70,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w0I-pg-Jih" userLabel="username">
                                                 <rect key="frame" x="0.0" y="0.0" width="290" height="48"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Qow-NY-Wdi">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="name" translatesAutoresizingMaskIntoConstraints="NO" id="Qow-NY-Wdi">
                                                         <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="Qow-NY-Wdi" secondAttribute="height" multiplier="1:1" id="Kb3-Ms-oTC"/>
@@ -107,7 +107,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pUZ-v7-U7m" userLabel="password">
                                                 <rect key="frame" x="0.0" y="56" width="290" height="48"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Gqr-xd-4rS">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="password" translatesAutoresizingMaskIntoConstraints="NO" id="Gqr-xd-4rS">
                                                         <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="Gqr-xd-4rS" secondAttribute="height" multiplier="1:1" id="nLn-4h-zLT"/>
@@ -144,7 +144,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1SC-e8-Fth" userLabel="verifyPassword">
                                                 <rect key="frame" x="0.0" y="112" width="290" height="48"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Dgi-e8-Z3Q">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="password" translatesAutoresizingMaskIntoConstraints="NO" id="Dgi-e8-Z3Q">
                                                         <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="Dgi-e8-Z3Q" secondAttribute="height" id="SQd-ej-cMo"/>
@@ -242,7 +242,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OeK-oQ-sOW" userLabel="fullName">
                                         <rect key="frame" x="8" y="33" width="406" height="48"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1fv-cX-snT">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="name" translatesAutoresizingMaskIntoConstraints="NO" id="1fv-cX-snT">
                                                 <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="1fv-cX-snT" secondAttribute="height" id="wws-lZ-X3D"/>
@@ -279,7 +279,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UHd-wN-Su8" userLabel="phone">
                                         <rect key="frame" x="8" y="89" width="406" height="48"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="F3D-iJ-ssa">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="email" translatesAutoresizingMaskIntoConstraints="NO" id="F3D-iJ-ssa">
                                                 <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="F3D-iJ-ssa" secondAttribute="height" multiplier="1:1" id="ybJ-E0-C2q"/>
@@ -316,7 +316,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fiD-Jw-RJO" userLabel="email">
                                         <rect key="frame" x="8" y="145" width="406" height="48"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Yf4-E7-ctJ">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="email" translatesAutoresizingMaskIntoConstraints="NO" id="Yf4-E7-ctJ">
                                                 <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="Yf4-E7-ctJ" secondAttribute="height" multiplier="1:1" id="HKL-Xh-6TR"/>
@@ -353,8 +353,8 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KeQ-Zt-eml" userLabel="termView">
                                         <rect key="frame" x="0.0" y="218" width="414" height="30"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bmW-tN-AI5">
-                                                <rect key="frame" x="8" y="2.5" width="25" height="25"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark.rectangle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="bmW-tN-AI5">
+                                                <rect key="frame" x="8" y="3.5" width="25" height="23"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="25" id="FNw-gG-7gG"/>
                                                     <constraint firstAttribute="height" constant="25" id="swy-Ak-HjH"/>
@@ -410,17 +410,16 @@
                                             <constraint firstAttribute="height" constant="21" id="Rsa-3W-7hm"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" systemColor="linkColor" red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PSR-tG-gbz">
-                                        <rect key="frame" x="157" y="295" width="100" height="36"/>
-                                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <rect key="frame" x="69" y="295" width="276" height="36"/>
+                                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="100" id="PFx-7U-WSw"/>
                                             <constraint firstAttribute="height" constant="36" id="uh3-aJ-vec"/>
                                         </constraints>
-                                        <state key="normal" title="Đăng kí">
+                                        <state key="normal" title="Đăng kí" backgroundImage="button">
                                             <color key="titleColor" red="0.058823529409999999" green="0.058823529409999999" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                     </button>
@@ -430,6 +429,7 @@
                                     <constraint firstItem="j8c-AG-wFQ" firstAttribute="top" secondItem="PSR-tG-gbz" secondAttribute="bottom" constant="25" id="5XQ-Pe-ocN"/>
                                     <constraint firstItem="j8c-AG-wFQ" firstAttribute="centerX" secondItem="j73-oQ-Og0" secondAttribute="centerX" id="5yd-sa-Wz2"/>
                                     <constraint firstAttribute="bottom" secondItem="j8c-AG-wFQ" secondAttribute="bottom" constant="25" id="80Q-py-3CO"/>
+                                    <constraint firstItem="PSR-tG-gbz" firstAttribute="width" secondItem="j73-oQ-Og0" secondAttribute="width" multiplier="2/3" id="PZj-C3-6EI"/>
                                     <constraint firstItem="PSR-tG-gbz" firstAttribute="centerX" secondItem="j73-oQ-Og0" secondAttribute="centerX" id="fbW-m7-fhK"/>
                                 </constraints>
                             </view>
@@ -469,4 +469,12 @@
             <point key="canvasLocation" x="137.68115942028987" y="94.419642857142847"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="button" width="60" height="20"/>
+        <image name="checkmark.rectangle.fill" catalog="system" width="64" height="48"/>
+        <image name="email" width="24" height="24"/>
+        <image name="name" width="24" height="24"/>
+        <image name="password" width="24" height="24"/>
+        <image name="selectCamera" width="32" height="25"/>
+    </resources>
 </document>

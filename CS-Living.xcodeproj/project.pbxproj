@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B05C37424547A6700E80F92 /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B05C37124547A6700E80F92 /* Register.storyboard */; };
+		1B05C37524547A6700E80F92 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B05C37224547A6700E80F92 /* RegisterViewController.swift */; };
+		1B7C3FE2245464E1002941BA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7C3FE1245464E1002941BA /* HomeViewController.swift */; };
+		1B7C3FE4245464EE002941BA /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B7C3FE3245464EE002941BA /* Home.storyboard */; };
+		1B8F931C2454709D00369FC1 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8F931A2454709D00369FC1 /* ForgotPasswordViewController.swift */; };
 		485C206624547865002E5040 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485C206424547864002E5040 /* RegisterViewController.swift */; };
 		485C206724547865002E5040 /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 485C206524547865002E5040 /* Register.storyboard */; };
 		489FD77A2453F5E400E04771 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489FD7792453F5E400E04771 /* AppDelegate.swift */; };
@@ -57,6 +62,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B05C37124547A6700E80F92 /* Register.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
+		1B05C37224547A6700E80F92 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		1B7C3FE1245464E1002941BA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		1B7C3FE3245464EE002941BA /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		1B8F931A2454709D00369FC1 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		1EA3390C88326F7FAF5D08A1 /* Pods-CS-Living-CS-LivingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CS-Living-CS-LivingUITests.debug.xcconfig"; path = "Target Support Files/Pods-CS-Living-CS-LivingUITests/Pods-CS-Living-CS-LivingUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		2114A7E1057B671534B90247 /* Pods_CS_LivingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CS_LivingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		279A11C361C3877A5C148927 /* Pods_CS_Living.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CS_Living.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -129,6 +139,89 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B05C36E2454795D00E80F92 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				485C206424547864002E5040 /* RegisterViewController.swift */,
+				485C206524547865002E5040 /* Register.storyboard */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		1B05C36F24547A6700E80F92 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				1B05C37324547A6700E80F92 /* Router */,
+				1B05C37024547A6700E80F92 /* Presenter */,
+				1B05C37124547A6700E80F92 /* Register.storyboard */,
+				1B05C37224547A6700E80F92 /* RegisterViewController.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		1B05C37024547A6700E80F92 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		1B05C37324547A6700E80F92 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		1B05C37624547EC000E80F92 /* ForgotPassword */ = {
+			isa = PBXGroup;
+			children = (
+				1B05C37724547ED800E80F92 /* Router */,
+				1B05C37824547EE700E80F92 /* Presenter */,
+				1B8F931A2454709D00369FC1 /* ForgotPasswordViewController.swift */,
+			);
+			path = ForgotPassword;
+			sourceTree = "<group>";
+		};
+		1B05C37724547ED800E80F92 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		1B05C37824547EE700E80F92 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		1B7C3FDE245464AA002941BA /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				1B7C3FDF245464B3002941BA /* Router */,
+				1B7C3FE0245464BB002941BA /* Presenter */,
+				1B7C3FE1245464E1002941BA /* HomeViewController.swift */,
+				1B7C3FE3245464EE002941BA /* Home.storyboard */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		1B7C3FDF245464B3002941BA /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		1B7C3FE0245464BB002941BA /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		489FD76D2453F5E400E04771 = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +231,7 @@
 				489FD7772453F5E400E04771 /* Products */,
 				C86CC96371D8979C3E53E6B5 /* Pods */,
 				E1D85C652BC4F6903D7A610C /* Frameworks */,
+				1B05C36E2454795D00E80F92 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -213,8 +307,10 @@
 		489FD7AB2453F6EF00E04771 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				48B70DD52454332300E894D5 /* Register */,
+				1B7C3FDE245464AA002941BA /* Home */,
+				1B05C36F24547A6700E80F92 /* Register */,
 				489FD7B42453FCE800E04771 /* Login */,
+				1B05C37624547EC000E80F92 /* ForgotPassword */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -335,15 +431,6 @@
 			children = (
 			);
 			path = Libraries;
-			sourceTree = "<group>";
-		};
-		48B70DD52454332300E894D5 /* Register */ = {
-			isa = PBXGroup;
-			children = (
-				485C206524547865002E5040 /* Register.storyboard */,
-				485C206424547864002E5040 /* RegisterViewController.swift */,
-			);
-			path = Register;
 			sourceTree = "<group>";
 		};
 		C86CC96371D8979C3E53E6B5 /* Pods */ = {
@@ -480,8 +567,10 @@
 				489FD7B62453FD0700E04771 /* Login.storyboard in Resources */,
 				489FD7862453F5E600E04771 /* LaunchScreen.storyboard in Resources */,
 				489FD7832453F5E600E04771 /* Assets.xcassets in Resources */,
+				1B7C3FE4245464EE002941BA /* Home.storyboard in Resources */,
 				489FD7812453F5E400E04771 /* Main.storyboard in Resources */,
 				485C206724547865002E5040 /* Register.storyboard in Resources */,
+				1B05C37424547A6700E80F92 /* Register.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -614,6 +703,7 @@
 				48B70DBE24541D0100E894D5 /* ResponseObject.swift in Sources */,
 				489FD7BA2453FD3F00E04771 /* LoginViewController.swift in Sources */,
 				48B70DD124542AD000E894D5 /* APIClient+Register.swift in Sources */,
+				1B8F931C2454709D00369FC1 /* ForgotPasswordViewController.swift in Sources */,
 				489FD77E2453F5E400E04771 /* ViewController.swift in Sources */,
 				48B70DCF245421B100E894D5 /* UIImage+Color.swift in Sources */,
 				489FD77A2453F5E400E04771 /* AppDelegate.swift in Sources */,
@@ -622,6 +712,7 @@
 				48B70DC424541FB700E894D5 /* DefineText.swift in Sources */,
 				485C206624547865002E5040 /* RegisterViewController.swift in Sources */,
 				489FD7BC2453FD5D00E04771 /* LoginPresenter.swift in Sources */,
+				1B05C37524547A6700E80F92 /* RegisterViewController.swift in Sources */,
 				48B70DC224541FA200E894D5 /* DefineMarco.swift in Sources */,
 				48B70DBC24541C1900E894D5 /* APIClient.swift in Sources */,
 				48B70DD42454329200E894D5 /* BaseViewController.swift in Sources */,
@@ -629,6 +720,7 @@
 				48B70DDA2454375D00E894D5 /* APIClient+Login.swift in Sources */,
 				48B70DC024541E0800E894D5 /* AppUtil.swift in Sources */,
 				48B70DC824541FCA00E894D5 /* DefineEnum.swift in Sources */,
+				1B7C3FE2245464E1002941BA /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
