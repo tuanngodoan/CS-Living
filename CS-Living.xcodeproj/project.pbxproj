@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		485C206624547865002E5040 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485C206424547864002E5040 /* RegisterViewController.swift */; };
+		485C206724547865002E5040 /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 485C206524547865002E5040 /* Register.storyboard */; };
 		489FD77A2453F5E400E04771 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489FD7792453F5E400E04771 /* AppDelegate.swift */; };
 		489FD77C2453F5E400E04771 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489FD77B2453F5E400E04771 /* SceneDelegate.swift */; };
 		489FD77E2453F5E400E04771 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489FD77D2453F5E400E04771 /* ViewController.swift */; };
@@ -58,6 +60,8 @@
 		1EA3390C88326F7FAF5D08A1 /* Pods-CS-Living-CS-LivingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CS-Living-CS-LivingUITests.debug.xcconfig"; path = "Target Support Files/Pods-CS-Living-CS-LivingUITests/Pods-CS-Living-CS-LivingUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		2114A7E1057B671534B90247 /* Pods_CS_LivingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CS_LivingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		279A11C361C3877A5C148927 /* Pods_CS_Living.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CS_Living.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		485C206424547864002E5040 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		485C206524547865002E5040 /* Register.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
 		489FD7762453F5E400E04771 /* CS-Living.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CS-Living.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		489FD7792453F5E400E04771 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		489FD77B2453F5E400E04771 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -336,6 +340,8 @@
 		48B70DD52454332300E894D5 /* Register */ = {
 			isa = PBXGroup;
 			children = (
+				485C206524547865002E5040 /* Register.storyboard */,
+				485C206424547864002E5040 /* RegisterViewController.swift */,
 			);
 			path = Register;
 			sourceTree = "<group>";
@@ -475,6 +481,7 @@
 				489FD7862453F5E600E04771 /* LaunchScreen.storyboard in Resources */,
 				489FD7832453F5E600E04771 /* Assets.xcassets in Resources */,
 				489FD7812453F5E400E04771 /* Main.storyboard in Resources */,
+				485C206724547865002E5040 /* Register.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -613,6 +620,7 @@
 				48B70DD82454369B00E894D5 /* UserModel.swift in Sources */,
 				489FD77C2453F5E400E04771 /* SceneDelegate.swift in Sources */,
 				48B70DC424541FB700E894D5 /* DefineText.swift in Sources */,
+				485C206624547865002E5040 /* RegisterViewController.swift in Sources */,
 				489FD7BC2453FD5D00E04771 /* LoginPresenter.swift in Sources */,
 				48B70DC224541FA200E894D5 /* DefineMarco.swift in Sources */,
 				48B70DBC24541C1900E894D5 /* APIClient.swift in Sources */,
