@@ -53,6 +53,10 @@ class BaseViewController: UIViewController {
         navigationItem.leftBarButtonItem = UIBarButtonItem(customView: tmpButton)
     }
     
+    func hideTitleLeftButton() {
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+    }
+    
     func setBackButtonWithTitle(_ title: String, withAction action: Selector) {
         let tmpButton = UIButton(type: .custom)
         tmpButton.setTitle(title, for: .normal)

@@ -9,6 +9,7 @@ import UIKit
 
 protocol LoginPresenterView: class {
     func authenticationCompleted(isSuccess: Bool)
+    func goRegisterViewController()
 }
 
 class LoginPresenter {
@@ -17,6 +18,7 @@ class LoginPresenter {
     init(view: LoginPresenterView) {
         self.view = view
     }
+    
     func login(params: [String: Any]) {
         APIClient.sharedIntance.login(param: params) {[weak self] (responseObject, error) in
             if error == nil, responseObject != nil {
@@ -33,5 +35,9 @@ class LoginPresenter {
                 self?.view?.authenticationCompleted(isSuccess: false)
             }
         }
+    }
+    
+    func goRegisterViewController() {
+        self.view?.goRegisterViewController()
     }
 }

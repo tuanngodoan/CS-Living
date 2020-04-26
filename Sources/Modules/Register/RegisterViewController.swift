@@ -7,8 +7,10 @@
 
 import UIKit
 
-class RegisterViewController: UIViewController {
+class RegisterViewController: BaseViewController {
 
+    var presenter: RegisterPresenter!
+    
     @IBOutlet weak var avatarImageView: UIImageView!
     @IBOutlet weak var pickerAvatarView: UIView!
     
@@ -28,19 +30,77 @@ class RegisterViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Đăng kí tài khoản"
+        self.setBackButtonWithImage("icn_back", withAction: #selector(backButtonAction))
+    }
 
-        // Do any additional setup after loading the view.
+    @objc func backButtonAction() {
+        self.navigationController?.popViewController(animated: true)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func registerButtonDidTouch(_ sender: UIButton) {
+        self.register()
     }
-    */
+}
 
+// MARK: - Init View
+extension RegisterViewController {
+    override func initUI() {
+        
+    }
+}
+
+// MARK: - Init Data
+extension RegisterViewController {
+    override func initData() {
+
+    }
+}
+
+// MARK: - ConfigPresenter
+extension RegisterViewController {
+    override func configPresenter() {
+        self.presenter = RegisterPresenter.init(view: self)
+    }
+}
+
+// MARK: - Private func
+extension RegisterViewController {
+    
+}
+
+// MARK: - Public func
+extension RegisterViewController {
+    
+}
+
+// MARK: - API CALL
+extension RegisterViewController {
+    func register() {
+        guard let loginName = self.userNameTextField.text,
+            let password = self.passwordTextField.text,
+            let name = self.fullNameTextField.text,
+            let phone = self.phoneTextField.text,
+            let email = self.emailTextField.text else { return }
+        
+        let params: [String: Any] = [
+            kLoginName: loginName,
+            kPassword: password,
+            kFirstName: name,
+            kPhoneNumber: phone,
+            kEmail: email,
+            
+        ]
+        
+        self.presenter?.register(params: params)
+    }
+}
+
+// MARK: - LoginPresenterView
+extension RegisterViewController: RegisterPresenterView {
+    func registerCompleted(isSuccess: Bool) {
+        AppUtil.showAlert("Đã đăng kí tài khoản thành công", callback: { [weak self] in
+            self?.backButtonAction()
+        })
+    }
 }

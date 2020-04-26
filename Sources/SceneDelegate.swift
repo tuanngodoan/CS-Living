@@ -20,8 +20,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let _ = (scene as? UIWindowScene) else { return }
          if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
-               let loginVC = LoginViewController.controller(from: "Login", storyboardID: "LoginViewController")
-             window.rootViewController = loginVC// Your RootViewController in here
+            let loginVC = LoginViewController.controller(from: "Login", storyboardID: "LoginViewController")
+            let loginNavi = BaseNavigationController(rootViewController: loginVC)
+             window.rootViewController = loginNavi// Your RootViewController in here
              self.window = window
              window.makeKeyAndVisible()
         }
