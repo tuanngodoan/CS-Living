@@ -9,7 +9,7 @@ import UIKit
 
 class UpgradeAccountViewController: UIViewController {
 
-    @IBoutlet weak var upgradeAccountButton: UIButton!
+    @IBOutlet weak var upgradeAccountButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()

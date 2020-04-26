@@ -30,11 +30,21 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var adsView: UIView!
     
+    @IBOutlet weak var collectionView: UICollectionView! //img: 77
+    @IBOutlet weak var pageControl: UIPageControl!
+
+    var thisWidth: CGFloat = 0
+    var adsHeight: CGFloat = 130.0
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        thisWidth = CGFloat(self.view.frame.width)
+        collectionView.delegate = self
+        collectionView.dataSource = self
 
-        // Do any additional setup after loading the view.
+        pageControl.hidesForSinglePage = true
     }
     
     @IBAction func functionButtonDidTouch(_ sender: UIButton) {
@@ -71,15 +81,34 @@ class HomeViewController: UIViewController {
             break
         }
     }
+}
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 4
     }
-    */
 
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 1
+    }
+
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AdsBannerCollectionViewCell", for: indexPath) as? AdsBannerCollectionViewCell {
+            let color = (Int.random(in: 0...1) == 1) ? UIColor.orange : UIColor.blue
+            cell.adsBannerView.backgroundColor = color
+            return cell
+        }
+        
+        return UICollectionViewCell()
+        
+    }
+
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        pageControl.currentPage = Int(scrollView.contentOffset.x) / Int(scrollView.frame.width)
+    }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        thisWidth = CGFloat(self.view.frame.width)
+        return CGSize(width: thisWidth, height: self.adsHeight)
+    }
 }
