@@ -28,6 +28,10 @@ class LoginViewController: BaseViewController {
     @IBAction func register(sender: UIButton) {
         registerUserFireBase()
     }
+    
+    @IBAction func registerButtonDidTouch(_ sender: UIButton) {
+        self.presenter?.goRegisterViewController()
+    }
 }
 
 // MARK: - Init View
@@ -41,6 +45,13 @@ extension LoginViewController {
 extension LoginViewController {
     override func initData() {
 
+    }
+}
+
+// MARK: - IBAction
+extension LoginViewController {
+    @IBAction func loginAction(sender: UIButton) {
+        self.login()
     }
 }
 
@@ -73,16 +84,20 @@ extension LoginViewController {
 //            print("LOGGGG",result?.user.uid)
 //        }
         
-        Auth.auth().signIn(withEmail: "tungkoi92@gmail.com", password: "thanhtung") { (result, error) in
-            print("LOGGGGqqqq",result?.user.uid)
-        }
+       
     }
 }
 
 // MARK: - LoginPresenterView
 extension LoginViewController: LoginPresenterView {
+    func goRegisterViewController() {
+        let registerVC = RegisterViewController.controller(from: "Register", storyboardID: "RegisterViewController")
+        self.navigationController?.pushViewController(registerVC, animated: true)
+    }
+    
     func authenticationCompleted(isSuccess: Bool) {
-        
+        print("isSuccess",isSuccess)
+        AppUtil.appDelegate?.showHome()
     }
 }
 
