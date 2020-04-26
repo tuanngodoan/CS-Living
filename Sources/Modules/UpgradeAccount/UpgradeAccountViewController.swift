@@ -7,13 +7,14 @@
 
 import UIKit
 
-class UpgradeAccountViewController: UIViewController {
+class UpgradeAccountViewController: BaseViewController {
 
     @IBOutlet weak var upgradeAccountButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.title = "Nâng cấp tài khoản"
+        self.setBackButtonWithImage("icn_back", withAction: #selector(backButtonAction))
         // Do any additional setup after loading the view.
     }
     
@@ -21,4 +22,7 @@ class UpgradeAccountViewController: UIViewController {
         
     }
 
+    @objc func backButtonAction() {
+        self.navigationController?.popViewController(animated: true)
+    }
 }

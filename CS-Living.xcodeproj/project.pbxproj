@@ -49,6 +49,9 @@
 		612E42BDE2B19C766826E416 /* Pods_CS_Living_CS_LivingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD89677E6DFAB48AA57EEC7E /* Pods_CS_Living_CS_LivingUITests.framework */; };
 		7D79C24F3F6C7CE960731D56 /* Pods_CS_Living.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 279A11C361C3877A5C148927 /* Pods_CS_Living.framework */; };
 		9ADDC9ED1013FC9AADE84372 /* Pods_CS_LivingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2114A7E1057B671534B90247 /* Pods_CS_LivingTests.framework */; };
+		C35FF5662455A4F200AAC9C8 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35FF5652455A4F200AAC9C8 /* HomePresenter.swift */; };
+		C35FF56A2455CA6800AAC9C8 /* CustomFeatureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C35FF5692455CA6800AAC9C8 /* CustomFeatureView.xib */; };
+		C35FF56C2455CC8A00AAC9C8 /* CustomFeatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35FF56B2455CC8A00AAC9C8 /* CustomFeatureView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,6 +125,9 @@
 		816B1FCA0DED3F503EF95F72 /* Pods-CS-Living-CS-LivingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CS-Living-CS-LivingUITests.release.xcconfig"; path = "Target Support Files/Pods-CS-Living-CS-LivingUITests/Pods-CS-Living-CS-LivingUITests.release.xcconfig"; sourceTree = "<group>"; };
 		9416EEC78FE21D9BA5687294 /* Pods-CS-LivingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CS-LivingTests.release.xcconfig"; path = "Target Support Files/Pods-CS-LivingTests/Pods-CS-LivingTests.release.xcconfig"; sourceTree = "<group>"; };
 		AACFEA1243093F33BC829386 /* Pods-CS-LivingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CS-LivingTests.debug.xcconfig"; path = "Target Support Files/Pods-CS-LivingTests/Pods-CS-LivingTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C35FF5652455A4F200AAC9C8 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomePresenter.swift; path = Sources/Modules/Register/HomePresenter.swift; sourceTree = SOURCE_ROOT; };
+		C35FF5692455CA6800AAC9C8 /* CustomFeatureView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomFeatureView.xib; sourceTree = "<group>"; };
+		C35FF56B2455CC8A00AAC9C8 /* CustomFeatureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFeatureView.swift; sourceTree = "<group>"; };
 		DD89677E6DFAB48AA57EEC7E /* Pods_CS_Living_CS_LivingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CS_Living_CS_LivingUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -191,6 +197,8 @@
 			children = (
 				1B5D3E132455505E00C288B1 /* AdsBannerCollectionViewCell.swift */,
 				1B5D3E142455505E00C288B1 /* AdsBannerCollectionViewCell.xib */,
+				C35FF5692455CA6800AAC9C8 /* CustomFeatureView.xib */,
+				C35FF56B2455CC8A00AAC9C8 /* CustomFeatureView.swift */,
 				1B7C3FE1245464E1002941BA /* HomeViewController.swift */,
 			);
 			path = PassivewView;
@@ -209,6 +217,7 @@
 		1B7C3FE0245464BB002941BA /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				C35FF5652455A4F200AAC9C8 /* HomePresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -641,6 +650,7 @@
 				1B5D3E162455505E00C288B1 /* AdsBannerCollectionViewCell.xib in Resources */,
 				489FD7812453F5E400E04771 /* Main.storyboard in Resources */,
 				1BD06B3D245492D50024088F /* FeeList.storyboard in Resources */,
+				C35FF56A2455CA6800AAC9C8 /* CustomFeatureView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -771,6 +781,7 @@
 				1B9C1EEA24552F4800F03A3A /* RegisterViewController.swift in Sources */,
 				48B70DCD2454204E00E894D5 /* UIView.swift in Sources */,
 				48B70DC624541FC100E894D5 /* DefineKey.swift in Sources */,
+				C35FF5662455A4F200AAC9C8 /* HomePresenter.swift in Sources */,
 				485C207B2454898B002E5040 /* UIViewController.swift in Sources */,
 				48B70DBE24541D0100E894D5 /* ResponseObject.swift in Sources */,
 				489FD7BA2453FD3F00E04771 /* LoginViewController.swift in Sources */,
@@ -792,6 +803,7 @@
 				48B70DDC24545F4700E894D5 /* NetworkResponse.swift in Sources */,
 				1B9C1EE624552C4800F03A3A /* RegisterPresenter.swift in Sources */,
 				48B70DDA2454375D00E894D5 /* APIClient+Login.swift in Sources */,
+				C35FF56C2455CC8A00AAC9C8 /* CustomFeatureView.swift in Sources */,
 				48B70DC024541E0800E894D5 /* AppUtil.swift in Sources */,
 				485C207E245489C6002E5040 /* Router.swift in Sources */,
 				485C20772454891F002E5040 /* BaseTabbarController.swift in Sources */,

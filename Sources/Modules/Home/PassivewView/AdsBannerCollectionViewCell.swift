@@ -10,10 +10,16 @@ import UIKit
 class AdsBannerCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var adsBannerView: UIView!
+    @IBOutlet weak var adsBannerImageView: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+    }
+    
+    func setAdsView(imageName: String) {
+        let image = UIImage(named: imageName)
+        self.adsBannerImageView.image = image
     }
 
 }
