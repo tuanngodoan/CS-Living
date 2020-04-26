@@ -23,6 +23,10 @@ class LoginViewController: BaseViewController {
         super.viewDidLoad()
         
     }
+    
+    @IBAction func registerButtonDidTouch(_ sender: UIButton) {
+        self.presenter?.goRegisterViewController()
+    }
 }
 
 // MARK: - Init View
@@ -66,6 +70,11 @@ extension LoginViewController {
 
 // MARK: - LoginPresenterView
 extension LoginViewController: LoginPresenterView {
+    func goRegisterViewController() {
+        let registerVC = RegisterViewController.controller(from: "Register", storyboardID: "RegisterViewController")
+        self.navigationController?.pushViewController(registerVC, animated: true)
+    }
+    
     func authenticationCompleted(isSuccess: Bool) {
         
     }

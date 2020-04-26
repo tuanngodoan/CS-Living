@@ -123,6 +123,26 @@ final class AppUtil: NSObject {
         visibleViewController?.present(alert, animated: true, completion: nil)
     }
     
+    class func showAlert(_ mesage: String, callback: @escaping () -> (Void)) {
+        
+        if AppUtil.checkStringIsEmpty(mesage) {
+            return
+        }
+        if AppUtil.visibleViewController is UIAlertController {
+            return
+        }
+        let alert = UIAlertController.init(title: kMessageTitle, message: mesage, preferredStyle: .alert)
+        
+        let cancel = UIAlertAction.init(title: kClose, style: .default) { _ in
+            alert.dismiss(animated: true, completion: nil)
+            callback()
+        }
+        
+        alert.addAction(cancel)
+        
+        visibleViewController?.present(alert, animated: true, completion: nil)
+    }
+    
     class func validatePassword(_ password: String) -> Bool {
 
 //        let tempString = CharacterSet.

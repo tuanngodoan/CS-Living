@@ -11,7 +11,7 @@ import Alamofire
 extension APIClient {
     func postRegisterUser(param: Parameters, callBack: @escaping CSCallBack) {
         requestPath(path: kRegister, param: param, methodRequest: .post) { responseObject, error in
-            
+            callBack(responseObject,error)
         }
     }
 }
