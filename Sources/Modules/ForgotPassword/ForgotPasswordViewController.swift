@@ -9,9 +9,9 @@ import UIKit
 
 class ForgotPasswordViewController: UIViewController {
 
-    @IBoutlet weak var emailorPhoneTextField: UITextField!
+    @IBOutlet weak var emailorPhoneTextField: UITextField!
     
-    @IBoutlet weak var sendOTPButton: UIButton!
+    @IBOutlet weak var sendOTPButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
