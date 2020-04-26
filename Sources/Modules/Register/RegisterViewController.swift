@@ -8,7 +8,6 @@
 import UIKit
 
 class RegisterViewController: BaseViewController {
-    
     @IBOutlet weak var avatarImageView: UIImageView!
     @IBOutlet weak var pickerAvatarView: UIView!
     @IBOutlet weak var userNameTextField: UITextField!
@@ -20,14 +19,16 @@ class RegisterViewController: BaseViewController {
     @IBOutlet weak var checkTermImage: UIImageView!
     @IBOutlet weak var termLabel: UILabel!
     @IBOutlet weak var registerButton: UIButton!
-    @IBOutlet weak var backLoginLabel: UILabel!
-    
+    private var isCheckedTerm: Bool = true
     var presenter: RegisterPresenter!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Đăng kí tài khoản"
         self.setBackButtonWithImage("icn_back", withAction: #selector(backButtonAction))
+        
+        let tapTerm = UITapGestureRecognizer(target: self, action: #selector(toggleCheckTerm))
+        checkTermImage.addGestureRecognizer(tapTerm)
     }
 
     @objc func backButtonAction() {
@@ -37,13 +38,29 @@ class RegisterViewController: BaseViewController {
     @IBAction func registerButtonDidTouch(_ sender: UIButton) {
         self.register()
     }
+    
+    @IBAction func backToLoginDidTouch(_ sender: UIButton) {
+        self.backButtonAction()
+    }
 }
 
 // MARK: - Init View
 extension RegisterViewController {
     override func initUI() {
-        
+        super.initUI()
+        termLabelUI()
     }
+    
+    func termLabelUI() {
+        let range = (termLabel.text! as NSString).range(of: "Điều khoản")
+        let attribute = NSMutableAttributedString.init(string: termLabel.text!)
+        attribute.addAttributes([NSAttributedString.Key.foregroundColor: UIColor.blue,
+                                 NSAttributedString.Key.underlineStyle: NSUnderlineStyle.single.rawValue],
+                                range: range)
+        termLabel.attributedText = attribute
+    }
+    
+    
 }
 
 // MARK: - Init Data
@@ -62,7 +79,10 @@ extension RegisterViewController {
 
 // MARK: - Private func
 extension RegisterViewController {
-    
+    @objc private func toggleCheckTerm() {
+        self.isCheckedTerm = !self.isCheckedTerm
+        self.checkTermImage.image = self.isCheckedTerm ? UIImage(named: "icn_check") : UIImage(named: "icn_uncheck")
+    }
 }
 
 // MARK: - Public func
