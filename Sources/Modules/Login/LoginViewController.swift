@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
 
 class LoginViewController: BaseViewController {
     private var presenter: LoginPresenter?
@@ -21,7 +23,10 @@ class LoginViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+    }
+    
+    @IBAction func register(sender: UIButton) {
+        registerUserFireBase()
     }
 }
 
@@ -61,6 +66,16 @@ extension LoginViewController {
     func login() {
         let params: [String: Any] = [kUserName: "string", kPassword: "string"]
         self.presenter?.login(params: params)
+    }
+    
+    func registerUserFireBase() {
+//        Auth.auth().createUser(withEmail: "tungkoi92@gmail.com", password: "thanhtung") { (result, error) in
+//            print("LOGGGG",result?.user.uid)
+//        }
+        
+        Auth.auth().signIn(withEmail: "tungkoi92@gmail.com", password: "thanhtung") { (result, error) in
+            print("LOGGGGqqqq",result?.user.uid)
+        }
     }
 }
 

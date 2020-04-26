@@ -45,6 +45,7 @@
 		48B70DD82454369B00E894D5 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B70DD72454369B00E894D5 /* UserModel.swift */; };
 		48B70DDA2454375D00E894D5 /* APIClient+Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B70DD92454375D00E894D5 /* APIClient+Login.swift */; };
 		48B70DDC24545F4700E894D5 /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B70DDB24545F4700E894D5 /* NetworkResponse.swift */; };
+		48B7494724557B9400E5FFD2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48B7494624557B9300E5FFD2 /* GoogleService-Info.plist */; };
 		612E42BDE2B19C766826E416 /* Pods_CS_Living_CS_LivingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD89677E6DFAB48AA57EEC7E /* Pods_CS_Living_CS_LivingUITests.framework */; };
 		7D79C24F3F6C7CE960731D56 /* Pods_CS_Living.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 279A11C361C3877A5C148927 /* Pods_CS_Living.framework */; };
 		9ADDC9ED1013FC9AADE84372 /* Pods_CS_LivingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2114A7E1057B671534B90247 /* Pods_CS_LivingTests.framework */; };
@@ -115,6 +116,7 @@
 		48B70DD72454369B00E894D5 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		48B70DD92454375D00E894D5 /* APIClient+Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIClient+Login.swift"; sourceTree = "<group>"; };
 		48B70DDB24545F4700E894D5 /* NetworkResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResponse.swift; sourceTree = "<group>"; };
+		48B7494624557B9300E5FFD2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		59B3FC6BDD48F1EBCB140A11 /* Pods-CS-Living.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CS-Living.release.xcconfig"; path = "Target Support Files/Pods-CS-Living/Pods-CS-Living.release.xcconfig"; sourceTree = "<group>"; };
 		7055593A792205437A7F0295 /* Pods-CS-Living.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CS-Living.debug.xcconfig"; path = "Target Support Files/Pods-CS-Living/Pods-CS-Living.debug.xcconfig"; sourceTree = "<group>"; };
 		816B1FCA0DED3F503EF95F72 /* Pods-CS-Living-CS-LivingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CS-Living-CS-LivingUITests.release.xcconfig"; path = "Target Support Files/Pods-CS-Living-CS-LivingUITests/Pods-CS-Living-CS-LivingUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -309,6 +311,7 @@
 		489FD7782453F5E400E04771 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				48B7494624557B9300E5FFD2 /* GoogleService-Info.plist */,
 				489FD7AA2453F6EF00E04771 /* ServiceAPI */,
 				489FD7A92453F6EF00E04771 /* Core */,
 				489FD7AE2453F6EF00E04771 /* Resources */,
@@ -632,6 +635,7 @@
 			files = (
 				489FD7B62453FD0700E04771 /* Login.storyboard in Resources */,
 				489FD7862453F5E600E04771 /* LaunchScreen.storyboard in Resources */,
+				48B7494724557B9400E5FFD2 /* GoogleService-Info.plist in Resources */,
 				1B9C1EE824552F2E00F03A3A /* Register.storyboard in Resources */,
 				489FD7832453F5E600E04771 /* Assets.xcassets in Resources */,
 				1B7C3FE4245464EE002941BA /* Home.storyboard in Resources */,
@@ -974,7 +978,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.cs.living;
+				PRODUCT_BUNDLE_IDENTIFIER = "CS-Living";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -995,7 +999,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.cs.living;
+				PRODUCT_BUNDLE_IDENTIFIER = "CS-Living";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
