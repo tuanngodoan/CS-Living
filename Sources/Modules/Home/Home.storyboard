@@ -1,45 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Q7k-cr-PdI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Q7k-cr-PdI">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Home View Controller-->
         <scene sceneID="RYa-kp-uhz">
             <objects>
-                <viewController id="Q7k-cr-PdI" customClass="HomeViewController" customModule="CS_Living" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" id="Q7k-cr-PdI" customClass="HomeViewController" customModule="CS_Living" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Haj-jl-xlQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VjE-gB-PYq" userLabel="HeaderView">
-                                <rect key="frame" x="0.0" y="44" width="375" height="60"/>
+                                <rect key="frame" x="0.0" y="60" width="375" height="70"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ibh-kp-Tn2">
-                                        <rect key="frame" x="16" y="0.0" width="60" height="60"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="name" translatesAutoresizingMaskIntoConstraints="NO" id="ibh-kp-Tn2">
+                                        <rect key="frame" x="16" y="5" width="60" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="ibh-kp-Tn2" secondAttribute="height" multiplier="1:1" id="KTY-56-P0q"/>
                                             <constraint firstAttribute="height" constant="60" id="irJ-Jx-Mt9"/>
                                         </constraints>
                                     </imageView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bUM-70-PR6" userLabel="UserInfo">
-                                        <rect key="frame" x="84" y="0.0" width="150" height="60"/>
+                                        <rect key="frame" x="83.999999999999986" y="0.0" width="187.66666666666663" height="70"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="NwO-zS-6X1">
-                                                <rect key="frame" x="0.0" y="0.0" width="150" height="60"/>
+                                                <rect key="frame" x="5" y="5" width="177.66666666666666" height="60"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Họ và tên" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HJK-gv-6DM">
-                                                        <rect key="frame" x="0.0" y="0.0" width="150" height="30"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="177.66666666666666" height="30"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Căn" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8rK-bg-aEs">
-                                                        <rect key="frame" x="0.0" y="30" width="150" height="30"/>
+                                                        <rect key="frame" x="0.0" y="30" width="177.66666666666666" height="30"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -49,28 +49,28 @@
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="NwO-zS-6X1" secondAttribute="bottom" id="Ffi-mp-WX0"/>
-                                            <constraint firstAttribute="trailing" secondItem="NwO-zS-6X1" secondAttribute="trailing" id="YIK-B0-nQZ"/>
-                                            <constraint firstItem="NwO-zS-6X1" firstAttribute="top" secondItem="bUM-70-PR6" secondAttribute="top" id="a9m-uh-CRB"/>
-                                            <constraint firstItem="NwO-zS-6X1" firstAttribute="leading" secondItem="bUM-70-PR6" secondAttribute="leading" id="acb-D2-bo6"/>
+                                            <constraint firstAttribute="bottom" secondItem="NwO-zS-6X1" secondAttribute="bottom" constant="5" id="Ffi-mp-WX0"/>
+                                            <constraint firstAttribute="trailing" secondItem="NwO-zS-6X1" secondAttribute="trailing" constant="5" id="YIK-B0-nQZ"/>
+                                            <constraint firstItem="NwO-zS-6X1" firstAttribute="top" secondItem="bUM-70-PR6" secondAttribute="top" constant="5" id="a9m-uh-CRB"/>
+                                            <constraint firstItem="NwO-zS-6X1" firstAttribute="leading" secondItem="bUM-70-PR6" secondAttribute="leading" constant="5" id="acb-D2-bo6"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                <real key="value" value="1"/>
+                                                <real key="value" value="0.5"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                <color key="value" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="8"/>
+                                                <real key="value" value="6"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBound" value="YES"/>
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6FL-C8-DZX" userLabel="Upgrade">
-                                        <rect key="frame" x="287" y="0.0" width="80" height="60"/>
+                                        <rect key="frame" x="287" y="0.0" width="80" height="70"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="quz-hu-z93">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="contact" translatesAutoresizingMaskIntoConstraints="NO" id="quz-hu-z93">
                                                 <rect key="frame" x="20" y="0.0" width="40" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="BCN-ht-X3L"/>
@@ -78,7 +78,7 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cư dân" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RhI-5S-gSN">
-                                                <rect key="frame" x="0.0" y="42" width="80" height="18"/>
+                                                <rect key="frame" x="0.0" y="42" width="80" height="28"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -99,69 +99,111 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstItem="bUM-70-PR6" firstAttribute="top" secondItem="VjE-gB-PYq" secondAttribute="top" id="CLO-hN-7AG"/>
-                                    <constraint firstAttribute="height" constant="60" id="JrI-I7-pIS"/>
+                                    <constraint firstAttribute="height" constant="70" id="JrI-I7-pIS"/>
                                     <constraint firstItem="ibh-kp-Tn2" firstAttribute="leading" secondItem="VjE-gB-PYq" secondAttribute="leading" constant="16" id="LSc-nx-84G"/>
                                     <constraint firstItem="bUM-70-PR6" firstAttribute="leading" secondItem="ibh-kp-Tn2" secondAttribute="trailing" constant="8" id="WYT-Hb-Qzi"/>
                                     <constraint firstItem="ibh-kp-Tn2" firstAttribute="centerY" secondItem="VjE-gB-PYq" secondAttribute="centerY" id="byq-CM-hQg"/>
                                     <constraint firstAttribute="bottom" secondItem="6FL-C8-DZX" secondAttribute="bottom" id="iLy-gY-4YW"/>
                                     <constraint firstItem="bUM-70-PR6" firstAttribute="centerY" secondItem="VjE-gB-PYq" secondAttribute="centerY" id="nCh-rB-c4J"/>
                                     <constraint firstItem="6FL-C8-DZX" firstAttribute="top" secondItem="VjE-gB-PYq" secondAttribute="top" id="pNk-8k-LhW"/>
-                                    <constraint firstItem="bUM-70-PR6" firstAttribute="width" secondItem="VjE-gB-PYq" secondAttribute="width" multiplier="0.4" id="qLK-7V-9F7"/>
+                                    <constraint firstItem="bUM-70-PR6" firstAttribute="width" secondItem="VjE-gB-PYq" secondAttribute="width" multiplier="0.5" id="qLK-7V-9F7"/>
                                     <constraint firstAttribute="trailing" secondItem="6FL-C8-DZX" secondAttribute="trailing" constant="8" id="raX-p5-47N"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="soY-z4-Fcg" userLabel="ButtonView">
-                                <rect key="frame" x="0.0" y="116" width="375" height="220"/>
+                                <rect key="frame" x="20" y="155" width="335" height="220"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Oma-hE-8da">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="70"/>
                                         <subviews>
                                             <button opaque="NO" tag="1000001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hBv-yz-V9u">
-                                                <rect key="frame" x="0.0" y="0.0" width="121.66666666666667" height="70"/>
-                                                <color key="backgroundColor" systemColor="separatorColor" red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <state key="normal" title="Button"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="108.33333333333333" height="70"/>
+                                                <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Bảng kê phí">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="value" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                        <size key="value" width="1" height="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                        <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="functionButtonDidTouch:" destination="Q7k-cr-PdI" eventType="touchUpInside" id="2BV-tQ-sjX"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="1000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0va-Zh-tUL">
-                                                <rect key="frame" x="126.66666666666666" y="0.0" width="121.66666666666666" height="70"/>
-                                                <color key="backgroundColor" systemColor="separatorColor" red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <state key="normal" title="Button"/>
+                                            <button opaque="NO" tag="1000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="cfa-Mi-6q5">
+                                                <rect key="frame" x="113.33333333333334" y="0.0" width="108.33333333333334" height="70"/>
+                                                <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Ý kiến, Yêu cầu">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="value" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                        <size key="value" width="1" height="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                        <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="functionButtonDidTouch:" destination="Q7k-cr-PdI" eventType="touchUpInside" id="IiO-QN-mNp"/>
+                                                    <action selector="functionButtonDidTouch:" destination="Q7k-cr-PdI" eventType="touchUpInside" id="FQY-ZG-49K"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="1000003" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pZT-jk-LBD">
-                                                <rect key="frame" x="253.33333333333334" y="0.0" width="121.66666666666666" height="70"/>
-                                                <color key="backgroundColor" systemColor="separatorColor" red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <state key="normal" title="Button"/>
+                                            <button opaque="NO" tag="1000003" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Flj-ii-JCi">
+                                                <rect key="frame" x="226.66666666666666" y="0.0" width="108.33333333333334" height="70"/>
+                                                <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Thông báo">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="value" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                        <size key="value" width="1" height="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                        <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="functionButtonDidTouch:" destination="Q7k-cr-PdI" eventType="touchUpInside" id="MDT-gC-Lk9"/>
+                                                    <action selector="functionButtonDidTouch:" destination="Q7k-cr-PdI" eventType="touchUpInside" id="GLp-R2-HaC"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -170,54 +212,97 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="DSa-Ev-WOY">
-                                        <rect key="frame" x="0.0" y="75" width="375" height="70"/>
+                                        <rect key="frame" x="0.0" y="75" width="335" height="70"/>
                                         <subviews>
-                                            <button opaque="NO" tag="1000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AfR-hC-X9k">
-                                                <rect key="frame" x="0.0" y="0.0" width="121.66666666666667" height="70"/>
-                                                <color key="backgroundColor" systemColor="separatorColor" red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <state key="normal" title="Button"/>
+                                            <button opaque="NO" tag="1000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="zC7-89-4kn">
+                                                <rect key="frame" x="0.0" y="0.0" width="108.33333333333333" height="70"/>
+                                                <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                                <state key="normal" title="Thông tin phương tiện">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="value" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                        <size key="value" width="1" height="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                        <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="functionButtonDidTouch:" destination="Q7k-cr-PdI" eventType="touchUpInside" id="zLs-h6-DKA"/>
+                                                    <action selector="functionButtonDidTouch:" destination="Q7k-cr-PdI" eventType="touchUpInside" id="xux-tB-31E"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="1000005" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l73-f4-8aj">
-                                                <rect key="frame" x="126.66666666666666" y="0.0" width="121.66666666666666" height="70"/>
-                                                <color key="backgroundColor" systemColor="separatorColor" red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <state key="normal" title="Button"/>
+                                            <button opaque="NO" tag="1000005" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="hZo-pF-GGJ">
+                                                <rect key="frame" x="113.33333333333334" y="0.0" width="108.33333333333334" height="70"/>
+                                                <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Thông tin nhân khẩu">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="value" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                        <size key="value" width="1" height="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                        <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="functionButtonDidTouch:" destination="Q7k-cr-PdI" eventType="touchUpInside" id="F4P-ct-as1"/>
+                                                    <action selector="functionButtonDidTouch:" destination="Q7k-cr-PdI" eventType="touchUpInside" id="1me-dY-uzK"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="1000006" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ffi-Wg-tTg">
-                                                <rect key="frame" x="253.33333333333334" y="0.0" width="121.66666666666666" height="70"/>
-                                                <color key="backgroundColor" systemColor="separatorColor" red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <state key="normal" title="Button"/>
+                                            <button opaque="NO" tag="1000006" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Myp-aI-Ksj">
+                                                <rect key="frame" x="226.66666666666666" y="0.0" width="108.33333333333334" height="70"/>
+                                                <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Đặt dịch vụ">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="value" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                        <size key="value" width="1" height="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                        <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="functionButtonDidTouch:" destination="Q7k-cr-PdI" eventType="touchUpInside" id="SKw-bi-OuQ"/>
+                                                    <action selector="functionButtonDidTouch:" destination="Q7k-cr-PdI" eventType="touchUpInside" id="eo4-W1-JdD"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -226,54 +311,97 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="sZ7-FG-cEy">
-                                        <rect key="frame" x="0.0" y="150" width="375" height="70"/>
+                                        <rect key="frame" x="0.0" y="150" width="335" height="70"/>
                                         <subviews>
-                                            <button opaque="NO" tag="1000007" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vaz-Ta-f76">
-                                                <rect key="frame" x="0.0" y="0.0" width="121.66666666666667" height="70"/>
-                                                <color key="backgroundColor" systemColor="separatorColor" red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <state key="normal" title="Button"/>
+                                            <button opaque="NO" tag="1000007" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Bb5-kH-KsZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="108.33333333333333" height="70"/>
+                                                <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <state key="normal" title="Cho thuê/ Bán nhà">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="value" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                        <size key="value" width="1" height="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                        <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="functionButtonDidTouch:" destination="Q7k-cr-PdI" eventType="touchUpInside" id="cQZ-jd-AYY"/>
+                                                    <action selector="functionButtonDidTouch:" destination="Q7k-cr-PdI" eventType="touchUpInside" id="BQL-qT-G0Y"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="1000008" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="an6-QA-8Nx">
-                                                <rect key="frame" x="126.66666666666666" y="0.0" width="121.66666666666666" height="70"/>
-                                                <color key="backgroundColor" systemColor="separatorColor" red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <state key="normal" title="Button"/>
+                                            <button opaque="NO" tag="1000008" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oYd-Q2-dl1">
+                                                <rect key="frame" x="113.33333333333334" y="0.0" width="108.33333333333334" height="70"/>
+                                                <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Đặt lịch">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="value" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                        <size key="value" width="1" height="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                        <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="functionButtonDidTouch:" destination="Q7k-cr-PdI" eventType="touchUpInside" id="5z5-8q-B34"/>
+                                                    <action selector="functionButtonDidTouch:" destination="Q7k-cr-PdI" eventType="touchUpInside" id="DDs-EE-XgN"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="1000009" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oE2-7V-oPV">
-                                                <rect key="frame" x="253.33333333333334" y="0.0" width="121.66666666666666" height="70"/>
-                                                <color key="backgroundColor" systemColor="separatorColor" red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <state key="normal" title="Button"/>
+                                            <button opaque="NO" tag="1000009" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d61-YY-zHQ">
+                                                <rect key="frame" x="226.66666666666666" y="0.0" width="108.33333333333334" height="70"/>
+                                                <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Thanh toán">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="value" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                        <size key="value" width="1" height="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                        <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="functionButtonDidTouch:" destination="Q7k-cr-PdI" eventType="touchUpInside" id="reY-8w-ExG"/>
+                                                    <action selector="functionButtonDidTouch:" destination="Q7k-cr-PdI" eventType="touchUpInside" id="1KK-yc-Qnj"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -296,31 +424,22 @@
                                     <constraint firstItem="Oma-hE-8da" firstAttribute="leading" secondItem="soY-z4-Fcg" secondAttribute="leading" id="xuk-gt-rTt"/>
                                 </constraints>
                             </view>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Uy4-TT-w5p">
-                                <rect key="frame" x="0.0" y="648" width="375" height="130"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <collectionView clipsSubviews="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Uy4-TT-w5p">
+                                <rect key="frame" x="0.0" y="677" width="375" height="135"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="130" id="reQ-E0-0TH"/>
+                                    <constraint firstAttribute="height" constant="135" id="reQ-E0-0TH"/>
                                 </constraints>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="JAg-O6-Wvs">
-                                    <size key="itemSize" width="50" height="50"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="JAg-O6-Wvs">
+                                    <size key="itemSize" width="400" height="135"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="uK3-kJ-2SG">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="aY9-TF-MEw">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </collectionViewCellContentView>
-                                    </collectionViewCell>
-                                </cells>
+                                <cells/>
                             </collectionView>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Znv-1V-Ewj">
-                                <rect key="frame" x="157.66666666666666" y="738" width="60" height="40"/>
+                                <rect key="frame" x="157.66666666666666" y="772" width="60" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="Qeg-I6-mYX"/>
                                     <constraint firstAttribute="height" constant="40" id="qB5-cJ-xJh"/>
@@ -329,17 +448,17 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="soY-z4-Fcg" firstAttribute="trailing" secondItem="HN4-Ab-Xaf" secondAttribute="trailing" id="7tD-Qj-Rdl"/>
-                            <constraint firstItem="Znv-1V-Ewj" firstAttribute="bottom" secondItem="HN4-Ab-Xaf" secondAttribute="bottom" id="InO-Ob-PY2"/>
+                            <constraint firstItem="soY-z4-Fcg" firstAttribute="trailing" secondItem="HN4-Ab-Xaf" secondAttribute="trailing" constant="-20" id="7tD-Qj-Rdl"/>
+                            <constraint firstItem="Znv-1V-Ewj" firstAttribute="bottom" secondItem="Haj-jl-xlQ" secondAttribute="bottom" id="InO-Ob-PY2"/>
                             <constraint firstItem="Uy4-TT-w5p" firstAttribute="leading" secondItem="HN4-Ab-Xaf" secondAttribute="leading" id="JL7-P0-EfV"/>
                             <constraint firstItem="HN4-Ab-Xaf" firstAttribute="trailing" secondItem="Uy4-TT-w5p" secondAttribute="trailing" id="Lax-PA-gyz"/>
-                            <constraint firstItem="VjE-gB-PYq" firstAttribute="top" secondItem="HN4-Ab-Xaf" secondAttribute="top" id="MSE-Ju-M3w"/>
+                            <constraint firstItem="VjE-gB-PYq" firstAttribute="top" secondItem="HN4-Ab-Xaf" secondAttribute="top" constant="16" id="MSE-Ju-M3w"/>
                             <constraint firstItem="HN4-Ab-Xaf" firstAttribute="trailing" secondItem="VjE-gB-PYq" secondAttribute="trailing" id="MkU-JS-RyY"/>
                             <constraint firstItem="Znv-1V-Ewj" firstAttribute="centerX" secondItem="Haj-jl-xlQ" secondAttribute="centerX" id="O1A-yH-puC"/>
                             <constraint firstItem="VjE-gB-PYq" firstAttribute="leading" secondItem="HN4-Ab-Xaf" secondAttribute="leading" id="bEQ-PJ-vB1"/>
-                            <constraint firstItem="soY-z4-Fcg" firstAttribute="leading" secondItem="HN4-Ab-Xaf" secondAttribute="leading" id="cbo-x8-77N"/>
-                            <constraint firstItem="HN4-Ab-Xaf" firstAttribute="bottom" secondItem="Uy4-TT-w5p" secondAttribute="bottom" id="gj6-lc-gRI"/>
-                            <constraint firstItem="soY-z4-Fcg" firstAttribute="top" secondItem="VjE-gB-PYq" secondAttribute="bottom" constant="12" id="y5F-SN-b7A"/>
+                            <constraint firstItem="soY-z4-Fcg" firstAttribute="leading" secondItem="HN4-Ab-Xaf" secondAttribute="leading" constant="20" id="cbo-x8-77N"/>
+                            <constraint firstAttribute="bottom" secondItem="Uy4-TT-w5p" secondAttribute="bottom" id="gj6-lc-gRI"/>
+                            <constraint firstItem="soY-z4-Fcg" firstAttribute="top" secondItem="VjE-gB-PYq" secondAttribute="bottom" constant="25" id="y5F-SN-b7A"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="HN4-Ab-Xaf"/>
                     </view>
@@ -355,12 +474,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DCe-j5-Vaa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="131.8840579710145" y="121.875"/>
+            <point key="canvasLocation" x="130.40000000000001" y="121.18226600985223"/>
         </scene>
-        <!--View Controller-->
+        <!--Upgrade Account View Controller-->
         <scene sceneID="j4G-Tb-SA1">
             <objects>
-                <viewController id="w98-JJ-gE2" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="UpgradeAccountViewController" id="w98-JJ-gE2" customClass="UpgradeAccountViewController" customModule="CS_Living" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="i4N-yF-1iu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -377,7 +496,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bZr-NJ-0gb">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="bZr-NJ-0gb">
                                         <rect key="frame" x="123.66666666666669" y="52" width="128" height="128"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="128" id="KFx-5z-jld"/>
@@ -405,7 +524,7 @@
                                             <constraint firstAttribute="height" constant="70" id="VDw-PF-OhX"/>
                                         </constraints>
                                         <string key="text">Nếu Ban quản lý Chung cư/Khu đô thị nơi ban đang ở đã liên kết với CS-Living thì bạn sẽ có quyền truy nhập vào các chức năng sau khi nâng cấp tài khoản:</string>
-                                        <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -452,12 +571,12 @@
                                             <constraint firstAttribute="height" constant="44" id="oQi-0r-e82"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
-                                        <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dcC-3R-qD7">
                                         <rect key="frame" x="62.666666666666657" y="197" width="249.99999999999997" height="46"/>
-                                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="46" id="cD8-Cj-9ij"/>
                                         </constraints>
@@ -589,12 +708,12 @@
                                             <constraint firstAttribute="height" constant="31.329999999999998" id="Rcs-1F-QyS"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
-                                        <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="088-zz-MzV">
                                         <rect key="frame" x="62.666666666666657" y="175.33333333333331" width="249.99999999999997" height="48"/>
-                                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="48" id="VI0-N9-flD"/>
                                         </constraints>
@@ -638,6 +757,9 @@
     </scenes>
     <resources>
         <image name="compose" width="17" height="27"/>
+        <image name="contact" width="131" height="132"/>
+        <image name="logo" width="62" height="26.5"/>
+        <image name="name" width="24" height="24"/>
         <image name="send" width="32" height="25"/>
     </resources>
 </document>

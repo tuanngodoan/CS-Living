@@ -7,20 +7,10 @@
 
 import UIKit
 
-enum ButtonType: Int {
-    case feeList                = 1000001 // bảng kê phí
-    case feedback               = 1000002 // ý kiến yêu cầu
-    case notify                 = 1000003 // thông báo
-    case mediaInfomation        = 1000004 //thông tin phương tiện
-    case demographicInformation = 1000005 // thông tin nhân khẩu
-    case bookAService           = 1000006 // Đặt dịch vụ
-    case forSale                = 1000007 //Cho thuê, bán
-    case schedule               = 1000008 // Đặt lịch
-    case pay                    = 1000009 // Thanh toán
-}
+class HomeViewController: BaseViewController {
 
-class HomeViewController: UIViewController {
-
+    private var presenter: HomePresenter!
+    
     @IBOutlet weak var userAvatarImageView: UIImageView!
     @IBOutlet weak var userInfoView: UIView!
     @IBOutlet weak var fullNameLabel: UILabel!
@@ -28,27 +18,24 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var upgradeAccountView: UIView!
     
-    @IBOutlet weak var adsView: UIView!
-    
     @IBOutlet weak var collectionView: UICollectionView! //img: 77
     @IBOutlet weak var pageControl: UIPageControl!
 
-    var thisWidth: CGFloat = 0
-    var adsHeight: CGFloat = 130.0
-    
+    private var thisWidth: CGFloat = 0
+    private var adsHeight: CGFloat = 135
+    private var dummyAds: [String] = ["img_ads1", "img_ads2", "img_ads3", "img_ads4"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        thisWidth = CGFloat(self.view.frame.width)
-        collectionView.delegate = self
-        collectionView.dataSource = self
-
-        pageControl.hidesForSinglePage = true
+        self.title = "Trang chủ"
+    }
+    
+    @objc func upgradeAccountDidTouch() {
+        self.presenter.goUpgradeAccountVC()
     }
     
     @IBAction func functionButtonDidTouch(_ sender: UIButton) {
-        let buttonType = ButtonType.init(rawValue: sender.tag)
+        let buttonType = ButtonHomeType.init(rawValue: sender.tag)
         switch buttonType {
         case .feeList:
             // TODO:
@@ -83,32 +70,96 @@ class HomeViewController: UIViewController {
     }
 }
 
-extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
-    func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 4
+// MARK: - Init View
+extension HomeViewController {
+    override func initUI() {
+        super.initUI()
+        self.setupAdsCollectionView()
+        self.setupUpgradeAccView()
     }
-
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 1
+    
+    func setupAdsCollectionView() {
+        thisWidth = CGFloat(self.view.frame.width)
+        collectionView.register(UINib(nibName: "AdsBannerCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "AdsBannerCollectionViewCell")
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        pageControl.hidesForSinglePage = true
     }
+    
+    func setupUpgradeAccView() {
+        let tapHandler = UITapGestureRecognizer(target: self, action: #selector(upgradeAccountDidTouch))
+        self.upgradeAccountView.isUserInteractionEnabled = true
+        self.upgradeAccountView.addGestureRecognizer(tapHandler)
+    }
+}
 
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AdsBannerCollectionViewCell", for: indexPath) as? AdsBannerCollectionViewCell {
-            let color = (Int.random(in: 0...1) == 1) ? UIColor.orange : UIColor.blue
-            cell.adsBannerView.backgroundColor = color
-            return cell
+// MARK: - Init Data
+extension HomeViewController {
+    override func initData() {
+
+    }
+}
+
+// MARK: - ConfigPresenter
+extension HomeViewController {
+    override func configPresenter() {
+        self.presenter = HomePresenter.init(view: self)
+    }
+}
+
+// MARK: - Private func
+extension HomeViewController {
+    
+}
+
+// MARK: - Public func
+extension HomeViewController {
+    
+}
+
+// MARK: - API CALL
+extension HomeViewController {
+    
+}
+
+// MARK: - LoginPresenterView
+extension HomeViewController: HomePresenterView {
+    func goUpgradeAccountVC() {
+        if let upgradeAccVC = UpgradeAccountViewController.controller(from: "Home", storyboardID: "UpgradeAccountViewController") as? UpgradeAccountViewController {
+            self.navigationController?.pushViewController(upgradeAccVC, animated: true)
         }
-        
-        return UICollectionViewCell()
-        
     }
+    
+   
+}
 
+// MARK: - Ads CollectionView
+extension HomeViewController: UICollectionViewDelegate {
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         pageControl.currentPage = Int(scrollView.contentOffset.x) / Int(scrollView.frame.width)
     }
+}
 
+extension HomeViewController: UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        self.pageControl.numberOfPages = self.dummyAds.count
+        return self.dummyAds.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AdsBannerCollectionViewCell", for: indexPath) as? AdsBannerCollectionViewCell  {
+                cell.setAdsView(imageName: self.dummyAds[indexPath.row])
+                return cell
+            }
+        
+        return UICollectionViewCell()
+    }
+}
+
+extension HomeViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         thisWidth = CGFloat(self.view.frame.width)
         return CGSize(width: thisWidth, height: self.adsHeight)
     }
 }
+
