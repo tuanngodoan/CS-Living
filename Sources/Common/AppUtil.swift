@@ -16,8 +16,11 @@ final class AppUtil: NSObject {
     }
     
     class var visibleViewController: UIViewController? {
-        let rootViewController: UIViewController = UIApplication.shared.windows.first!.rootViewController!
-        return AppUtil.getVisibleViewController(from: rootViewController)
+        if let keyWindow = UIWindow.key, let rootVC = keyWindow.rootViewController {
+            return AppUtil.getVisibleViewController(from: rootVC)
+        }
+        return nil
+        
     }
     
     class func getVisibleViewController(from vc: UIViewController) -> UIViewController {
