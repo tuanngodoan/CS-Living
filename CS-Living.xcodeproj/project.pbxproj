@@ -59,6 +59,9 @@
 		C3F5D8A72456F19800A66695 /* FeeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3F5D8A52456F19800A66695 /* FeeTableViewCell.xib */; };
 		C3F5D8A92456FBB200A66695 /* FeeTableFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3F5D8A82456FBB200A66695 /* FeeTableFooterView.xib */; };
 		C3F5D8AB2456FCD200A66695 /* FeeTableFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F5D8AA2456FCD200A66695 /* FeeTableFooterView.swift */; };
+		C3F5D8AD245719E400A66695 /* FirebaseDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F5D8AC245719E400A66695 /* FirebaseDBManager.swift */; };
+		C3F5D8AF24571C1B00A66695 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C3F5D8AE24571C1B00A66695 /* GoogleService-Info.plist */; };
+		C3F5D8B224571FBD00A66695 /* UserDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F5D8B124571FBD00A66695 /* UserDB.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -142,6 +145,9 @@
 		C3F5D8A52456F19800A66695 /* FeeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeeTableViewCell.xib; sourceTree = "<group>"; };
 		C3F5D8A82456FBB200A66695 /* FeeTableFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeeTableFooterView.xib; sourceTree = "<group>"; };
 		C3F5D8AA2456FCD200A66695 /* FeeTableFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeeTableFooterView.swift; sourceTree = "<group>"; };
+		C3F5D8AC245719E400A66695 /* FirebaseDBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FirebaseDBManager.swift; path = Sources/Modules/FeeList/PassivewView/FirebaseDBManager.swift; sourceTree = SOURCE_ROOT; };
+		C3F5D8AE24571C1B00A66695 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C3F5D8B124571FBD00A66695 /* UserDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDB.swift; sourceTree = "<group>"; };
 		DD89677E6DFAB48AA57EEC7E /* Pods_CS_Living_CS_LivingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CS_Living_CS_LivingUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -414,6 +420,7 @@
 		489FD7AD2453F6EF00E04771 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				C3F5D8AC245719E400A66695 /* FirebaseDBManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -428,6 +435,7 @@
 		489FD7AF2453F6EF00E04771 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				C3F5D8AE24571C1B00A66695 /* GoogleService-Info.plist */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -435,6 +443,7 @@
 		489FD7B02453F6EF00E04771 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				C3F5D8B024571F4A00A66695 /* FirebaseModel */,
 				48B70DBD24541D0100E894D5 /* ResponseObject.swift */,
 				48B70DD72454369B00E894D5 /* UserModel.swift */,
 				1B5D3E17245579AB00C288B1 /* RegisterModel.swift */,
@@ -538,6 +547,14 @@
 				C3705E4B2456B6BF00EED37B /* FeeListViewController.swift */,
 			);
 			path = PassivewView;
+			sourceTree = "<group>";
+		};
+		C3F5D8B024571F4A00A66695 /* FirebaseModel */ = {
+			isa = PBXGroup;
+			children = (
+				C3F5D8B124571FBD00A66695 /* UserDB.swift */,
+			);
+			path = FirebaseModel;
 			sourceTree = "<group>";
 		};
 		C86CC96371D8979C3E53E6B5 /* Pods */ = {
@@ -671,6 +688,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3F5D8AF24571C1B00A66695 /* GoogleService-Info.plist in Resources */,
 				489FD7B62453FD0700E04771 /* Login.storyboard in Resources */,
 				489FD7862453F5E600E04771 /* LaunchScreen.storyboard in Resources */,
 				1B9C1EE824552F2E00F03A3A /* Register.storyboard in Resources */,
@@ -829,6 +847,7 @@
 				48B70DC424541FB700E894D5 /* DefineText.swift in Sources */,
 				1BD06B3824548ED90024088F /* UpgradeAccountViewController.swift in Sources */,
 				489FD7BC2453FD5D00E04771 /* LoginPresenter.swift in Sources */,
+				C3F5D8B224571FBD00A66695 /* UserDB.swift in Sources */,
 				48B70DC224541FA200E894D5 /* DefineMarco.swift in Sources */,
 				C3F5D8AB2456FCD200A66695 /* FeeTableFooterView.swift in Sources */,
 				C30BB2252456E7F3006CB37E /* FeeTableHeaderView.swift in Sources */,
@@ -842,6 +861,7 @@
 				C35FF56C2455CC8A00AAC9C8 /* CustomFeatureView.swift in Sources */,
 				48B70DC024541E0800E894D5 /* AppUtil.swift in Sources */,
 				485C207E245489C6002E5040 /* Router.swift in Sources */,
+				C3F5D8AD245719E400A66695 /* FirebaseDBManager.swift in Sources */,
 				485C20772454891F002E5040 /* BaseTabbarController.swift in Sources */,
 				48B70DC824541FCA00E894D5 /* DefineEnum.swift in Sources */,
 				1B7C3FE2245464E1002941BA /* HomeViewController.swift in Sources */,
