@@ -49,9 +49,19 @@
 		612E42BDE2B19C766826E416 /* Pods_CS_Living_CS_LivingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD89677E6DFAB48AA57EEC7E /* Pods_CS_Living_CS_LivingUITests.framework */; };
 		7D79C24F3F6C7CE960731D56 /* Pods_CS_Living.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 279A11C361C3877A5C148927 /* Pods_CS_Living.framework */; };
 		9ADDC9ED1013FC9AADE84372 /* Pods_CS_LivingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2114A7E1057B671534B90247 /* Pods_CS_LivingTests.framework */; };
+		C30BB2252456E7F3006CB37E /* FeeTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30BB2242456E7F3006CB37E /* FeeTableHeaderView.swift */; };
+		C30BB2272456E7FF006CB37E /* FeeTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C30BB2262456E7FF006CB37E /* FeeTableHeaderView.xib */; };
 		C35FF5662455A4F200AAC9C8 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35FF5652455A4F200AAC9C8 /* HomePresenter.swift */; };
 		C35FF56A2455CA6800AAC9C8 /* CustomFeatureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C35FF5692455CA6800AAC9C8 /* CustomFeatureView.xib */; };
 		C35FF56C2455CC8A00AAC9C8 /* CustomFeatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35FF56B2455CC8A00AAC9C8 /* CustomFeatureView.swift */; };
+		C3705E4C2456B6BF00EED37B /* FeeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3705E4B2456B6BF00EED37B /* FeeListViewController.swift */; };
+		C3F5D8A62456F19800A66695 /* FeeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F5D8A42456F19800A66695 /* FeeTableViewCell.swift */; };
+		C3F5D8A72456F19800A66695 /* FeeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3F5D8A52456F19800A66695 /* FeeTableViewCell.xib */; };
+		C3F5D8A92456FBB200A66695 /* FeeTableFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3F5D8A82456FBB200A66695 /* FeeTableFooterView.xib */; };
+		C3F5D8AB2456FCD200A66695 /* FeeTableFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F5D8AA2456FCD200A66695 /* FeeTableFooterView.swift */; };
+		C3F5D8AD245719E400A66695 /* FirebaseDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F5D8AC245719E400A66695 /* FirebaseDBManager.swift */; };
+		C3F5D8AF24571C1B00A66695 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C3F5D8AE24571C1B00A66695 /* GoogleService-Info.plist */; };
+		C3F5D8B224571FBD00A66695 /* UserDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F5D8B124571FBD00A66695 /* UserDB.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,9 +135,19 @@
 		816B1FCA0DED3F503EF95F72 /* Pods-CS-Living-CS-LivingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CS-Living-CS-LivingUITests.release.xcconfig"; path = "Target Support Files/Pods-CS-Living-CS-LivingUITests/Pods-CS-Living-CS-LivingUITests.release.xcconfig"; sourceTree = "<group>"; };
 		9416EEC78FE21D9BA5687294 /* Pods-CS-LivingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CS-LivingTests.release.xcconfig"; path = "Target Support Files/Pods-CS-LivingTests/Pods-CS-LivingTests.release.xcconfig"; sourceTree = "<group>"; };
 		AACFEA1243093F33BC829386 /* Pods-CS-LivingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CS-LivingTests.debug.xcconfig"; path = "Target Support Files/Pods-CS-LivingTests/Pods-CS-LivingTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C30BB2242456E7F3006CB37E /* FeeTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeeTableHeaderView.swift; sourceTree = "<group>"; };
+		C30BB2262456E7FF006CB37E /* FeeTableHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeeTableHeaderView.xib; sourceTree = "<group>"; };
 		C35FF5652455A4F200AAC9C8 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomePresenter.swift; path = Sources/Modules/Register/HomePresenter.swift; sourceTree = SOURCE_ROOT; };
 		C35FF5692455CA6800AAC9C8 /* CustomFeatureView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomFeatureView.xib; sourceTree = "<group>"; };
 		C35FF56B2455CC8A00AAC9C8 /* CustomFeatureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFeatureView.swift; sourceTree = "<group>"; };
+		C3705E4B2456B6BF00EED37B /* FeeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeeListViewController.swift; sourceTree = "<group>"; };
+		C3F5D8A42456F19800A66695 /* FeeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeeTableViewCell.swift; sourceTree = "<group>"; };
+		C3F5D8A52456F19800A66695 /* FeeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeeTableViewCell.xib; sourceTree = "<group>"; };
+		C3F5D8A82456FBB200A66695 /* FeeTableFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeeTableFooterView.xib; sourceTree = "<group>"; };
+		C3F5D8AA2456FCD200A66695 /* FeeTableFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeeTableFooterView.swift; sourceTree = "<group>"; };
+		C3F5D8AC245719E400A66695 /* FirebaseDBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FirebaseDBManager.swift; path = Sources/Modules/FeeList/PassivewView/FirebaseDBManager.swift; sourceTree = SOURCE_ROOT; };
+		C3F5D8AE24571C1B00A66695 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C3F5D8B124571FBD00A66695 /* UserDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDB.swift; sourceTree = "<group>"; };
 		DD89677E6DFAB48AA57EEC7E /* Pods_CS_Living_CS_LivingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CS_Living_CS_LivingUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -249,6 +269,7 @@
 		1BD06B39245492B20024088F /* FeeList */ = {
 			isa = PBXGroup;
 			children = (
+				C30BB2232456E790006CB37E /* PassivewView */,
 				1BD06B3B245492C30024088F /* Router */,
 				1BD06B3A245492B80024088F /* Presenter */,
 				1BD06B3C245492D50024088F /* FeeList.storyboard */,
@@ -399,6 +420,7 @@
 		489FD7AD2453F6EF00E04771 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				C3F5D8AC245719E400A66695 /* FirebaseDBManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -413,6 +435,7 @@
 		489FD7AF2453F6EF00E04771 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				C3F5D8AE24571C1B00A66695 /* GoogleService-Info.plist */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -420,6 +443,7 @@
 		489FD7B02453F6EF00E04771 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				C3F5D8B024571F4A00A66695 /* FirebaseModel */,
 				48B70DBD24541D0100E894D5 /* ResponseObject.swift */,
 				48B70DD72454369B00E894D5 /* UserModel.swift */,
 				1B5D3E17245579AB00C288B1 /* RegisterModel.swift */,
@@ -509,6 +533,28 @@
 			children = (
 			);
 			path = Libraries;
+			sourceTree = "<group>";
+		};
+		C30BB2232456E790006CB37E /* PassivewView */ = {
+			isa = PBXGroup;
+			children = (
+				C30BB2242456E7F3006CB37E /* FeeTableHeaderView.swift */,
+				C30BB2262456E7FF006CB37E /* FeeTableHeaderView.xib */,
+				C3F5D8A42456F19800A66695 /* FeeTableViewCell.swift */,
+				C3F5D8A52456F19800A66695 /* FeeTableViewCell.xib */,
+				C3F5D8AA2456FCD200A66695 /* FeeTableFooterView.swift */,
+				C3F5D8A82456FBB200A66695 /* FeeTableFooterView.xib */,
+				C3705E4B2456B6BF00EED37B /* FeeListViewController.swift */,
+			);
+			path = PassivewView;
+			sourceTree = "<group>";
+		};
+		C3F5D8B024571F4A00A66695 /* FirebaseModel */ = {
+			isa = PBXGroup;
+			children = (
+				C3F5D8B124571FBD00A66695 /* UserDB.swift */,
+			);
+			path = FirebaseModel;
 			sourceTree = "<group>";
 		};
 		C86CC96371D8979C3E53E6B5 /* Pods */ = {
@@ -642,13 +688,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3F5D8AF24571C1B00A66695 /* GoogleService-Info.plist in Resources */,
 				489FD7B62453FD0700E04771 /* Login.storyboard in Resources */,
 				489FD7862453F5E600E04771 /* LaunchScreen.storyboard in Resources */,
 				1B9C1EE824552F2E00F03A3A /* Register.storyboard in Resources */,
+				C3F5D8A72456F19800A66695 /* FeeTableViewCell.xib in Resources */,
+				C30BB2272456E7FF006CB37E /* FeeTableHeaderView.xib in Resources */,
 				489FD7832453F5E600E04771 /* Assets.xcassets in Resources */,
 				1B7C3FE4245464EE002941BA /* Home.storyboard in Resources */,
 				1B5D3E162455505E00C288B1 /* AdsBannerCollectionViewCell.xib in Resources */,
 				489FD7812453F5E400E04771 /* Main.storyboard in Resources */,
+				C3F5D8A92456FBB200A66695 /* FeeTableFooterView.xib in Resources */,
 				1BD06B3D245492D50024088F /* FeeList.storyboard in Resources */,
 				C35FF56A2455CA6800AAC9C8 /* CustomFeatureView.xib in Resources */,
 			);
@@ -779,10 +829,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B9C1EEA24552F4800F03A3A /* RegisterViewController.swift in Sources */,
+				C3705E4C2456B6BF00EED37B /* FeeListViewController.swift in Sources */,
 				48B70DCD2454204E00E894D5 /* UIView.swift in Sources */,
 				48B70DC624541FC100E894D5 /* DefineKey.swift in Sources */,
 				C35FF5662455A4F200AAC9C8 /* HomePresenter.swift in Sources */,
 				485C207B2454898B002E5040 /* UIViewController.swift in Sources */,
+				C3F5D8A62456F19800A66695 /* FeeTableViewCell.swift in Sources */,
 				48B70DBE24541D0100E894D5 /* ResponseObject.swift in Sources */,
 				489FD7BA2453FD3F00E04771 /* LoginViewController.swift in Sources */,
 				48B70DD124542AD000E894D5 /* APIClient+Register.swift in Sources */,
@@ -795,7 +847,10 @@
 				48B70DC424541FB700E894D5 /* DefineText.swift in Sources */,
 				1BD06B3824548ED90024088F /* UpgradeAccountViewController.swift in Sources */,
 				489FD7BC2453FD5D00E04771 /* LoginPresenter.swift in Sources */,
+				C3F5D8B224571FBD00A66695 /* UserDB.swift in Sources */,
 				48B70DC224541FA200E894D5 /* DefineMarco.swift in Sources */,
+				C3F5D8AB2456FCD200A66695 /* FeeTableFooterView.swift in Sources */,
+				C30BB2252456E7F3006CB37E /* FeeTableHeaderView.swift in Sources */,
 				48B70DBC24541C1900E894D5 /* APIClient.swift in Sources */,
 				1B5D3E152455505E00C288B1 /* AdsBannerCollectionViewCell.swift in Sources */,
 				1B5D3E18245579AB00C288B1 /* RegisterModel.swift in Sources */,
@@ -806,6 +861,7 @@
 				C35FF56C2455CC8A00AAC9C8 /* CustomFeatureView.swift in Sources */,
 				48B70DC024541E0800E894D5 /* AppUtil.swift in Sources */,
 				485C207E245489C6002E5040 /* Router.swift in Sources */,
+				C3F5D8AD245719E400A66695 /* FirebaseDBManager.swift in Sources */,
 				485C20772454891F002E5040 /* BaseTabbarController.swift in Sources */,
 				48B70DC824541FCA00E894D5 /* DefineEnum.swift in Sources */,
 				1B7C3FE2245464E1002941BA /* HomeViewController.swift in Sources */,
