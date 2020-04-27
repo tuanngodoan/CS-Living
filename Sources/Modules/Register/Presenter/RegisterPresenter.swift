@@ -39,23 +39,10 @@ class RegisterPresenter {
                         self?.view?.registerCompleted(isSuccess: true)
                         let decoder = JSONDecoder()
                         let registerObject = try decoder.decode(NetworkResponse<RegisterModel>.self, from: jsonData)
-                        let email = registerObject.data.email
-                        let password = registerObject.data.password
-                        self?.registerUserWithFireBase(email: email, pwd: password)
                     } catch  {
                         print(error)
                     }
                 } 
-            }
-        }
-    }
-    
-    func registerUserWithFireBase(email: String, pwd: String) {
-        Auth.auth().createUser(withEmail: email, password: pwd) {[weak self] (result, error) in
-            if let _ = result {
-                self?.view?.registerCompleted(isSuccess: true)
-            } else {
-                self?.view?.registerCompleted(isSuccess: false)
             }
         }
     }

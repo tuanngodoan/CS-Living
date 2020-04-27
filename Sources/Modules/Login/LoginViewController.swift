@@ -79,14 +79,6 @@ extension LoginViewController {
         let params: [String: Any] = [kUserName: "duongna167@gmail.com", kPassword: "123456"]
         self.presenter?.login(params: params)
     }
-    
-    func registerUserFireBase() {
-//        Auth.auth().createUser(withEmail: "tungkoi92@gmail.com", password: "thanhtung") { (result, error) in
-//            print("LOGGGG",result?.user.uid)
-//        }
-        
-       
-    }
 }
 
 // MARK: - LoginPresenterView
