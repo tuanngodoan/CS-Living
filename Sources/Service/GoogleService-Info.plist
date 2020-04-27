@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>889678604-5busvbo75rqorklaeu8qdsrmvf1kgvlq.apps.googleusercontent.com</string>
+	<string>889678604-e4gplsg14ud589sni7kcuo7sqjll04b4.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.889678604-5busvbo75rqorklaeu8qdsrmvf1kgvlq</string>
+	<string>com.googleusercontent.apps.889678604-e4gplsg14ud589sni7kcuo7sqjll04b4</string>
 	<key>API_KEY</key>
 	<string>AIzaSyBdMJPiRtbrVAlci5ZZV2WghvJZJj_67Xk</string>
 	<key>GCM_SENDER_ID</key>
@@ -13,7 +13,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>CS-Living</string>
+	<string>com.cs.living</string>
 	<key>PROJECT_ID</key>
 	<string>cs-living-a4620</string>
 	<key>STORAGE_BUCKET</key>
@@ -29,7 +29,7 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:889678604:ios:cdd0b645add64dcc907729</string>
+	<string>1:889678604:ios:894d98eb0858964c907729</string>
 	<key>DATABASE_URL</key>
 	<string>https://cs-living-a4620.firebaseio.com</string>
 </dict>

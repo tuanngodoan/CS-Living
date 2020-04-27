@@ -41,6 +41,8 @@ class HomeViewController: BaseViewController {
         let buttonType = ButtonHomeType.init(rawValue: sender.tag)
         switch buttonType {
         case .feeList:
+            let feeListVC = FeeListViewController.controller(from: "FeeList", storyboardID: "FeeListViewController")
+            self.navigationController?.pushViewController(feeListVC, animated: true)
             // TODO:
             break
         case .feedback:

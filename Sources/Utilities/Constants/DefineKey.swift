@@ -51,3 +51,7 @@ let kUnitName                           = "UnitName"
 let kConfigLinkCode                     = "ConfigLinkCode"
 let kOwnerCode                          = "OwnerCode"
 let kKeyCode                            = "KeyCode"
+
+// MARK: - Firebase key
+
+let kUser                               = "users"

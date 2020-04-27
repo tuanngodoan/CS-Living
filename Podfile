@@ -9,6 +9,8 @@ target 'CS-Living' do
 pod 'Alamofire', '~> 5'
 pod 'MBProgressHUD'
  pod 'Firebase/Auth'
+pod 'Firebase/Database'
+
   target 'CS-LivingTests' do
     inherit! :search_paths
     # Pods for testing
