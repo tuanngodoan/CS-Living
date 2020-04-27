@@ -27,7 +27,10 @@ class HomeViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Trang chủ"
+        self.navigationController?.navigationBar.isHidden = true
+        
+
+//        self.title = "Trang chủ"
     }
     
     @objc func upgradeAccountDidTouch() {

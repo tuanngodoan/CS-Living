@@ -23,6 +23,7 @@ class LoginViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.navigationBar.isHidden = true
     }
     
     @IBAction func register(sender: UIButton) {
@@ -75,7 +76,7 @@ extension LoginViewController {
 // MARK: - API CALL
 extension LoginViewController {
     func login() {
-        let params: [String: Any] = [kUserName: "string", kPassword: "string"]
+        let params: [String: Any] = [kUserName: "duongna167@gmail.com", kPassword: "123456"]
         self.presenter?.login(params: params)
     }
     
@@ -96,7 +97,6 @@ extension LoginViewController: LoginPresenterView {
     }
     
     func authenticationCompleted(isSuccess: Bool) {
-        print("isSuccess",isSuccess)
         AppUtil.appDelegate?.showHome()
     }
 }

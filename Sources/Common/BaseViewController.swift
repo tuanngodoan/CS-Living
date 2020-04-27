@@ -117,7 +117,7 @@ class BaseViewController: UIViewController {
 @objc extension BaseViewController {
     // MARK: - Init UI && Data
     func initUI() {
-
+        self.edgesForExtendedLayout = []
     }
 
     func initData() {
