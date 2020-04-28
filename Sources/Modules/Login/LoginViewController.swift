@@ -27,7 +27,7 @@ class LoginViewController: BaseViewController {
     }
     
     @IBAction func register(sender: UIButton) {
-        registerUserFireBase()
+        //registerUserFireBase()
     }
     
     @IBAction func registerButtonDidTouch(_ sender: UIButton) {

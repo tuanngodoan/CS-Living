@@ -28,6 +28,7 @@ class LoginPresenter {
                         let decoder = JSONDecoder()
                         let userObject = try decoder.decode(NetworkResponse<UserModel>.self, from: jsonData)
                         self?.updateUserDB(user: userObject.data)
+                        self?.view?.authenticationCompleted(isSuccess: true)
                     } catch  {
                         print(error)
                     }
