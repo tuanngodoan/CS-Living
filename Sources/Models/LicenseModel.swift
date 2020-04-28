@@ -9,9 +9,9 @@ import Foundation
 
 struct LicenseModel: Codable {
     let id: Int
-    let code, name, licenseDescription: String
-    let ownerCode: String
-    let unit: [UnitModel]
+    let code, name, licenseDescription: String?
+    let ownerCode: String?
+    let unit: [UnitModel]?
 
     enum CodingKeys: String, CodingKey {
         case id, code, name
@@ -23,9 +23,9 @@ struct LicenseModel: Codable {
 
 struct UnitModel: Codable {
     let id: Int
-    let name: String
-    let propertyID: Int
-    let ownerCode: String
+    let name: String?
+    let propertyID: Int?
+    let ownerCode: String?
 
     enum CodingKeys: String, CodingKey {
         case id, name

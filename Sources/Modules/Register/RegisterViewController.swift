@@ -91,7 +91,7 @@ extension RegisterViewController {
         projectTextField.addGestureRecognizer(tapProject)
         
         let tapUnit = UITapGestureRecognizer(target: self, action: #selector(showUnitPicker))
-        projectTextField.addGestureRecognizer(tapProject)
+        unitTextField.addGestureRecognizer(tapUnit)
     }
     
     @objc func backButtonAction() {
@@ -117,7 +117,7 @@ extension RegisterViewController {
         self.pickingProject = true
         
         let listTitle = projectList.map { (license) -> String in
-            return license.name
+            return (license.name ?? "")
         }
         
         pickerBlurView?.configData(listTitle)
@@ -132,8 +132,8 @@ extension RegisterViewController {
         
         self.pickingProject = false
         
-        let listUnitName = self.projectPicked?.unit.map { (unit) -> String in
-            return unit.name
+        let listUnitName = self.projectPicked?.unit?.map { (unit) -> String in
+            return (unit.name ?? "")
         }
         
         pickerBlurView?.configData(listUnitName ?? [])
@@ -191,11 +191,16 @@ extension RegisterViewController: RegisterPresenterView {
 // MARK: - LoginPresenterView
 extension RegisterViewController: PickerBlurViewDelegate {
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, value: String?) {
+        if value == nil {
+            return
+        }
+        
         if self.pickingProject {
             self.projectPicked = self.projectList[row]
             self.projectTextField.text = self.projectPicked?.name
+            self.unitTextField.text = ""
         } else {
-            self.unitPicked = self.projectPicked?.unit[row]
+            self.unitPicked = self.projectPicked?.unit?[row]
             self.unitTextField.text = self.unitPicked?.name
         }
     }
