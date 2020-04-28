@@ -26,10 +26,6 @@ class LoginViewController: BaseViewController {
         self.navigationController?.navigationBar.isHidden = true
     }
     
-    @IBAction func register(sender: UIButton) {
-        registerUserFireBase()
-    }
-    
     @IBAction func registerButtonDidTouch(_ sender: UIButton) {
         self.presenter?.goRegisterViewController()
     }
