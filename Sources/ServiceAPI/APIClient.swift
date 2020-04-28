@@ -43,7 +43,7 @@ final class APIClient: Session {
         return (isReachable && !needsConnection)
     }
 
-    func getRequestPath (path: String, param: Parameters, showLoading: Bool = true, callback: @escaping CSCallBack) {
+    func getRequestPath (path: String, param: Parameters?, showLoading: Bool = true, callback: @escaping CSCallBack) {
         if !APIClient.isInternetAvailable() {
             AppUtil.showAlertWithMessage(kLostInternet)
             let errorTemp = NSError(domain: "", code: 10000, userInfo: nil)

@@ -59,12 +59,12 @@ class PickerBlurView: UIView {
             self.picker.isHidden = false
         } else {
             self.picker.isHidden = true
+            self.itemValue = nil
         }
         picker.reloadAllComponents()
     }
     
     func showPickerView(isShowCancelButton: Bool? = nil) {
-        //self.setUserInteractionViewInTopMostVC(isEnabled: false)
         self.isShowing = true
         if isShowCancelButton == true {
             cancelButton.isHidden = false
@@ -87,7 +87,6 @@ class PickerBlurView: UIView {
     }
     
     @objc func hidePickerView() {
-        self.setUserInteractionViewInTopMostVC(isEnabled: true)
         self.isShowing = false
         var pickerFrame = pickerView.frame
         UIView.animate(withDuration: 0.2, animations: {
@@ -151,14 +150,3 @@ extension PickerBlurView: UIPickerViewDelegate {
         }
     }
 }
-
-extension PickerBlurView {
-    func setUserInteractionViewInTopMostVC(isEnabled: Bool) {
-//        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-//        guard let topMostVC = appDelegate.window?.rootViewController?.topMostViewController() else { return }
-//        topMostVC.view.isUserInteractionEnabled = isEnabled
-//        topMostVC.navigationController?.navigationBar.isUserInteractionEnabled = isEnabled
-//        topMostVC.tabBarController?.tabBar.isUserInteractionEnabled = isEnabled
-    }
-}
-
