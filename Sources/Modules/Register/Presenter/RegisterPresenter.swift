@@ -36,9 +36,6 @@ class RegisterPresenter {
                         self?.view?.registerCompleted(isSuccess: true)
                         let decoder = JSONDecoder()
                         let registerObject = try decoder.decode(NetworkResponse<RegisterModel>.self, from: jsonData)
-                        let email = registerObject.data.email
-                        let password = registerObject.data.password
-                        self?.registerUserWithFireBase(email: email, pwd: password)
                     } catch  {
                         print(error)
                     }
@@ -72,7 +69,7 @@ class RegisterPresenter {
             }
         }
     }
-    
+
     func validInput() {
         
     }
