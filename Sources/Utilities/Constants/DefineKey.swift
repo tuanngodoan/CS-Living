@@ -7,6 +7,11 @@
 //
 
 import Foundation
+import UIKit
+
+// Constants
+
+let ScreenHeight                    = UIScreen.main.bounds.size.height
 
 //JSON Keys
 
@@ -31,6 +36,7 @@ let kJSONNoInternetConnection       = 0
 
 let kRegister                           = "/api/v1/Register"
 let kLogin                              = "/api/v1/UsersLogin"
+let kGetListLicense                     = "/api/v1/GetListLicense"
 // MARK: - Define Key
 let kUserName                           = "Username"
 let kPassword                           = "Password"

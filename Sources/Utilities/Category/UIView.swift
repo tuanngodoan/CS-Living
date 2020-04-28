@@ -125,4 +125,9 @@ extension UIView {
         shapeLayer.path = path
         layer.addSublayer(shapeLayer)
     }
+    
+    class func fromNib() -> UIView? {
+        Bundle(for: self).loadNibNamed(String(describing: self), owner: nil, options: nil)?.first as? UIView
+    }
+    
 }

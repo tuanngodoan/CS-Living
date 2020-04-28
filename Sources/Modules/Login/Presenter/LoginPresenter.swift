@@ -28,22 +28,11 @@ class LoginPresenter {
                         let decoder = JSONDecoder()
                         let userObject = try decoder.decode(NetworkResponse<UserModel>.self, from: jsonData)
                         self?.updateUserDB(user: userObject.data)
+                        self?.view?.authenticationCompleted(isSuccess: true)
                     } catch  {
                         print(error)
                     }
                 }
-            }
-        }
-    }
-    
-    func loginUserWithFireBase(email: String, pwd: String) {
-        
-        
-        Auth.auth().signIn(withEmail: email, password: pwd) {[weak self] (result, error) in
-            if let _ = result {
-                self?.view?.authenticationCompleted(isSuccess: true)
-            } else {
-                self?.view?.authenticationCompleted(isSuccess: false)
             }
         }
     }

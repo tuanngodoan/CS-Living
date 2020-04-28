@@ -16,10 +16,18 @@ class RegisterViewController: BaseViewController {
     @IBOutlet weak var fullNameTextField: UITextField!
     @IBOutlet weak var phoneTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var projectTextField: UITextField!
+    @IBOutlet weak var unitTextField: UITextField!
     @IBOutlet weak var checkTermImage: UIImageView!
     @IBOutlet weak var termLabel: UILabel!
     @IBOutlet weak var registerButton: UIButton!
+    
+    private var projectList: [LicenseModel] = []
+    private var projectPicked: LicenseModel?
+    
     private var isCheckedTerm: Bool = true
+    private var pickerBlurView: PickerBlurView?
+    
     var presenter: RegisterPresenter!
     
     override func viewDidLoad() {
@@ -29,12 +37,11 @@ class RegisterViewController: BaseViewController {
         
         let tapTerm = UITapGestureRecognizer(target: self, action: #selector(toggleCheckTerm))
         checkTermImage.addGestureRecognizer(tapTerm)
+        
+        let tapProject = UITapGestureRecognizer(target: self, action: #selector(getProjectPicker))
+        projectTextField.addGestureRecognizer(tapProject)
     }
 
-    @objc func backButtonAction() {
-        self.navigationController?.popViewController(animated: true)
-    }
-    
     @IBAction func registerButtonDidTouch(_ sender: UIButton) {
         self.register()
     }
@@ -79,9 +86,34 @@ extension RegisterViewController {
 
 // MARK: - Private func
 extension RegisterViewController {
+    @objc func backButtonAction() {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
     @objc private func toggleCheckTerm() {
         self.isCheckedTerm = !self.isCheckedTerm
         self.checkTermImage.image = self.isCheckedTerm ? UIImage(named: "icn_check") : UIImage(named: "icn_uncheck")
+    }
+    
+    @objc func getProjectPicker() {
+        self.presenter.getListLicense()
+    }
+    
+    func showProjectPicker() {
+        if pickerBlurView == nil {
+            guard let pickerView = PickerBlurView.fromNib() as? PickerBlurView else {
+                return
+            }
+            pickerBlurView = pickerView
+        }
+        
+        let listTitle = projectList.map { (license) -> String in
+            return license.name
+        }
+        
+        pickerBlurView?.configData(listTitle)
+        pickerBlurView?.showPickerView(isShowCancelButton: false)
+        pickerBlurView?.delegate = self
     }
 }
 
@@ -105,7 +137,7 @@ extension RegisterViewController {
             kFirstName: name,
             kPhoneNumber: phone,
             kEmail: email,
-            
+    
         ]
         
         self.presenter?.register(params: params)
@@ -114,10 +146,23 @@ extension RegisterViewController {
 
 // MARK: - LoginPresenterView
 extension RegisterViewController: RegisterPresenterView {
+    func getLicenseCompleted(listLicense: [LicenseModel]) {
+        self.projectList = listLicense
+        self.showProjectPicker()
+    }
+    
     func registerCompleted(isSuccess: Bool) {
         let message = isSuccess ? "Đã đăng kí tài khoản thành công" : "Có lỗi xảy ra"
         AppUtil.showAlert(message, callback: { [weak self] in
             self?.backButtonAction()
         })
+    }
+}
+
+
+// MARK: - LoginPresenterView
+extension RegisterViewController: PickerBlurViewDelegate {
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, value: String?) {
+        print(row)
     }
 }

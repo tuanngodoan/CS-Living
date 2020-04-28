@@ -10,6 +10,7 @@ import FirebaseAuth
 
 protocol RegisterPresenterView: class {
     func registerCompleted(isSuccess: Bool)
+    func getLicenseCompleted(listLicense: [LicenseModel])
 }
 
 class RegisterPresenter {
@@ -46,6 +47,22 @@ class RegisterPresenter {
                         print(error)
                     }
                 } 
+            }
+        }
+    }
+    
+    func getListLicense() {
+        APIClient.sharedIntance.getListLicense { (responseObject, error) in
+            if error == nil, responseObject != nil {
+                if let jsonData = responseObject?.jsonString?.data(using: .utf8) {
+                    do {
+                        let decoder = JSONDecoder()
+                        let listLicense = try decoder.decode(NetworkResponse<[LicenseModel]>.self, from: jsonData)
+                        self.view?.getLicenseCompleted(listLicense: listLicense.data)
+                    } catch  {
+                        print(error)
+                    }
+                }
             }
         }
     }

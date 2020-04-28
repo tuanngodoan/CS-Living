@@ -109,7 +109,7 @@ extension FeeListViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        return Bundle.main.loadNibNamed("FeeTableHeaderView", owner: nil, options: nil)!.first as! FeeTableHeaderView
+        return FeeTableHeaderView.fromNib()
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
