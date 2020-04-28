@@ -38,6 +38,8 @@ let kRegister                           = "/api/v1/Register"
 let kLogin                              = "/api/v1/UsersLogin"
 let kGetListLicense                     = "/api/v1/GetListLicense"
 let kNotification                       = "/api/v1/GetLogInforMessageByModel"
+let kGetBalanceCD                       = "/api/v1/GetBalanceCD"
+let kSearchServiceBy                    = "/api/v1/SearchServiceBy"
 // MARK: - Define Key
 let kUserName                           = "Username"
 let kPassword                           = "Password"

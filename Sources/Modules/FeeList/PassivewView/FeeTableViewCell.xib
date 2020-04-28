@@ -201,6 +201,14 @@
                     <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </userDefinedRuntimeAttribute>
             </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="endingDebtLabel" destination="v02-ja-bAk" id="8PL-Ud-IF7"/>
+                <outlet property="incurredDebtLabel" destination="tBG-5r-Xxt" id="Gcd-RY-KMX"/>
+                <outlet property="loanPrevLabel" destination="c1b-gn-fXD" id="rj1-90-iRa"/>
+                <outlet property="paidLabel" destination="Zmm-sf-0Nj" id="Zru-Iv-Sx7"/>
+                <outlet property="serviceLabel" destination="BHC-JX-rW8" id="YGf-9Y-gaw"/>
+                <outlet property="timeLabel" destination="iWk-uJ-HsA" id="n4T-oa-cnP"/>
+            </connections>
             <point key="canvasLocation" x="137.68115942028987" y="89.0625"/>
         </tableViewCell>
     </objects>

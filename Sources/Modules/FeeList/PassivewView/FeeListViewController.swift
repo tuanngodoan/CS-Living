@@ -9,6 +9,8 @@ import UIKit
 
 class FeeListViewController: BaseViewController {
 
+    private var presenter: FeePresenter?
+    
     @IBOutlet weak var pickDateView: UIStackView!
     @IBOutlet weak var formDateTextField: UITextField!
     @IBOutlet weak var toDateTextField: UITextField!
@@ -22,6 +24,8 @@ class FeeListViewController: BaseViewController {
     
     private var heightHeaderTableView: CGFloat = 50.0
     private var heightCell: CGFloat = 38.0
+    
+    private var feeList: [FeeModel] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -75,7 +79,7 @@ extension FeeListViewController {
 // MARK: - ConfigPresenter
 extension FeeListViewController {
     override func configPresenter() {
-        //self.presenter = HomePresenter.init(view: self)
+        self.presenter = FeePresenter.init(view: self)
     }
 }
 
@@ -120,18 +124,25 @@ extension FeeListViewController {
     
 }
 
-// MARK: - LoginPresenterView
-//extension FeeListViewController: HomePresenterView {
-//}
+// MARK: - FeePresenterView
+extension FeeListViewController: FeePresenterView {
+    func getListServiceCompletion(feeList: [FeeModel]) {
+        self.feeList = feeList
+        self.tableView.reloadData()
+    }
+    
+    
+}
 
 // MARK: - TableViewDatasoure
 extension FeeListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 20
+        return feeList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "FeeTableViewCell", for: indexPath) as? FeeTableViewCell {
+            cell.setupCell(fee: feeList[indexPath.row])
             return cell
         }
         return UITableViewCell()
