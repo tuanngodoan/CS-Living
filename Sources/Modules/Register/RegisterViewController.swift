@@ -24,6 +24,8 @@ class RegisterViewController: BaseViewController {
     
     private var projectList: [LicenseModel] = []
     private var projectPicked: LicenseModel?
+    private var unitPicked: UnitModel?
+    private var pickingProject = false
     
     private var isCheckedTerm: Bool = true
     private var pickerBlurView: PickerBlurView?
@@ -34,12 +36,7 @@ class RegisterViewController: BaseViewController {
         super.viewDidLoad()
         self.title = "Đăng kí tài khoản"
         self.setBackButtonWithImage("icn_back", withAction: #selector(backButtonAction))
-        
-        let tapTerm = UITapGestureRecognizer(target: self, action: #selector(toggleCheckTerm))
-        checkTermImage.addGestureRecognizer(tapTerm)
-        
-        let tapProject = UITapGestureRecognizer(target: self, action: #selector(getProjectPicker))
-        projectTextField.addGestureRecognizer(tapProject)
+        self.tapHandler()
     }
 
     @IBAction func registerButtonDidTouch(_ sender: UIButton) {
@@ -86,6 +83,17 @@ extension RegisterViewController {
 
 // MARK: - Private func
 extension RegisterViewController {
+    func tapHandler() {
+        let tapTerm = UITapGestureRecognizer(target: self, action: #selector(toggleCheckTerm))
+        checkTermImage.addGestureRecognizer(tapTerm)
+        
+        let tapProject = UITapGestureRecognizer(target: self, action: #selector(getProjectPicker))
+        projectTextField.addGestureRecognizer(tapProject)
+        
+        let tapUnit = UITapGestureRecognizer(target: self, action: #selector(showUnitPicker))
+        projectTextField.addGestureRecognizer(tapProject)
+    }
+    
     @objc func backButtonAction() {
         self.navigationController?.popViewController(animated: true)
     }
@@ -106,6 +114,7 @@ extension RegisterViewController {
             }
             pickerBlurView = pickerView
         }
+        self.pickingProject = true
         
         let listTitle = projectList.map { (license) -> String in
             return license.name
@@ -114,6 +123,21 @@ extension RegisterViewController {
         pickerBlurView?.configData(listTitle)
         pickerBlurView?.showPickerView(isShowCancelButton: false)
         pickerBlurView?.delegate = self
+    }
+    
+    @objc func showUnitPicker() {
+        if pickerBlurView == nil || self.projectPicked == nil {
+            return
+        }
+        
+        self.pickingProject = false
+        
+        let listUnitName = self.projectPicked?.unit.map { (unit) -> String in
+            return unit.name
+        }
+        
+        pickerBlurView?.configData(listUnitName ?? [])
+        pickerBlurView?.showPickerView(isShowCancelButton: false)
     }
 }
 
@@ -129,7 +153,9 @@ extension RegisterViewController {
             let password = self.passwordTextField.text,
             let name = self.fullNameTextField.text,
             let phone = self.phoneTextField.text,
-            let email = self.emailTextField.text else { return }
+            let email = self.emailTextField.text,
+            let ownerCode = self.projectPicked?.ownerCode,
+            let unitName = self.unitTextField.text else { return }
         
         let params: [String: Any] = [
             kLoginName: loginName,
@@ -137,7 +163,9 @@ extension RegisterViewController {
             kFirstName: name,
             kPhoneNumber: phone,
             kEmail: email,
-    
+            kUnitName: unitName,
+            kOwnerCode: ownerCode,
+            kConfigLinkCode: ownerCode
         ]
         
         self.presenter?.register(params: params)
@@ -163,6 +191,12 @@ extension RegisterViewController: RegisterPresenterView {
 // MARK: - LoginPresenterView
 extension RegisterViewController: PickerBlurViewDelegate {
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, value: String?) {
-        print(row)
+        if self.pickingProject {
+            self.projectPicked = self.projectList[row]
+            self.projectTextField.text = self.projectPicked?.name
+        } else {
+            self.unitPicked = self.projectPicked?.unit[row]
+            self.unitTextField.text = self.unitPicked?.name
+        }
     }
 }

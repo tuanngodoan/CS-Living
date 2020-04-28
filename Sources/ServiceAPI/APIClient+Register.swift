@@ -14,5 +14,9 @@ extension APIClient {
             callBack(responseObject,error)
         }
     }
+    
+    func getLicense(callBack: @escaping CSCallBack) {
+        //requestPath(path: kGetListLicense, param: [:], methodRequest: .get, callback: callBack)
+    }
 }
 

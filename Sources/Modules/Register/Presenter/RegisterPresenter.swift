@@ -21,16 +21,12 @@ class RegisterPresenter {
     }
     
     func register(params: [String: Any]) {
-        
         var registerParams = params
         registerParams[kId] = "0"
         registerParams[kUserCode] = ""
         registerParams[kStatus] = "0"
         registerParams[kContractNo] = ""
         registerParams[kProjectId] = 1
-        registerParams[kUnitName] = "string"
-        registerParams[kConfigLinkCode] = "string"
-        registerParams[kOwnerCode] = "string"
         registerParams[kKeyCode] = ""
 
         APIClient.sharedIntance.postRegisterUser(param: registerParams) {[weak self] (responseObject, error) in
@@ -52,7 +48,7 @@ class RegisterPresenter {
     }
     
     func getListLicense() {
-        APIClient.sharedIntance.getListLicense { (responseObject, error) in
+        APIClient.sharedIntance.getLicense{ (responseObject, error) in
             if error == nil, responseObject != nil {
                 if let jsonData = responseObject?.jsonString?.data(using: .utf8) {
                     do {

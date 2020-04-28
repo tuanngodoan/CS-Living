@@ -19,18 +19,18 @@ struct LicenseModel: Codable {
         case ownerCode
         case unit = "unit"
     }
-    
-    struct UnitModel: Codable {
-        let id: Int
-        let name: String
-        let propertyID: Int
-        let ownerCode: String
+}
 
-        enum CodingKeys: String, CodingKey {
-            case id, name
-            case propertyID = "propertyId"
-            case ownerCode
-        }
+struct UnitModel: Codable {
+    let id: Int
+    let name: String
+    let propertyID: Int
+    let ownerCode: String
+
+    enum CodingKeys: String, CodingKey {
+        case id, name
+        case propertyID = "propertyId"
+        case ownerCode
     }
 }
 
