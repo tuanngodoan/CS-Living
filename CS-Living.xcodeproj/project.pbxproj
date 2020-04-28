@@ -12,6 +12,9 @@
 		1B5D3E18245579AB00C288B1 /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5D3E17245579AB00C288B1 /* RegisterModel.swift */; };
 		1B7C3FE2245464E1002941BA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7C3FE1245464E1002941BA /* HomeViewController.swift */; };
 		1B7C3FE4245464EE002941BA /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B7C3FE3245464EE002941BA /* Home.storyboard */; };
+		1B8CCFC42457B69E006917D2 /* PickerBlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8CCFC32457B69E006917D2 /* PickerBlurView.swift */; };
+		1B8CCFC62457B71B006917D2 /* PickerBlurView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B8CCFC52457B71B006917D2 /* PickerBlurView.xib */; };
+		1B8CCFC82457BDEA006917D2 /* LicenseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8CCFC72457BDEA006917D2 /* LicenseModel.swift */; };
 		1B9C1EE624552C4800F03A3A /* RegisterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9C1EE524552C4800F03A3A /* RegisterPresenter.swift */; };
 		1B9C1EE824552F2E00F03A3A /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B9C1EE724552F2E00F03A3A /* Register.storyboard */; };
 		1B9C1EEA24552F4800F03A3A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9C1EE924552F4800F03A3A /* RegisterViewController.swift */; };
@@ -86,6 +89,9 @@
 		1B5D3E17245579AB00C288B1 /* RegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModel.swift; sourceTree = "<group>"; };
 		1B7C3FE1245464E1002941BA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		1B7C3FE3245464EE002941BA /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		1B8CCFC32457B69E006917D2 /* PickerBlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerBlurView.swift; sourceTree = "<group>"; };
+		1B8CCFC52457B71B006917D2 /* PickerBlurView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PickerBlurView.xib; sourceTree = "<group>"; };
+		1B8CCFC72457BDEA006917D2 /* LicenseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicenseModel.swift; sourceTree = "<group>"; };
 		1B9C1EE524552C4800F03A3A /* RegisterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPresenter.swift; sourceTree = "<group>"; };
 		1B9C1EE724552F2E00F03A3A /* Register.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
 		1B9C1EE924552F4800F03A3A /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -238,6 +244,15 @@
 				C35FF5652455A4F200AAC9C8 /* HomePresenter.swift */,
 			);
 			path = Presenter;
+			sourceTree = "<group>";
+		};
+		1B8CCFC22457B683006917D2 /* PickerView */ = {
+			isa = PBXGroup;
+			children = (
+				1B8CCFC32457B69E006917D2 /* PickerBlurView.swift */,
+				1B8CCFC52457B71B006917D2 /* PickerBlurView.xib */,
+			);
+			path = PickerView;
 			sourceTree = "<group>";
 		};
 		1BD06B3424548EAC0024088F /* UpgradeAccount */ = {
@@ -444,6 +459,7 @@
 				48B70DBD24541D0100E894D5 /* ResponseObject.swift */,
 				48B70DD72454369B00E894D5 /* UserModel.swift */,
 				1B5D3E17245579AB00C288B1 /* RegisterModel.swift */,
+				1B8CCFC72457BDEA006917D2 /* LicenseModel.swift */,
 				48B70DDB24545F4700E894D5 /* NetworkResponse.swift */,
 			);
 			path = Models;
@@ -528,6 +544,7 @@
 		48B70DD2245430CF00E894D5 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				1B8CCFC22457B683006917D2 /* PickerView */,
 			);
 			path = Libraries;
 			sourceTree = "<group>";
@@ -696,6 +713,7 @@
 				1B5D3E162455505E00C288B1 /* AdsBannerCollectionViewCell.xib in Resources */,
 				489FD7812453F5E400E04771 /* Main.storyboard in Resources */,
 				C3F5D8A92456FBB200A66695 /* FeeTableFooterView.xib in Resources */,
+				1B8CCFC62457B71B006917D2 /* PickerBlurView.xib in Resources */,
 				1BD06B3D245492D50024088F /* FeeList.storyboard in Resources */,
 				C35FF56A2455CA6800AAC9C8 /* CustomFeatureView.xib in Resources */,
 			);
@@ -828,6 +846,7 @@
 				1B9C1EEA24552F4800F03A3A /* RegisterViewController.swift in Sources */,
 				C3705E4C2456B6BF00EED37B /* FeeListViewController.swift in Sources */,
 				48B70DCD2454204E00E894D5 /* UIView.swift in Sources */,
+				1B8CCFC82457BDEA006917D2 /* LicenseModel.swift in Sources */,
 				48B70DC624541FC100E894D5 /* DefineKey.swift in Sources */,
 				C35FF5662455A4F200AAC9C8 /* HomePresenter.swift in Sources */,
 				485C207B2454898B002E5040 /* UIViewController.swift in Sources */,
@@ -844,6 +863,7 @@
 				1BD06B3824548ED90024088F /* UpgradeAccountViewController.swift in Sources */,
 				489FD7BC2453FD5D00E04771 /* LoginPresenter.swift in Sources */,
 				C3F5D8B224571FBD00A66695 /* UserDB.swift in Sources */,
+				1B8CCFC42457B69E006917D2 /* PickerBlurView.swift in Sources */,
 				48B70DC224541FA200E894D5 /* DefineMarco.swift in Sources */,
 				C3F5D8AB2456FCD200A66695 /* FeeTableFooterView.swift in Sources */,
 				C30BB2252456E7F3006CB37E /* FeeTableHeaderView.swift in Sources */,

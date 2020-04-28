@@ -20,8 +20,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func setupRootLoginViewController() {
           let loginVC = LoginViewController.controller(from: "Login", storyboardID: "LoginViewController")
+          let navi = UINavigationController(rootViewController: loginVC)
           self.window = UIWindow(frame: UIScreen.main.bounds)
-          self.window?.rootViewController = loginVC
+          self.window?.rootViewController = navi
           self.window?.makeKeyAndVisible()
       }
 
