@@ -25,7 +25,6 @@ class LoginViewController: BaseViewController {
         super.viewDidLoad()
         self.navigationController?.navigationBar.isHidden = true
     }
-    
     @IBAction func registerButtonDidTouch(_ sender: UIButton) {
         self.presenter?.goRegisterViewController()
     }

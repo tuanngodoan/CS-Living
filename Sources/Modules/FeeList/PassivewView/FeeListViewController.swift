@@ -10,17 +10,18 @@ import UIKit
 class FeeListViewController: BaseViewController {
 
     @IBOutlet weak var pickDateView: UIStackView!
-    @IBOutlet weak var formDateLabel: UILabel!
-    @IBOutlet weak var toDateLabel: UILabel!
+    @IBOutlet weak var formDateTextField: UITextField!
+    @IBOutlet weak var toDateTextField: UITextField!
     @IBOutlet weak var pickServiceView: UIView!
     @IBOutlet weak var serviceLabel: UILabel!
     @IBOutlet weak var totalBillView: UIView!
-    
     @IBOutlet weak var tableView: UITableView!
+    
+    private let datePicker = UIDatePicker()
+    private var currentDatePicker: UITextField?
     
     private var heightHeaderTableView: CGFloat = 50.0
     private var heightCell: CGFloat = 38.0
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,6 +52,8 @@ extension FeeListViewController {
     override func initUI() {
         super.initUI()
         self.setupTableViewUI()
+        self.showDatePicker(textField: self.formDateTextField)
+        self.showDatePicker(textField: self.toDateTextField)
     }
     
     func setupTableViewUI() {
@@ -78,7 +81,33 @@ extension FeeListViewController {
 
 // MARK: - Private func
 extension FeeListViewController {
-    
+    func showDatePicker(textField: UITextField) {
+        textField.delegate = self
+        //Formate Date
+        datePicker.datePickerMode = .date
+        //ToolBar
+        let toolbar = UIToolbar()
+        toolbar.sizeToFit()
+        let doneButton = UIBarButtonItem(title: "Chọn", style: .plain, target: self, action: #selector(donedatePicker))
+        let spaceButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace, target: nil, action: nil)
+        let cancelButton = UIBarButtonItem(title: "Hủy", style: .plain, target: self, action: #selector(cancelDatePicker))
+
+        toolbar.setItems([cancelButton,spaceButton,doneButton], animated: false)
+
+        textField.inputAccessoryView = toolbar
+        textField.inputView = datePicker
+    }
+
+     @objc func donedatePicker() {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "dd/MM/yyyy"
+        currentDatePicker?.text = formatter.string(from: datePicker.date)
+        self.view.endEditing(true)
+    }
+
+    @objc func cancelDatePicker() {
+        self.view.endEditing(true)
+     }
 }
 
 // MARK: - Public func
@@ -132,4 +161,11 @@ extension FeeListViewController: UITableViewDataSource {
 // MARK: - UITableViewDelegate
 extension FeeListViewController: UITableViewDelegate {
     
+}
+
+// MARK: - UITableViewDelegate
+extension FeeListViewController: UITextFieldDelegate {
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        self.currentDatePicker = textField
+    }
 }
