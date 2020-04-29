@@ -13,7 +13,7 @@ class BaseTabbarController: UITabBarController {
         super.init(nibName: nil, bundle: nil)
         let homeVC = HomeViewController.controller(from: "Home", storyboardID: "HomeViewController")
         let navHome = BaseNavigationController(rootViewController: homeVC)
-        navHome.tabBarItem = UITabBarItem(title: "Trang chủ", image: UIImage(named: "fb_events"), selectedImage: nil)
+        navHome.tabBarItem = UITabBarItem(title: "Trang chủ", image: UIImage(named: "ic_home_outline"), selectedImage: nil)
         self.viewControllers = [navHome, navHome, navHome, navHome]
     
     }

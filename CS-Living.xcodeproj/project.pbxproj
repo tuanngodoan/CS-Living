@@ -20,6 +20,9 @@
 		1B9C1EEA24552F4800F03A3A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9C1EE924552F4800F03A3A /* RegisterViewController.swift */; };
 		1BD06B3824548ED90024088F /* UpgradeAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD06B3724548ED90024088F /* UpgradeAccountViewController.swift */; };
 		1BD06B3D245492D50024088F /* FeeList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BD06B3C245492D50024088F /* FeeList.storyboard */; };
+		484141F32458A2CB008AB972 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484141F22458A2CB008AB972 /* DataManager.swift */; };
+		484141F62458A2D7008AB972 /* User.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 484141F42458A2D6008AB972 /* User.xcdatamodeld */; };
+		484141F82458A2F0008AB972 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484141F72458A2EF008AB972 /* User.swift */; };
 		485C2075245488F3002E5040 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485C2074245488F3002E5040 /* BaseNavigationController.swift */; };
 		485C20772454891F002E5040 /* BaseTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485C20762454891F002E5040 /* BaseTabbarController.swift */; };
 		485C207B2454898B002E5040 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485C207A2454898B002E5040 /* UIViewController.swift */; };
@@ -100,6 +103,9 @@
 		1EA3390C88326F7FAF5D08A1 /* Pods-CS-Living-CS-LivingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CS-Living-CS-LivingUITests.debug.xcconfig"; path = "Target Support Files/Pods-CS-Living-CS-LivingUITests/Pods-CS-Living-CS-LivingUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		2114A7E1057B671534B90247 /* Pods_CS_LivingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CS_LivingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		279A11C361C3877A5C148927 /* Pods_CS_Living.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CS_Living.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		484141F22458A2CB008AB972 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataManager.swift; path = "../../../../../TTT/pos-ipad/App/Models/LocalData/DataManager.swift"; sourceTree = "<group>"; };
+		484141F52458A2D6008AB972 /* SwiftModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftModel.xcdatamodel; sourceTree = "<group>"; };
+		484141F72458A2EF008AB972 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		485C2074245488F3002E5040 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		485C20762454891F002E5040 /* BaseTabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabbarController.swift; sourceTree = "<group>"; };
 		485C207A2454898B002E5040 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
@@ -304,6 +310,16 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
+		484141CD245876A9008AB972 /* LocalData */ = {
+			isa = PBXGroup;
+			children = (
+				484141F72458A2EF008AB972 /* User.swift */,
+				484141F42458A2D6008AB972 /* User.xcdatamodeld */,
+				484141F22458A2CB008AB972 /* DataManager.swift */,
+			);
+			path = LocalData;
+			sourceTree = "<group>";
+		};
 		485C2072245488E3002E5040 /* BaseNav */ = {
 			isa = PBXGroup;
 			children = (
@@ -455,6 +471,7 @@
 		489FD7B02453F6EF00E04771 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				484141CD245876A9008AB972 /* LocalData */,
 				C3F5D8B024571F4A00A66695 /* FirebaseModel */,
 				48B70DBD24541D0100E894D5 /* ResponseObject.swift */,
 				48B70DD72454369B00E894D5 /* UserModel.swift */,
@@ -864,6 +881,7 @@
 				489FD7BC2453FD5D00E04771 /* LoginPresenter.swift in Sources */,
 				C3F5D8B224571FBD00A66695 /* UserDB.swift in Sources */,
 				1B8CCFC42457B69E006917D2 /* PickerBlurView.swift in Sources */,
+				484141F82458A2F0008AB972 /* User.swift in Sources */,
 				48B70DC224541FA200E894D5 /* DefineMarco.swift in Sources */,
 				C3F5D8AB2456FCD200A66695 /* FeeTableFooterView.swift in Sources */,
 				C30BB2252456E7F3006CB37E /* FeeTableHeaderView.swift in Sources */,
@@ -872,12 +890,14 @@
 				1B5D3E18245579AB00C288B1 /* RegisterModel.swift in Sources */,
 				48B70DD42454329200E894D5 /* BaseViewController.swift in Sources */,
 				48B70DDC24545F4700E894D5 /* NetworkResponse.swift in Sources */,
+				484141F32458A2CB008AB972 /* DataManager.swift in Sources */,
 				1B9C1EE624552C4800F03A3A /* RegisterPresenter.swift in Sources */,
 				48B70DDA2454375D00E894D5 /* APIClient+Login.swift in Sources */,
 				C35FF56C2455CC8A00AAC9C8 /* CustomFeatureView.swift in Sources */,
 				48B70DC024541E0800E894D5 /* AppUtil.swift in Sources */,
 				485C207E245489C6002E5040 /* Router.swift in Sources */,
 				C3F5D8AD245719E400A66695 /* FirebaseDBManager.swift in Sources */,
+				484141F62458A2D7008AB972 /* User.xcdatamodeld in Sources */,
 				485C20772454891F002E5040 /* BaseTabbarController.swift in Sources */,
 				48B70DC824541FCA00E894D5 /* DefineEnum.swift in Sources */,
 				1B7C3FE2245464E1002941BA /* HomeViewController.swift in Sources */,
@@ -1217,6 +1237,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		484141F42458A2D6008AB972 /* User.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				484141F52458A2D6008AB972 /* SwiftModel.xcdatamodel */,
+			);
+			currentVersion = 484141F52458A2D6008AB972 /* SwiftModel.xcdatamodel */;
+			name = User.xcdatamodeld;
+			path = "../../../../../TTT/pos-ipad/App/Models/LocalData/User.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 489FD76E2453F5E400E04771 /* Project object */;
 }

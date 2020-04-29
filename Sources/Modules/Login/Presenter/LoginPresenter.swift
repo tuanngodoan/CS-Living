@@ -7,6 +7,7 @@
 
 import UIKit
 import FirebaseAuth
+import CoreData
 
 protocol LoginPresenterView: class {
     func authenticationCompleted(isSuccess: Bool)
@@ -27,7 +28,15 @@ class LoginPresenter {
                     do {
                         let decoder = JSONDecoder()
                         let userObject = try decoder.decode(NetworkResponse<UserModel>.self, from: jsonData)
+                        // save data firebase
                         self?.updateUserDB(user: userObject.data)
+                        // save token
+                        UserDefaults.standard.set("\(userObject.data.id)", forKey: kID)
+                        UserDefaults.standard.set(userObject.token, forKey: kAccessToken)
+                        UserDefaults.standard.synchronize()
+                        // save infor user with coreDat
+                        self?.saveUser(userModel: userObject.data)
+                        // update UI
                         self?.view?.authenticationCompleted(isSuccess: true)
                     } catch  {
                         print(error)
@@ -35,6 +44,14 @@ class LoginPresenter {
                 }
             }
         }
+    }
+    
+    func saveUser(userModel: UserModel) {
+        let user: User = User.createUser(withId: "\(userModel.id)")
+        user.setCotnent(userModel)
+        DataManager.sharedIntance.saveContext()
+        let curUser = User.currentUser()
+        print(curUser.username)
     }
     
     func goRegisterViewController() {

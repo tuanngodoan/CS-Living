@@ -61,3 +61,4 @@ let kKeyCode                            = "KeyCode"
 // MARK: - Firebase key
 
 let kUser                               = "users"
+let kID                                 = "id"

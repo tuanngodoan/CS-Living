@@ -10,7 +10,7 @@ import Firebase
 import FirebaseAuth
 
 class LoginViewController: BaseViewController {
-    private var presenter: LoginPresenter?
+    
     @IBOutlet weak var backgroundImageView: UIImageView!
     @IBOutlet weak var logoImageView: UIImageView!
     @IBOutlet weak var companyLabel: UILabel!
@@ -20,6 +20,8 @@ class LoginViewController: BaseViewController {
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var registerNewUserButton: UIButton!
     @IBOutlet weak var forgotPasswordButton: UIButton!
+    
+    private var presenter: LoginPresenter?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -71,7 +73,16 @@ extension LoginViewController {
 // MARK: - API CALL
 extension LoginViewController {
     func login() {
-        let params: [String: Any] = [kUserName: "duongna167@gmail.com", kPassword: "123456"]
+        guard let userName = userNameTextField.text, userName.count > 0 else {
+            AppUtil.showAlertWithMessage("Chua nhap userName")
+            return
+        }
+        guard let password = passwordTextField.text, password.count > 0 else {
+            AppUtil.showAlertWithMessage("Chua nhap pass")
+            return
+        }
+        
+        let params: [String: Any] = [kUserName: userName, kPassword: password]
         self.presenter?.login(params: params)
     }
 }

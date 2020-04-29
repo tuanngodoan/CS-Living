@@ -11,4 +11,5 @@ struct NetworkResponse<ResponseData:Codable>: Codable {
     let statusCode: Int
     let messages: [String]
     let data: ResponseData
+    let token: String
 }
