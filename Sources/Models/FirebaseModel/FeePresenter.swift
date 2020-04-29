@@ -19,22 +19,20 @@ class FeePresenter {
     }
     
     func getListService(param: [String: Any]) {
-//        APIClient.sharedIntance.getFeeList(param: param) { (responseObject, error) in
-//            if error == nil, responseObject != nil {
-//                if let jsonData = responseObject?.jsonString?.data(using: .utf8) {
-//                    do {
-//                        let decoder = JSONDecoder()
-//                        let object = try decoder.decode(NetworkResponse<FeeModel>.self, from: jsonData)
-//
-//
-//                        self.view?.getListServiceCompletion(feeList: object.data)
-//                    } catch  {
-//                        print(error)
-//                    }
-//                }
-//            }
-//        }
-        self.view?.getListServiceCompletion(feeList: dummyData())
+        APIClient.sharedIntance.getFeeList(param: param) { (responseObject, error) in
+            if error == nil, responseObject != nil {
+                if let jsonData = responseObject?.jsonString?.data(using: .utf8) {
+                    do {
+                        let decoder = JSONDecoder()
+                        let object = try decoder.decode(NetworkResponse<FeeModel>.self, from: jsonData)
+                        self.view?.getListServiceCompletion(feeList: object.data)
+                    } catch  {
+                        print(error)
+                    }
+                }
+            }
+        }
+        //self.view?.getListServiceCompletion(feeList: dummyData())
     }
     
     func dummyData() -> FeeModel {

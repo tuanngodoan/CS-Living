@@ -8,8 +8,9 @@ target 'CS-Living' do
   # Pods for CS-Living
 pod 'Alamofire', '~> 5'
 pod 'MBProgressHUD'
- pod 'Firebase/Auth'
+pod 'Firebase/Auth'
 pod 'Firebase/Database'
+pod 'Bagel', '~>  1.3.2'
 
   target 'CS-LivingTests' do
     inherit! :search_paths
