@@ -20,8 +20,8 @@
 		1B9C1EEA24552F4800F03A3A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9C1EE924552F4800F03A3A /* RegisterViewController.swift */; };
 		1BD06B3824548ED90024088F /* UpgradeAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD06B3724548ED90024088F /* UpgradeAccountViewController.swift */; };
 		1BD06B3D245492D50024088F /* FeeList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BD06B3C245492D50024088F /* FeeList.storyboard */; };
-		482A728F2459CFE100923208 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482A728E2459CFE000923208 /* DataManager.swift */; };
 		482A72952459D05000923208 /* User.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 482A72932459D05000923208 /* User.xcdatamodeld */; };
+		482A72972459D48100923208 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482A72962459D48100923208 /* DataManager.swift */; };
 		484141F82458A2F0008AB972 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484141F72458A2EF008AB972 /* User.swift */; };
 		485C2075245488F3002E5040 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485C2074245488F3002E5040 /* BaseNavigationController.swift */; };
 		485C20772454891F002E5040 /* BaseTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485C20762454891F002E5040 /* BaseTabbarController.swift */; };
@@ -115,8 +115,8 @@
 		1EA3390C88326F7FAF5D08A1 /* Pods-CS-Living-CS-LivingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CS-Living-CS-LivingUITests.debug.xcconfig"; path = "Target Support Files/Pods-CS-Living-CS-LivingUITests/Pods-CS-Living-CS-LivingUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		2114A7E1057B671534B90247 /* Pods_CS_LivingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CS_LivingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		279A11C361C3877A5C148927 /* Pods_CS_Living.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CS_Living.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		482A728E2459CFE000923208 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DataManager.swift; path = "/Users/dinhtrien/Desktop/Source/CS-Living/Sources/Models/LocalData/DataManager.swift"; sourceTree = "<absolute>"; };
 		482A72942459D05000923208 /* SwiftModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftModel.xcdatamodel; sourceTree = "<group>"; };
+		482A72962459D48100923208 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		484141F72458A2EF008AB972 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		485C2074245488F3002E5040 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		485C20762454891F002E5040 /* BaseTabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabbarController.swift; sourceTree = "<group>"; };
@@ -339,8 +339,8 @@
 			isa = PBXGroup;
 			children = (
 				482A72932459D05000923208 /* User.xcdatamodeld */,
-				482A728E2459CFE000923208 /* DataManager.swift */,
 				484141F72458A2EF008AB972 /* User.swift */,
+				482A72962459D48100923208 /* DataManager.swift */,
 			);
 			path = LocalData;
 			sourceTree = "<group>";
@@ -958,8 +958,8 @@
 				C3EFE52724595B22001A474A /* Date+Extension.swift in Sources */,
 				48B70DD42454329200E894D5 /* BaseViewController.swift in Sources */,
 				C3EFE521245952A1001A474A /* NotificationModel.swift in Sources */,
+				482A72972459D48100923208 /* DataManager.swift in Sources */,
 				48B70DDC24545F4700E894D5 /* NetworkResponse.swift in Sources */,
-				482A728F2459CFE100923208 /* DataManager.swift in Sources */,
 				1B9C1EE624552C4800F03A3A /* RegisterPresenter.swift in Sources */,
 				48B70DDA2454375D00E894D5 /* APIClient+Login.swift in Sources */,
 				C35FF56C2455CC8A00AAC9C8 /* CustomFeatureView.swift in Sources */,
