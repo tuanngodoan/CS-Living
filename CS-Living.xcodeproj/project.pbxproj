@@ -69,6 +69,9 @@
 		C3EFE523245953C9001A474A /* NotifiTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EFE522245953C9001A474A /* NotifiTableViewCell.swift */; };
 		C3EFE52524595ADD001A474A /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EFE52424595ADD001A474A /* String+Extension.swift */; };
 		C3EFE52724595B22001A474A /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EFE52624595B22001A474A /* Date+Extension.swift */; };
+		C3EFE50C24586D76001A474A /* FeePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EFE50B24586D76001A474A /* FeePresenter.swift */; };
+		C3EFE50E24587132001A474A /* APIClient+FeeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EFE50D24587132001A474A /* APIClient+FeeList.swift */; };
+		C3EFE51024587342001A474A /* FeeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EFE50F24587342001A474A /* FeeModel.swift */; };
 		C3F5D8A62456F19800A66695 /* FeeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F5D8A42456F19800A66695 /* FeeTableViewCell.swift */; };
 		C3F5D8A72456F19800A66695 /* FeeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3F5D8A52456F19800A66695 /* FeeTableViewCell.xib */; };
 		C3F5D8A92456FBB200A66695 /* FeeTableFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3F5D8A82456FBB200A66695 /* FeeTableFooterView.xib */; };
@@ -169,6 +172,9 @@
 		C3EFE522245953C9001A474A /* NotifiTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotifiTableViewCell.swift; sourceTree = "<group>"; };
 		C3EFE52424595ADD001A474A /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		C3EFE52624595B22001A474A /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		C3EFE50B24586D76001A474A /* FeePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FeePresenter.swift; path = Sources/Models/FirebaseModel/FeePresenter.swift; sourceTree = SOURCE_ROOT; };
+		C3EFE50D24587132001A474A /* APIClient+FeeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIClient+FeeList.swift"; sourceTree = "<group>"; };
+		C3EFE50F24587342001A474A /* FeeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeeModel.swift; sourceTree = "<group>"; };
 		C3F5D8A42456F19800A66695 /* FeeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeeTableViewCell.swift; sourceTree = "<group>"; };
 		C3F5D8A52456F19800A66695 /* FeeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeeTableViewCell.xib; sourceTree = "<group>"; };
 		C3F5D8A82456FBB200A66695 /* FeeTableFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeeTableFooterView.xib; sourceTree = "<group>"; };
@@ -317,6 +323,7 @@
 		1BD06B3A245492B80024088F /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				C3EFE50B24586D76001A474A /* FeePresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -441,6 +448,7 @@
 				48B70DD024542AD000E894D5 /* APIClient+Register.swift */,
 				48B70DD92454375D00E894D5 /* APIClient+Login.swift */,
 				C3EFE51C245950E0001A474A /* APIClient+Notification.swift */,
+				C3EFE50D24587132001A474A /* APIClient+FeeList.swift */,
 			);
 			path = ServiceAPI;
 			sourceTree = "<group>";
@@ -499,6 +507,7 @@
 				1B8CCFC72457BDEA006917D2 /* LicenseModel.swift */,
 				48B70DDB24545F4700E894D5 /* NetworkResponse.swift */,
 				C3EFE520245952A1001A474A /* NotificationModel.swift */,
+				C3EFE50F24587342001A474A /* FeeModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -932,13 +941,16 @@
 				48B70DC424541FB700E894D5 /* DefineText.swift in Sources */,
 				1BD06B3824548ED90024088F /* UpgradeAccountViewController.swift in Sources */,
 				489FD7BC2453FD5D00E04771 /* LoginPresenter.swift in Sources */,
+				C3EFE50C24586D76001A474A /* FeePresenter.swift in Sources */,
 				C3F5D8B224571FBD00A66695 /* UserDB.swift in Sources */,
 				1B8CCFC42457B69E006917D2 /* PickerBlurView.swift in Sources */,
 				484141F82458A2F0008AB972 /* User.swift in Sources */,
 				48B70DC224541FA200E894D5 /* DefineMarco.swift in Sources */,
 				C3F5D8AB2456FCD200A66695 /* FeeTableFooterView.swift in Sources */,
+				C3EFE51024587342001A474A /* FeeModel.swift in Sources */,
 				C30BB2252456E7F3006CB37E /* FeeTableHeaderView.swift in Sources */,
 				48B70DBC24541C1900E894D5 /* APIClient.swift in Sources */,
+				C3EFE50E24587132001A474A /* APIClient+FeeList.swift in Sources */,
 				1B5D3E152455505E00C288B1 /* AdsBannerCollectionViewCell.swift in Sources */,
 				1B5D3E18245579AB00C288B1 /* RegisterModel.swift in Sources */,
 				C3EFE52524595ADD001A474A /* String+Extension.swift in Sources */,

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,17 +20,17 @@
                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="MvK-sn-ZQX">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="72"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ogs-YV-zra">
-                                <rect key="frame" x="0.0" y="0.0" width="53.5" height="72"/>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ogs-YV-zra">
+                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="72"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iWk-uJ-HsA">
-                                        <rect key="frame" x="10.5" y="28" width="32.5" height="16"/>
+                                        <rect key="frame" x="-16.5" y="28" width="33" height="16"/>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RL6-mB-mf5">
-                                        <rect key="frame" x="52.5" y="0.0" width="1" height="72"/>
+                                        <rect key="frame" x="-1" y="0.0" width="1" height="72"/>
                                         <color key="backgroundColor" red="0.76078431369999999" green="0.76078431369999999" blue="0.76078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="1" id="DWD-fp-SRi"/>
@@ -47,16 +47,16 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UyO-kx-idR">
-                                <rect key="frame" x="53.5" y="0.0" width="53" height="72"/>
+                                <rect key="frame" x="0.0" y="0.0" width="64" height="72"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BHC-JX-rW8">
-                                        <rect key="frame" x="10.5" y="28" width="32.5" height="16"/>
+                                        <rect key="frame" x="16" y="28" width="32.5" height="16"/>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lkU-UM-VfB">
-                                        <rect key="frame" x="52" y="0.0" width="1" height="72"/>
+                                        <rect key="frame" x="63" y="0.0" width="1" height="72"/>
                                         <color key="backgroundColor" red="0.76078431369999999" green="0.76078431369999999" blue="0.76078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="1" id="toi-eQ-TTT"/>
@@ -73,16 +73,16 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rff-xq-exT">
-                                <rect key="frame" x="106.5" y="0.0" width="53.5" height="72"/>
+                                <rect key="frame" x="64" y="0.0" width="64" height="72"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c1b-gn-fXD">
-                                        <rect key="frame" x="10.5" y="28" width="32.5" height="16"/>
+                                        <rect key="frame" x="16" y="28" width="32.5" height="16"/>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bho-Rd-pGa">
-                                        <rect key="frame" x="52.5" y="0.0" width="1" height="72"/>
+                                        <rect key="frame" x="63" y="0.0" width="1" height="72"/>
                                         <color key="backgroundColor" red="0.76078431369999999" green="0.76078431369999999" blue="0.76078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="1" id="w2u-dy-4nF"/>
@@ -99,16 +99,16 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5no-2o-CGI">
-                                <rect key="frame" x="160" y="0.0" width="53.5" height="72"/>
+                                <rect key="frame" x="128" y="0.0" width="64" height="72"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tBG-5r-Xxt">
-                                        <rect key="frame" x="10.5" y="28" width="32.5" height="16"/>
+                                        <rect key="frame" x="16" y="28" width="32.5" height="16"/>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V5z-uy-PeY">
-                                        <rect key="frame" x="52.5" y="0.0" width="1" height="72"/>
+                                        <rect key="frame" x="63" y="0.0" width="1" height="72"/>
                                         <color key="backgroundColor" red="0.76078431369999999" green="0.76078431369999999" blue="0.76078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="1" id="zea-lV-AT0"/>
@@ -125,16 +125,16 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tGA-gV-SBm">
-                                <rect key="frame" x="213.5" y="0.0" width="53" height="72"/>
+                                <rect key="frame" x="192" y="0.0" width="64" height="72"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zmm-sf-0Nj">
-                                        <rect key="frame" x="10.5" y="28" width="32.5" height="16"/>
+                                        <rect key="frame" x="16" y="28" width="32.5" height="16"/>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wdx-aN-4HO">
-                                        <rect key="frame" x="52" y="0.0" width="1" height="72"/>
+                                        <rect key="frame" x="63" y="0.0" width="1" height="72"/>
                                         <color key="backgroundColor" red="0.76078431369999999" green="0.76078431369999999" blue="0.76078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="1" id="Jij-Mh-Ygy"/>
@@ -151,16 +151,16 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vzs-e3-L1A">
-                                <rect key="frame" x="266.5" y="0.0" width="53.5" height="72"/>
+                                <rect key="frame" x="256" y="0.0" width="64" height="72"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v02-ja-bAk">
-                                        <rect key="frame" x="10.5" y="28" width="32.5" height="16"/>
+                                        <rect key="frame" x="16" y="28" width="32.5" height="16"/>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GeR-a2-ZAt">
-                                        <rect key="frame" x="52.5" y="0.0" width="1" height="72"/>
+                                        <rect key="frame" x="63" y="0.0" width="1" height="72"/>
                                         <color key="backgroundColor" red="0.76078431369999999" green="0.76078431369999999" blue="0.76078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="1" id="0gA-ak-Z3T"/>
@@ -201,6 +201,14 @@
                     <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </userDefinedRuntimeAttribute>
             </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="endingDebtLabel" destination="v02-ja-bAk" id="8PL-Ud-IF7"/>
+                <outlet property="incurredDebtLabel" destination="tBG-5r-Xxt" id="Gcd-RY-KMX"/>
+                <outlet property="loanPrevLabel" destination="c1b-gn-fXD" id="rj1-90-iRa"/>
+                <outlet property="paidLabel" destination="Zmm-sf-0Nj" id="Zru-Iv-Sx7"/>
+                <outlet property="serviceLabel" destination="BHC-JX-rW8" id="YGf-9Y-gaw"/>
+                <outlet property="timeLabel" destination="iWk-uJ-HsA" id="n4T-oa-cnP"/>
+            </connections>
             <point key="canvasLocation" x="137.68115942028987" y="89.0625"/>
         </tableViewCell>
     </objects>

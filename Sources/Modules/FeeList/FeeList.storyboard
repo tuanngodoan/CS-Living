@@ -178,7 +178,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EtZ-S5-TL0">
                                                 <rect key="frame" x="100" y="0.0" width="298" height="48"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chọn dịch vụ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TZ1-3K-Lyp">
+                                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chọn dịch vụ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TZ1-3K-Lyp">
                                                         <rect key="frame" x="8" y="0.0" width="260" height="48"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -254,6 +254,12 @@
                                                     <constraint firstAttribute="width" constant="30" id="O4F-T5-CUw"/>
                                                 </constraints>
                                             </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HyP-ud-byf">
+                                                <rect key="frame" x="360" y="0.0" width="46" height="48"/>
+                                                <connections>
+                                                    <action selector="watchButtonDidTouchWith_sender:" destination="AQL-cr-sLK" eventType="touchUpInside" id="4bC-LG-oZy"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
@@ -262,11 +268,15 @@
                                             <constraint firstItem="dDC-Wk-rfH" firstAttribute="leading" secondItem="IHk-c8-4vA" secondAttribute="trailing" constant="8" id="5Ie-G0-3p1"/>
                                             <constraint firstItem="UIC-FZ-c8V" firstAttribute="centerY" secondItem="T6f-SB-Odb" secondAttribute="centerY" id="DhJ-6n-M91"/>
                                             <constraint firstAttribute="bottom" secondItem="UIC-FZ-c8V" secondAttribute="bottom" id="DtD-qt-Kqq"/>
+                                            <constraint firstItem="HyP-ud-byf" firstAttribute="width" secondItem="UIC-FZ-c8V" secondAttribute="width" multiplier="1.53333" id="NlA-ee-8tH"/>
                                             <constraint firstItem="dDC-Wk-rfH" firstAttribute="centerY" secondItem="T6f-SB-Odb" secondAttribute="centerY" id="U8i-eX-wMn"/>
                                             <constraint firstItem="UIC-FZ-c8V" firstAttribute="top" secondItem="T6f-SB-Odb" secondAttribute="top" id="UTg-Rl-Iam"/>
                                             <constraint firstItem="IHk-c8-4vA" firstAttribute="centerY" secondItem="T6f-SB-Odb" secondAttribute="centerY" id="Zcd-ek-4ls"/>
+                                            <constraint firstItem="HyP-ud-byf" firstAttribute="centerX" secondItem="UIC-FZ-c8V" secondAttribute="centerX" id="cIW-FN-XDR"/>
+                                            <constraint firstItem="HyP-ud-byf" firstAttribute="top" secondItem="UIC-FZ-c8V" secondAttribute="top" id="czL-jf-kFy"/>
                                             <constraint firstAttribute="height" constant="48" id="fgZ-k2-Wvm"/>
                                             <constraint firstAttribute="trailing" secondItem="UIC-FZ-c8V" secondAttribute="trailing" id="k24-vG-4Cb"/>
+                                            <constraint firstItem="HyP-ud-byf" firstAttribute="centerY" secondItem="UIC-FZ-c8V" secondAttribute="centerY" id="wVT-TJ-PYB"/>
                                         </constraints>
                                     </view>
                                 </subviews>
