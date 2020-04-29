@@ -60,12 +60,10 @@ let kUnitName                           = "UnitName"
 let kConfigLinkCode                     = "ConfigLinkCode"
 let kOwnerCode                          = "OwnerCode"
 let kKeyCode                            = "KeyCode"
-
 let kPropertyID                         = "propertyID"
 let kBlockID                            = "blockID"
 let kFloorID                            = "floorID"
 let kUnitID                             = "unitID"
-
 // MARK: - Firebase key
 
 let kUser                               = "users"

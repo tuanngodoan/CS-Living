@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -254,6 +254,9 @@
                                                     <constraint firstAttribute="width" constant="30" id="O4F-T5-CUw"/>
                                                 </constraints>
                                             </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HyP-ud-byf">
+                                                <rect key="frame" x="360" y="0.0" width="46" height="48"/>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
@@ -262,11 +265,15 @@
                                             <constraint firstItem="dDC-Wk-rfH" firstAttribute="leading" secondItem="IHk-c8-4vA" secondAttribute="trailing" constant="8" id="5Ie-G0-3p1"/>
                                             <constraint firstItem="UIC-FZ-c8V" firstAttribute="centerY" secondItem="T6f-SB-Odb" secondAttribute="centerY" id="DhJ-6n-M91"/>
                                             <constraint firstAttribute="bottom" secondItem="UIC-FZ-c8V" secondAttribute="bottom" id="DtD-qt-Kqq"/>
+                                            <constraint firstItem="HyP-ud-byf" firstAttribute="width" secondItem="UIC-FZ-c8V" secondAttribute="width" multiplier="1.53333" id="NlA-ee-8tH"/>
                                             <constraint firstItem="dDC-Wk-rfH" firstAttribute="centerY" secondItem="T6f-SB-Odb" secondAttribute="centerY" id="U8i-eX-wMn"/>
                                             <constraint firstItem="UIC-FZ-c8V" firstAttribute="top" secondItem="T6f-SB-Odb" secondAttribute="top" id="UTg-Rl-Iam"/>
                                             <constraint firstItem="IHk-c8-4vA" firstAttribute="centerY" secondItem="T6f-SB-Odb" secondAttribute="centerY" id="Zcd-ek-4ls"/>
+                                            <constraint firstItem="HyP-ud-byf" firstAttribute="centerX" secondItem="UIC-FZ-c8V" secondAttribute="centerX" id="cIW-FN-XDR"/>
+                                            <constraint firstItem="HyP-ud-byf" firstAttribute="top" secondItem="UIC-FZ-c8V" secondAttribute="top" id="czL-jf-kFy"/>
                                             <constraint firstAttribute="height" constant="48" id="fgZ-k2-Wvm"/>
                                             <constraint firstAttribute="trailing" secondItem="UIC-FZ-c8V" secondAttribute="trailing" id="k24-vG-4Cb"/>
+                                            <constraint firstItem="HyP-ud-byf" firstAttribute="centerY" secondItem="UIC-FZ-c8V" secondAttribute="centerY" id="wVT-TJ-PYB"/>
                                         </constraints>
                                     </view>
                                 </subviews>

@@ -48,6 +48,12 @@ class FeeListViewController: BaseViewController {
             self.pickServiceView.isHidden = false
         }
     }
+    
+    @IBAction func watchButtonDidTouch(_sender: UIButton) {
+        let param = [kRegister
+        ]
+        self.presenter?.getListService(param: <#T##[String : Any]#>)
+    }
 }
 
 
