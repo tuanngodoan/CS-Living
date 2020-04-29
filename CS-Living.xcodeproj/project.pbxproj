@@ -60,6 +60,15 @@
 		C35FF56A2455CA6800AAC9C8 /* CustomFeatureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C35FF5692455CA6800AAC9C8 /* CustomFeatureView.xib */; };
 		C35FF56C2455CC8A00AAC9C8 /* CustomFeatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35FF56B2455CC8A00AAC9C8 /* CustomFeatureView.swift */; };
 		C3705E4C2456B6BF00EED37B /* FeeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3705E4B2456B6BF00EED37B /* FeeListViewController.swift */; };
+		C3EFE514245939AD001A474A /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EFE513245939AD001A474A /* NotificationViewController.swift */; };
+		C3EFE51924593A3F001A474A /* Notification.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3EFE51824593A3E001A474A /* Notification.storyboard */; };
+		C3EFE51B24593B46001A474A /* NotificationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EFE51A24593B46001A474A /* NotificationDetailViewController.swift */; };
+		C3EFE51D245950E0001A474A /* APIClient+Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EFE51C245950E0001A474A /* APIClient+Notification.swift */; };
+		C3EFE51F24595255001A474A /* NotificationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EFE51E24595254001A474A /* NotificationPresenter.swift */; };
+		C3EFE521245952A1001A474A /* NotificationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EFE520245952A1001A474A /* NotificationModel.swift */; };
+		C3EFE523245953C9001A474A /* NotifiTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EFE522245953C9001A474A /* NotifiTableViewCell.swift */; };
+		C3EFE52524595ADD001A474A /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EFE52424595ADD001A474A /* String+Extension.swift */; };
+		C3EFE52724595B22001A474A /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EFE52624595B22001A474A /* Date+Extension.swift */; };
 		C3F5D8A62456F19800A66695 /* FeeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F5D8A42456F19800A66695 /* FeeTableViewCell.swift */; };
 		C3F5D8A72456F19800A66695 /* FeeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3F5D8A52456F19800A66695 /* FeeTableViewCell.xib */; };
 		C3F5D8A92456FBB200A66695 /* FeeTableFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3F5D8A82456FBB200A66695 /* FeeTableFooterView.xib */; };
@@ -151,6 +160,15 @@
 		C35FF5692455CA6800AAC9C8 /* CustomFeatureView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomFeatureView.xib; sourceTree = "<group>"; };
 		C35FF56B2455CC8A00AAC9C8 /* CustomFeatureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFeatureView.swift; sourceTree = "<group>"; };
 		C3705E4B2456B6BF00EED37B /* FeeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeeListViewController.swift; sourceTree = "<group>"; };
+		C3EFE513245939AD001A474A /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		C3EFE51824593A3E001A474A /* Notification.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Notification.storyboard; sourceTree = "<group>"; };
+		C3EFE51A24593B46001A474A /* NotificationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationDetailViewController.swift; sourceTree = "<group>"; };
+		C3EFE51C245950E0001A474A /* APIClient+Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIClient+Notification.swift"; sourceTree = "<group>"; };
+		C3EFE51E24595254001A474A /* NotificationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationPresenter.swift; sourceTree = "<group>"; };
+		C3EFE520245952A1001A474A /* NotificationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationModel.swift; sourceTree = "<group>"; };
+		C3EFE522245953C9001A474A /* NotifiTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotifiTableViewCell.swift; sourceTree = "<group>"; };
+		C3EFE52424595ADD001A474A /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		C3EFE52624595B22001A474A /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		C3F5D8A42456F19800A66695 /* FeeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeeTableViewCell.swift; sourceTree = "<group>"; };
 		C3F5D8A52456F19800A66695 /* FeeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeeTableViewCell.xib; sourceTree = "<group>"; };
 		C3F5D8A82456FBB200A66695 /* FeeTableFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeeTableFooterView.xib; sourceTree = "<group>"; };
@@ -422,6 +440,7 @@
 				48B70DBB24541C1900E894D5 /* APIClient.swift */,
 				48B70DD024542AD000E894D5 /* APIClient+Register.swift */,
 				48B70DD92454375D00E894D5 /* APIClient+Login.swift */,
+				C3EFE51C245950E0001A474A /* APIClient+Notification.swift */,
 			);
 			path = ServiceAPI;
 			sourceTree = "<group>";
@@ -430,6 +449,7 @@
 			isa = PBXGroup;
 			children = (
 				1BD06B39245492B20024088F /* FeeList */,
+				C3EFE51124593988001A474A /* Notification */,
 				1B7C3FDE245464AA002941BA /* Home */,
 				1BD06B3424548EAC0024088F /* UpgradeAccount */,
 				1B05C36F24547A6700E80F92 /* Register */,
@@ -478,6 +498,7 @@
 				1B5D3E17245579AB00C288B1 /* RegisterModel.swift */,
 				1B8CCFC72457BDEA006917D2 /* LicenseModel.swift */,
 				48B70DDB24545F4700E894D5 /* NetworkResponse.swift */,
+				C3EFE520245952A1001A474A /* NotificationModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -554,6 +575,8 @@
 				48B70DCE245421B100E894D5 /* UIImage+Color.swift */,
 				48B70DCC2454204E00E894D5 /* UIView.swift */,
 				485C207A2454898B002E5040 /* UIViewController.swift */,
+				C3EFE52424595ADD001A474A /* String+Extension.swift */,
+				C3EFE52624595B22001A474A /* Date+Extension.swift */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -576,6 +599,34 @@
 				C3F5D8AA2456FCD200A66695 /* FeeTableFooterView.swift */,
 				C3F5D8A82456FBB200A66695 /* FeeTableFooterView.xib */,
 				C3705E4B2456B6BF00EED37B /* FeeListViewController.swift */,
+			);
+			path = PassivewView;
+			sourceTree = "<group>";
+		};
+		C3EFE51124593988001A474A /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				C3EFE515245939B6001A474A /* PassivewView */,
+				C3EFE51224593995001A474A /* Presenter */,
+				C3EFE51824593A3E001A474A /* Notification.storyboard */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		C3EFE51224593995001A474A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				C3EFE51E24595254001A474A /* NotificationPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		C3EFE515245939B6001A474A /* PassivewView */ = {
+			isa = PBXGroup;
+			children = (
+				C3EFE522245953C9001A474A /* NotifiTableViewCell.swift */,
+				C3EFE513245939AD001A474A /* NotificationViewController.swift */,
+				C3EFE51A24593B46001A474A /* NotificationDetailViewController.swift */,
 			);
 			path = PassivewView;
 			sourceTree = "<group>";
@@ -733,6 +784,7 @@
 				1B8CCFC62457B71B006917D2 /* PickerBlurView.xib in Resources */,
 				1BD06B3D245492D50024088F /* FeeList.storyboard in Resources */,
 				C35FF56A2455CA6800AAC9C8 /* CustomFeatureView.xib in Resources */,
+				C3EFE51924593A3F001A474A /* Notification.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -872,6 +924,7 @@
 				489FD7BA2453FD3F00E04771 /* LoginViewController.swift in Sources */,
 				48B70DD124542AD000E894D5 /* APIClient+Register.swift in Sources */,
 				489FD77E2453F5E400E04771 /* ViewController.swift in Sources */,
+				C3EFE523245953C9001A474A /* NotifiTableViewCell.swift in Sources */,
 				48B70DCF245421B100E894D5 /* UIImage+Color.swift in Sources */,
 				485C2075245488F3002E5040 /* BaseNavigationController.swift in Sources */,
 				489FD77A2453F5E400E04771 /* AppDelegate.swift in Sources */,
@@ -888,7 +941,10 @@
 				48B70DBC24541C1900E894D5 /* APIClient.swift in Sources */,
 				1B5D3E152455505E00C288B1 /* AdsBannerCollectionViewCell.swift in Sources */,
 				1B5D3E18245579AB00C288B1 /* RegisterModel.swift in Sources */,
+				C3EFE52524595ADD001A474A /* String+Extension.swift in Sources */,
+				C3EFE52724595B22001A474A /* Date+Extension.swift in Sources */,
 				48B70DD42454329200E894D5 /* BaseViewController.swift in Sources */,
+				C3EFE521245952A1001A474A /* NotificationModel.swift in Sources */,
 				48B70DDC24545F4700E894D5 /* NetworkResponse.swift in Sources */,
 				484141F32458A2CB008AB972 /* DataManager.swift in Sources */,
 				1B9C1EE624552C4800F03A3A /* RegisterPresenter.swift in Sources */,
@@ -896,6 +952,10 @@
 				C35FF56C2455CC8A00AAC9C8 /* CustomFeatureView.swift in Sources */,
 				48B70DC024541E0800E894D5 /* AppUtil.swift in Sources */,
 				485C207E245489C6002E5040 /* Router.swift in Sources */,
+				C3EFE51D245950E0001A474A /* APIClient+Notification.swift in Sources */,
+				C3EFE51F24595255001A474A /* NotificationPresenter.swift in Sources */,
+				C3EFE51B24593B46001A474A /* NotificationDetailViewController.swift in Sources */,
+				C3EFE514245939AD001A474A /* NotificationViewController.swift in Sources */,
 				C3F5D8AD245719E400A66695 /* FirebaseDBManager.swift in Sources */,
 				484141F62458A2D7008AB972 /* User.xcdatamodeld in Sources */,
 				485C20772454891F002E5040 /* BaseTabbarController.swift in Sources */,
