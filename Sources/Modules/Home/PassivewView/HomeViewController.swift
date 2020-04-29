@@ -49,6 +49,8 @@ class HomeViewController: BaseViewController {
             // TODO:
             break
         case .notify:
+            let notifiVC = NotificationViewController.controller(from: "Notification", storyboardID: "NotificationViewController")
+            self.navigationController?.pushViewController(notifiVC, animated: true)
             // TODO:
             break
         case .mediaInfomation:
@@ -134,8 +136,6 @@ extension HomeViewController: HomePresenterView {
             self.navigationController?.pushViewController(upgradeAccVC, animated: true)
         }
     }
-    
-   
 }
 
 // MARK: - Ads CollectionView

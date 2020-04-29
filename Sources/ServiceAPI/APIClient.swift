@@ -77,6 +77,23 @@ final class APIClient: Session {
             self.processResponse(response: response, callBack: callback)
         })
     }
+    
+    func requestPath(path: String, param: Parameters, methodRequest: HTTPMethod, encoding: ParameterEncoding, callback: @escaping CSCallBack) {
+
+        if !APIClient.isInternetAvailable() {
+            AppUtil.showAlertWithMessage(kLostInternet)
+            let errorTemp = NSError(domain: "", code: 10000, userInfo: nil)
+            callback(ResponseObject(), errorTemp as Error)
+            return
+        }
+        let urlString = kBaseServerDev.appending(path)
+        MBProgressHUD.showAdded(to: AppUtil.visibleViewController?.view ?? UIView(), animated: true)
+        
+        AF.request(urlString, method: methodRequest, parameters: param, encoding: encoding, headers: getHeader()).responseData(completionHandler: { response in
+            MBProgressHUD.hide(for: AppUtil.visibleViewController?.view ?? UIView(), animated: true)
+            self.processResponse(response: response, callBack: callback)
+        })
+    }
 }
 
 private extension APIClient {
@@ -109,7 +126,7 @@ private extension APIClient {
         let accessToken: String = UserDefaults.standard.value(forKey: kAccessToken) as? String ?? ""
         parameters = ["Content-Type": "application/json",
                       "Accept": "application/json",
-                      "Authorization":"Bear\(accessToken)"] as HTTPHeaders? ?? HTTPHeaders()
+                      "Authorization":"Bear \(accessToken)"] as HTTPHeaders? ?? HTTPHeaders()
         
         return parameters
     }

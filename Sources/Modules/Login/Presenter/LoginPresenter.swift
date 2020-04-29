@@ -28,6 +28,10 @@ class LoginPresenter {
                         let decoder = JSONDecoder()
                         let userObject = try decoder.decode(NetworkResponse<UserModel>.self, from: jsonData)
                         self?.updateUserDB(user: userObject.data)
+                        if let json = try JSONSerialization.jsonObject(with: jsonData, options: []) as? [String: Any] {
+                            UserDefaults.standard.set(json["token"], forKey: kAccessToken)
+                        }
+                        
                         self?.view?.authenticationCompleted(isSuccess: true)
                     } catch  {
                         print(error)
