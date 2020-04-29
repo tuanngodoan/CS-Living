@@ -36,7 +36,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         AppUtil.visibleViewController?.present(tabbarController, animated: true, completion: {
             let window = UIApplication.shared.windows.first
             window?.rootViewController = tabbarController
-            //window?.makeKeyAndVisible()
+            window?.makeKeyAndVisible()
         })
     }
     

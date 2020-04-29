@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/dinhtrien/Desktop/Source/CS-Living/Sources/Models/LocalData/DataManager.swift">
+   </FileRef>
+   <FileRef
       location = "group:CS-Living.xcodeproj">
    </FileRef>
    <FileRef

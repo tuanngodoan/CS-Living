@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15400" systemVersion="18E227" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="User" representedClassName="User" syncable="YES">
+        <attribute name="blockID" optional="YES" attributeType="String"/>
+        <attribute name="blockName" optional="YES" attributeType="String"/>
+        <attribute name="configLinkCode" optional="YES" attributeType="String"/>
+        <attribute name="contractID" optional="YES" attributeType="String"/>
+        <attribute name="contractNo" optional="YES" attributeType="String"/>
+        <attribute name="firstName" optional="YES" attributeType="String"/>
+        <attribute name="floor" optional="YES" attributeType="String"/>
+        <attribute name="floorID" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="lastName" optional="YES" attributeType="String"/>
+        <attribute name="midName" optional="YES" attributeType="String"/>
+        <attribute name="ownerCode" optional="YES" attributeType="String"/>
+        <attribute name="projectCode" optional="YES" attributeType="String"/>
+        <attribute name="projectID" optional="YES" attributeType="String"/>
+        <attribute name="projectName" optional="YES" attributeType="String"/>
+        <attribute name="unitID" optional="YES" attributeType="String"/>
+        <attribute name="unitname" optional="YES" attributeType="String"/>
+        <attribute name="username" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="User" positionX="-63" positionY="-18" width="128" height="313"/>
+    </elements>
+</model>

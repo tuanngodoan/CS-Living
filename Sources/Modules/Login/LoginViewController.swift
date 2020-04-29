@@ -95,7 +95,7 @@ extension LoginViewController: LoginPresenterView {
     }
     
     func authenticationCompleted(isSuccess: Bool) {
-        AppUtil.appDelegate?.showHome()
+        AppUtil.appDelegate?.setupRootHomeVC()
     }
 }
 
