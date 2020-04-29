@@ -55,9 +55,9 @@ class FeeListViewController: BaseViewController {
     
     @IBAction func watchButtonDidTouch(_sender: UIButton) {
         let param = [
-              kFromDate: "2020-04-29T11:37:12.737Z",
-              kToDate: "2020-04-29T11:37:12.737Z",
-              kContractId: 514,
+              kFromDate: "2020-Apr-29 23:17:14",
+              kToDate: "2020-Apr-29 23:17:14",
+              kContractId: "541",
               kUnit: "B2-505"
             ] as [String : Any]
         self.presenter?.getListService(param: param)
