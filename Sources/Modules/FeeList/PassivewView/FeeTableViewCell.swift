@@ -18,6 +18,7 @@ class FeeTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        self.timeLabel.isHidden = true
         // Initialization code
     }
 
@@ -27,13 +28,16 @@ class FeeTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func setupCell(fee: FeeModel) {
-        self.timeLabel.text = String(describing: fee.closingDebit)
-        self.serviceLabel.text = String(describing: fee.closingDebit)
-        self.loanPrevLabel.text = String(describing: fee.closingDebit)
-        self.incurredDebtLabel.text = String(describing: fee.closingDebit)
-        self.paidLabel.text = String(describing: fee.closingDebit)
-        self.endingDebtLabel.text = String(describing: fee.closingDebit)
+    func setupCell(feeDetail: FeeDetail?) {
+        guard let detail = feeDetail else {
+            return
+        }
+        self.timeLabel.text = "zzzz"
+        self.serviceLabel.text = "\(detail.chargeCode ?? "")"
+        self.loanPrevLabel.text = "\(detail.closingDebit ?? 0)"
+        self.incurredDebtLabel.text = "\(detail.openingDebit ?? 0)"
+        self.paidLabel.text = "\(detail.paidAmount ?? 0)"
+        self.endingDebtLabel.text = "\(detail.accruedExpense ?? 0)"
     }
     
 }

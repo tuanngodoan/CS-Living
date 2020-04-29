@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -17,17 +17,17 @@
                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="75R-Dl-3w7">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="68"/>
                     <subviews>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ieM-nV-7J1">
-                            <rect key="frame" x="0.0" y="0.0" width="69" height="68"/>
+                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ieM-nV-7J1">
+                            <rect key="frame" x="-2" y="0.0" width="2" height="68"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tháng" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kAc-Ok-FPi">
-                                    <rect key="frame" x="1" y="26" width="67" height="16"/>
+                                    <rect key="frame" x="1" y="26" width="0.0" height="16"/>
                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M9A-Rq-htD">
-                                    <rect key="frame" x="68" y="0.0" width="1" height="68"/>
+                                    <rect key="frame" x="1" y="0.0" width="1" height="68"/>
                                     <color key="backgroundColor" red="0.76078431372549016" green="0.76078431372549016" blue="0.76078431372549016" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="1" id="LCh-3R-Gfv"/>
@@ -45,16 +45,16 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XA8-pW-SvK">
-                            <rect key="frame" x="69" y="0.0" width="69" height="68"/>
+                            <rect key="frame" x="0.0" y="0.0" width="83" height="68"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tên dịch vụ" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6zp-UZ-Llj">
-                                    <rect key="frame" x="0.0" y="18.5" width="69" height="31.5"/>
+                                    <rect key="frame" x="0.0" y="26" width="83" height="16"/>
                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Up-6K-2Wo">
-                                    <rect key="frame" x="68" y="0.0" width="1" height="68"/>
+                                    <rect key="frame" x="82" y="0.0" width="1" height="68"/>
                                     <color key="backgroundColor" red="0.76078431372549016" green="0.76078431372549016" blue="0.76078431372549016" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="1" id="uQq-ac-IdS"/>
@@ -72,16 +72,16 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qi4-QB-9Be">
-                            <rect key="frame" x="138" y="0.0" width="69" height="68"/>
+                            <rect key="frame" x="83" y="0.0" width="82.5" height="68"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dự nợ kỳ trước" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ynz-kN-3pP">
-                                    <rect key="frame" x="9" y="10.5" width="51" height="47"/>
+                                    <rect key="frame" x="9" y="18.5" width="64.5" height="31.5"/>
                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="410-bN-iI2">
-                                    <rect key="frame" x="68" y="0.0" width="1" height="68"/>
+                                    <rect key="frame" x="81.5" y="0.0" width="1" height="68"/>
                                     <color key="backgroundColor" red="0.76078431372549016" green="0.76078431372549016" blue="0.76078431372549016" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="1" id="Yey-AI-nxt"/>
@@ -99,16 +99,16 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8OO-dV-Ggw">
-                            <rect key="frame" x="207" y="0.0" width="69" height="68"/>
+                            <rect key="frame" x="165.5" y="0.0" width="83" height="68"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phát sinh trong kỳ" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pyu-qH-iVe">
-                                    <rect key="frame" x="0.0" y="18.5" width="69" height="31.5"/>
+                                    <rect key="frame" x="0.0" y="18.5" width="83" height="31.5"/>
                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kx3-Kd-046">
-                                    <rect key="frame" x="68" y="0.0" width="1" height="68"/>
+                                    <rect key="frame" x="82" y="0.0" width="1" height="68"/>
                                     <color key="backgroundColor" red="0.76078431372549016" green="0.76078431372549016" blue="0.76078431372549016" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="1" id="wvR-na-m4u"/>
@@ -126,16 +126,16 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xpu-oM-eeA">
-                            <rect key="frame" x="276" y="0.0" width="69" height="68"/>
+                            <rect key="frame" x="248.5" y="0.0" width="82.5" height="68"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Đã TT" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SJX-Wn-KKW">
-                                    <rect key="frame" x="1" y="26" width="67" height="16"/>
+                                    <rect key="frame" x="1" y="26" width="80.5" height="16"/>
                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ttc-gu-waG">
-                                    <rect key="frame" x="68" y="0.0" width="1" height="68"/>
+                                    <rect key="frame" x="81.5" y="0.0" width="1" height="68"/>
                                     <color key="backgroundColor" red="0.76078431372549016" green="0.76078431372549016" blue="0.76078431372549016" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="1" id="qn3-r9-vis"/>
@@ -153,16 +153,16 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AbY-91-R7P">
-                            <rect key="frame" x="345" y="0.0" width="69" height="68"/>
+                            <rect key="frame" x="331" y="0.0" width="83" height="68"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dư nợ cuối kỳ" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mgn-Ag-0yl">
-                                    <rect key="frame" x="0.0" y="18.5" width="69" height="31.5"/>
+                                    <rect key="frame" x="0.0" y="18.5" width="83" height="31.5"/>
                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BWH-C9-w54">
-                                    <rect key="frame" x="68" y="0.0" width="1" height="68"/>
+                                    <rect key="frame" x="82" y="0.0" width="1" height="68"/>
                                     <color key="backgroundColor" red="0.76078431372549016" green="0.76078431372549016" blue="0.76078431372549016" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="1" id="efR-TI-MiM"/>

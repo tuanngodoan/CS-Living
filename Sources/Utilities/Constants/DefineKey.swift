@@ -64,6 +64,10 @@ let kPropertyID                         = "propertyID"
 let kBlockID                            = "blockID"
 let kFloorID                            = "floorID"
 let kUnitID                             = "unitID"
+let kFromDate                           = "fromDate"
+let kToDate                             = "toDate"
+let kContractId                         = "contractId"
+let kUnit                               = "unit"
 // MARK: - Firebase key
 
 let kUser                               = "users"

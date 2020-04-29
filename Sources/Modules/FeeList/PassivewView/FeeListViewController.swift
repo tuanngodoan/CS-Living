@@ -20,18 +20,22 @@ class FeeListViewController: BaseViewController {
     @IBOutlet weak var tableView: UITableView!
     
     private let datePicker = UIDatePicker()
+    private var pickerService: PickerBlurView?
     private var currentDatePicker: UITextField?
     
     private var heightHeaderTableView: CGFloat = 50.0
     private var heightCell: CGFloat = 38.0
     
-    private var feeList: [FeeModel] = []
+    private var feeList: FeeModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.title = "Bảng kê phí"
         self.setBackButtonWithImage("icn_back", withAction: #selector(backButtonAction))
+        
+        let tapPickerService = UITapGestureRecognizer(target: self, action: #selector(showPickerService))
+        self.pickServiceView?.addGestureRecognizer(tapPickerService)
     }
     
     @objc func backButtonAction() {
@@ -50,9 +54,13 @@ class FeeListViewController: BaseViewController {
     }
     
     @IBAction func watchButtonDidTouch(_sender: UIButton) {
-        let param = [kRegister
-        ]
-        self.presenter?.getListService(param: <#T##[String : Any]#>)
+        let param = [
+              kFromDate: "2020-04-29T11:37:12.737Z",
+              kToDate: "2020-04-29T11:37:12.737Z",
+              kContractId: 514,
+              kUnit: "B2-505"
+            ] as [String : Any]
+        self.presenter?.getListService(param: param)
     }
 }
 
@@ -107,6 +115,20 @@ extension FeeListViewController {
         textField.inputAccessoryView = toolbar
         textField.inputView = datePicker
     }
+    
+    @objc func showPickerService() {
+        if pickerService == nil {
+            guard let pickerView = PickerBlurView.fromNib() as? PickerBlurView else {
+                return
+            }
+            pickerService = pickerView
+        }
+        let dummyService = ["Chọn dịch vụ", "NUOC", "DIEN", "BVMT", "XE", "PQL",  "KHAC"]
+        pickerService?.configData(dummyService)
+        pickerService?.selectedRow = 0
+        pickerService?.delegate = self
+        pickerService?.showPickerView()
+    }
 
      @objc func donedatePicker() {
         let formatter = DateFormatter()
@@ -132,23 +154,21 @@ extension FeeListViewController {
 
 // MARK: - FeePresenterView
 extension FeeListViewController: FeePresenterView {
-    func getListServiceCompletion(feeList: [FeeModel]) {
+    func getListServiceCompletion(feeList: FeeModel) {
         self.feeList = feeList
         self.tableView.reloadData()
     }
-    
-    
 }
 
 // MARK: - TableViewDatasoure
 extension FeeListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return feeList.count
+        return feeList?.dataDetail?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "FeeTableViewCell", for: indexPath) as? FeeTableViewCell {
-            cell.setupCell(fee: feeList[indexPath.row])
+            cell.setupCell(feeDetail: feeList?.dataDetail?[indexPath.row])
             return cell
         }
         return UITableViewCell()
@@ -163,7 +183,15 @@ extension FeeListViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-        return Bundle.main.loadNibNamed("FeeTableFooterView", owner: nil, options: nil)!.first as! FeeTableFooterView
+        if let footerView = FeeTableFooterView.fromNib() as? FeeTableFooterView,
+            let fee = self.feeList {
+            footerView.loanPrevLabel.text = "\(fee.accruedExpense ?? 0)"
+            footerView.endingDebtLabel.text = "\(fee.balnaceVND ?? 0)"
+            footerView.incurredDebtLabel.text = "\(fee.openingDebit ?? 0)"
+            footerView.paidLabel.text = "\(fee.paidAmount ?? 0)"
+            return footerView
+        }
+        return UIView()
     }
     
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
@@ -184,5 +212,13 @@ extension FeeListViewController: UITableViewDelegate {
 extension FeeListViewController: UITextFieldDelegate {
     func textFieldDidBeginEditing(_ textField: UITextField) {
         self.currentDatePicker = textField
+    }
+}
+
+
+// MARK: - Picker Blur View
+extension FeeListViewController: PickerBlurViewDelegate {
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, value: String?) {
+        self.serviceLabel.text = value
     }
 }
