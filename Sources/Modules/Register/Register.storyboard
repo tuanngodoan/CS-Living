@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -244,7 +244,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RLh-gP-dMA" userLabel="lineView">
-                                                                <rect key="frame" x="145.5" y="13" width="248.5" height="1"/>
+                                                                <rect key="frame" x="150.5" y="13" width="243.5" height="1"/>
                                                                 <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="1" id="KIR-z3-yBC"/>
@@ -257,7 +257,7 @@
                                                             <constraint firstAttribute="height" constant="25" id="L6q-N5-MQk"/>
                                                             <constraint firstAttribute="trailing" secondItem="RLh-gP-dMA" secondAttribute="trailing" id="N62-a7-U49"/>
                                                             <constraint firstItem="RBQ-on-cn1" firstAttribute="centerY" secondItem="qln-YK-R9N" secondAttribute="centerY" id="TCo-AY-tzM"/>
-                                                            <constraint firstItem="RLh-gP-dMA" firstAttribute="leading" secondItem="RBQ-on-cn1" secondAttribute="trailing" id="k0U-sZ-BAj"/>
+                                                            <constraint firstItem="RLh-gP-dMA" firstAttribute="leading" secondItem="RBQ-on-cn1" secondAttribute="trailing" constant="5" id="k0U-sZ-BAj"/>
                                                             <constraint firstItem="RBQ-on-cn1" firstAttribute="leading" secondItem="qln-YK-R9N" secondAttribute="leading" constant="8" id="rC8-AU-ofH"/>
                                                         </constraints>
                                                     </view>

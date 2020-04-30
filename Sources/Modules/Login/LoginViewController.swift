@@ -27,6 +27,12 @@ class LoginViewController: BaseViewController {
         super.viewDidLoad()
         self.navigationController?.navigationBar.isHidden = true
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+         
+    }
+    
     @IBAction func registerButtonDidTouch(_ sender: UIButton) {
         self.presenter?.goRegisterViewController()
     }

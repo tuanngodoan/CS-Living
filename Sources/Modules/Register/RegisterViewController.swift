@@ -36,9 +36,15 @@ class RegisterViewController: BaseViewController {
         super.viewDidLoad()
         self.title = "Đăng kí tài khoản"
         self.setBackButtonWithImage("icn_back", withAction: #selector(backButtonAction))
+        self.navigationController?.navigationBar.isHidden = false
         self.tapHandler()
     }
 
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+         self.navigationController?.navigationBar.isHidden = true
+    }
+    
     @IBAction func registerButtonDidTouch(_ sender: UIButton) {
         self.register()
     }
