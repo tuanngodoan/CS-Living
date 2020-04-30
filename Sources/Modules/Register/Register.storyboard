@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,30 +13,30 @@
             <objects>
                 <viewController storyboardIdentifier="RegisterViewController" id="6Ha-aJ-Akm" customClass="RegisterViewController" customModule="CS_Living" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oGd-B4-Y05">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fSf-jO-lbd">
-                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hiV-Qt-WBp">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="852"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="714"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IVW-wc-bae" userLabel="accountInfo">
-                                                <rect key="frame" x="10" y="0.0" width="394" height="168"/>
+                                                <rect key="frame" x="10" y="20" width="355" height="168"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yMA-Pg-x9S" userLabel="avatar">
-                                                        <rect key="frame" x="0.0" y="0.0" width="118" height="168"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="106.5" height="168"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tY0-1r-r3g" userLabel="avatarImg">
-                                                                <rect key="frame" x="9" y="34" width="100" height="100"/>
+                                                                <rect key="frame" x="3.5" y="34" width="100" height="100"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="100" id="MWy-kQ-8XI"/>
                                                                     <constraint firstAttribute="width" constant="100" id="iAQ-fE-xwy"/>
                                                                 </constraints>
                                                             </imageView>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZVo-GI-tE1" userLabel="pickerImageView">
-                                                                <rect key="frame" x="9" y="34" width="100" height="100"/>
+                                                                <rect key="frame" x="3.5" y="34" width="100" height="100"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icn_camera" translatesAutoresizingMaskIntoConstraints="NO" id="O0n-ZK-EHt">
                                                                         <rect key="frame" x="30" y="56" width="40" height="40"/>
@@ -87,10 +87,10 @@
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bPs-E4-N50" userLabel="account">
-                                                        <rect key="frame" x="118" y="0.0" width="276" height="168"/>
+                                                        <rect key="frame" x="106.5" y="0.0" width="248.5" height="168"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w0I-pg-Jih" userLabel="username">
-                                                                <rect key="frame" x="0.0" y="0.0" width="276" height="48"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="248.5" height="48"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="name" translatesAutoresizingMaskIntoConstraints="NO" id="Qow-NY-Wdi">
                                                                         <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
@@ -99,12 +99,12 @@
                                                                         </constraints>
                                                                     </imageView>
                                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Tên đăng nhập" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dtQ-nw-un2">
-                                                                        <rect key="frame" x="58" y="0.0" width="218" height="48"/>
+                                                                        <rect key="frame" x="58" y="0.0" width="190.5" height="48"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                                                                     </textField>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WnG-ws-AKm" userLabel="bottomline">
-                                                                        <rect key="frame" x="0.0" y="47" width="276" height="1"/>
+                                                                        <rect key="frame" x="0.0" y="47" width="248.5" height="1"/>
                                                                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="1" id="Cyb-sP-dLu"/>
@@ -127,7 +127,7 @@
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pUZ-v7-U7m" userLabel="password">
-                                                                <rect key="frame" x="0.0" y="56" width="276" height="48"/>
+                                                                <rect key="frame" x="0.0" y="56" width="248.5" height="48"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="password" translatesAutoresizingMaskIntoConstraints="NO" id="Gqr-xd-4rS">
                                                                         <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
@@ -136,12 +136,12 @@
                                                                         </constraints>
                                                                     </imageView>
                                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Mật khẩu" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QvN-LZ-ywv">
-                                                                        <rect key="frame" x="58" y="0.0" width="218" height="48"/>
+                                                                        <rect key="frame" x="58" y="0.0" width="190.5" height="48"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" textContentType="one-time-code"/>
                                                                     </textField>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Jz-pE-OoR" userLabel="bottomline">
-                                                                        <rect key="frame" x="0.0" y="47" width="276" height="1"/>
+                                                                        <rect key="frame" x="0.0" y="47" width="248.5" height="1"/>
                                                                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="1" id="DhB-CM-r0k"/>
@@ -164,7 +164,7 @@
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1SC-e8-Fth" userLabel="verifyPassword">
-                                                                <rect key="frame" x="0.0" y="112" width="276" height="48"/>
+                                                                <rect key="frame" x="0.0" y="112" width="248.5" height="48"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="password" translatesAutoresizingMaskIntoConstraints="NO" id="Dgi-e8-Z3Q">
                                                                         <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
@@ -173,12 +173,12 @@
                                                                         </constraints>
                                                                     </imageView>
                                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nhập lại mật khẩu" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qj6-iE-gk1">
-                                                                        <rect key="frame" x="58" y="0.0" width="218" height="48"/>
+                                                                        <rect key="frame" x="58" y="0.0" width="190.5" height="48"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" textContentType="one-time-code"/>
                                                                     </textField>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2oX-BN-1Gz" userLabel="bottomline">
-                                                                        <rect key="frame" x="0.0" y="47" width="276" height="1"/>
+                                                                        <rect key="frame" x="0.0" y="47" width="248.5" height="1"/>
                                                                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="1" id="Czj-rm-8t2"/>
@@ -229,22 +229,22 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="peG-JC-pGw" userLabel="userInfo">
-                                                <rect key="frame" x="10" y="168" width="394" height="315"/>
+                                                <rect key="frame" x="10" y="213" width="355" height="315"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qln-YK-R9N" userLabel="headerView">
-                                                        <rect key="frame" x="0.0" y="0.0" width="394" height="25"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="355" height="25"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thông tin cá nhân" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RBQ-on-cn1">
-                                                                <rect key="frame" x="8" y="2" width="137.5" height="21"/>
+                                                                <rect key="frame" x="8" y="2" width="102" height="21"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="21" id="Pne-dk-80H"/>
                                                                 </constraints>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <fontDescription key="fontDescription" type="italicSystem" pointSize="12"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RLh-gP-dMA" userLabel="lineView">
-                                                                <rect key="frame" x="150.5" y="13" width="243.5" height="1"/>
+                                                                <rect key="frame" x="110" y="13" width="245" height="1"/>
                                                                 <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="1" id="KIR-z3-yBC"/>
@@ -262,7 +262,7 @@
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KeQ-Zt-eml" userLabel="termView">
-                                                        <rect key="frame" x="0.0" y="285" width="394" height="30"/>
+                                                        <rect key="frame" x="0.0" y="285" width="355" height="30"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icn_check" translatesAutoresizingMaskIntoConstraints="NO" id="bmW-tN-AI5">
                                                                 <rect key="frame" x="16" y="2.5" width="25" height="25"/>
@@ -272,7 +272,7 @@
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tôi đồng ý với các Điều khoản của CS-Living" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s8k-2q-Vtc">
-                                                                <rect key="frame" x="49" y="2.5" width="345" height="25"/>
+                                                                <rect key="frame" x="49" y="2.5" width="306" height="25"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="25" id="383-75-sEi"/>
                                                                 </constraints>
@@ -292,10 +292,10 @@
                                                         </constraints>
                                                     </view>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="oeL-w4-Dt1">
-                                                        <rect key="frame" x="8" y="33" width="378" height="240"/>
+                                                        <rect key="frame" x="8" y="33" width="339" height="240"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OeK-oQ-sOW" userLabel="fullName">
-                                                                <rect key="frame" x="0.0" y="0.0" width="378" height="48"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="339" height="48"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="name" translatesAutoresizingMaskIntoConstraints="NO" id="1fv-cX-snT">
                                                                         <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
@@ -304,12 +304,12 @@
                                                                         </constraints>
                                                                     </imageView>
                                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Họ và tên" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="30T-Qz-SSC">
-                                                                        <rect key="frame" x="58" y="0.0" width="320" height="48"/>
+                                                                        <rect key="frame" x="58" y="0.0" width="281" height="48"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" textContentType="name"/>
                                                                     </textField>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZJX-ZG-eFe" userLabel="bottomline">
-                                                                        <rect key="frame" x="0.0" y="47" width="378" height="1"/>
+                                                                        <rect key="frame" x="0.0" y="47" width="339" height="1"/>
                                                                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="1" id="h3I-9C-8kL"/>
@@ -332,7 +332,7 @@
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UHd-wN-Su8" userLabel="phone">
-                                                                <rect key="frame" x="0.0" y="48" width="378" height="48"/>
+                                                                <rect key="frame" x="0.0" y="48" width="339" height="48"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="email" translatesAutoresizingMaskIntoConstraints="NO" id="F3D-iJ-ssa">
                                                                         <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
@@ -341,12 +341,12 @@
                                                                         </constraints>
                                                                     </imageView>
                                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Số điện thoại" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pmP-Ub-LwA">
-                                                                        <rect key="frame" x="58" y="0.0" width="320" height="48"/>
+                                                                        <rect key="frame" x="58" y="0.0" width="281" height="48"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" textContentType="tel"/>
                                                                     </textField>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FyM-yS-n5s" userLabel="bottomline">
-                                                                        <rect key="frame" x="0.0" y="47" width="378" height="1"/>
+                                                                        <rect key="frame" x="0.0" y="47" width="339" height="1"/>
                                                                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="1" id="ZbI-wN-SKV"/>
@@ -369,7 +369,7 @@
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fiD-Jw-RJO" userLabel="email">
-                                                                <rect key="frame" x="0.0" y="96" width="378" height="48"/>
+                                                                <rect key="frame" x="0.0" y="96" width="339" height="48"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="email" translatesAutoresizingMaskIntoConstraints="NO" id="Yf4-E7-ctJ">
                                                                         <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
@@ -378,12 +378,12 @@
                                                                         </constraints>
                                                                     </imageView>
                                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sT4-S9-y5e">
-                                                                        <rect key="frame" x="58" y="0.0" width="320" height="48"/>
+                                                                        <rect key="frame" x="58" y="0.0" width="281" height="48"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" textContentType="email"/>
                                                                     </textField>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g0J-b7-MrC" userLabel="bottomline">
-                                                                        <rect key="frame" x="0.0" y="47" width="378" height="1"/>
+                                                                        <rect key="frame" x="0.0" y="47" width="339" height="1"/>
                                                                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="1" id="0fU-Ou-yBA"/>
@@ -406,7 +406,7 @@
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zdu-ii-6Tv" userLabel="project">
-                                                                <rect key="frame" x="0.0" y="144" width="378" height="48"/>
+                                                                <rect key="frame" x="0.0" y="144" width="339" height="48"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="email" translatesAutoresizingMaskIntoConstraints="NO" id="tH7-qx-fgA">
                                                                         <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
@@ -415,12 +415,12 @@
                                                                         </constraints>
                                                                     </imageView>
                                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Dự án" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AMP-TW-AgT">
-                                                                        <rect key="frame" x="58" y="0.0" width="320" height="48"/>
+                                                                        <rect key="frame" x="58" y="0.0" width="281" height="48"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" textContentType="email"/>
                                                                     </textField>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UtO-CB-lB7" userLabel="bottomline">
-                                                                        <rect key="frame" x="0.0" y="47" width="378" height="1"/>
+                                                                        <rect key="frame" x="0.0" y="47" width="339" height="1"/>
                                                                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="1" id="ziN-S8-RUJ"/>
@@ -443,7 +443,7 @@
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JFE-ZD-hrt" userLabel="apartmentcode">
-                                                                <rect key="frame" x="0.0" y="192" width="378" height="48"/>
+                                                                <rect key="frame" x="0.0" y="192" width="339" height="48"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="email" translatesAutoresizingMaskIntoConstraints="NO" id="Syi-t7-5x1">
                                                                         <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
@@ -452,12 +452,12 @@
                                                                         </constraints>
                                                                     </imageView>
                                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Mã căn" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XUB-KR-UY4">
-                                                                        <rect key="frame" x="58" y="0.0" width="320" height="48"/>
+                                                                        <rect key="frame" x="58" y="0.0" width="281" height="48"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" textContentType="email"/>
                                                                     </textField>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4dQ-Rx-RWS" userLabel="bottomline">
-                                                                        <rect key="frame" x="0.0" y="47" width="378" height="1"/>
+                                                                        <rect key="frame" x="0.0" y="47" width="339" height="1"/>
                                                                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="1" id="jh6-HF-jeC"/>
@@ -497,10 +497,10 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j73-oQ-Og0" userLabel="bottomView">
-                                                <rect key="frame" x="0.0" y="483" width="414" height="369"/>
+                                                <rect key="frame" x="0.0" y="528" width="375" height="186"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PSR-tG-gbz">
-                                                        <rect key="frame" x="69" y="258" width="276" height="36"/>
+                                                        <rect key="frame" x="125" y="100" width="125" height="36"/>
                                                         <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="36" id="uh3-aJ-vec"/>
@@ -513,10 +513,11 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eKl-ez-gDB">
-                                                        <rect key="frame" x="69" y="319" width="276" height="25"/>
+                                                        <rect key="frame" x="123" y="161" width="129" height="25"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="25" id="mOY-4P-xZF"/>
                                                         </constraints>
+                                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="15"/>
                                                         <state key="normal" title="Tôi đã có tài khoản"/>
                                                         <connections>
                                                             <action selector="backToLoginDidTouch:" destination="6Ha-aJ-Akm" eventType="touchUpInside" id="czM-mv-cEf"/>
@@ -525,50 +526,50 @@
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
-                                                    <constraint firstItem="eKl-ez-gDB" firstAttribute="width" secondItem="PSR-tG-gbz" secondAttribute="width" id="HNK-Fz-QFO"/>
                                                     <constraint firstItem="eKl-ez-gDB" firstAttribute="centerX" secondItem="j73-oQ-Og0" secondAttribute="centerX" id="KbJ-dS-RjW"/>
-                                                    <constraint firstItem="PSR-tG-gbz" firstAttribute="width" secondItem="j73-oQ-Og0" secondAttribute="width" multiplier="2/3" id="PZj-C3-6EI"/>
+                                                    <constraint firstAttribute="bottom" secondItem="eKl-ez-gDB" secondAttribute="bottom" id="Mqp-aS-rcA"/>
+                                                    <constraint firstItem="PSR-tG-gbz" firstAttribute="width" secondItem="j73-oQ-Og0" secondAttribute="width" multiplier="1/3" id="PZj-C3-6EI"/>
+                                                    <constraint firstItem="eKl-ez-gDB" firstAttribute="centerX" secondItem="j73-oQ-Og0" secondAttribute="centerX" id="VVa-N7-HTO"/>
                                                     <constraint firstItem="PSR-tG-gbz" firstAttribute="centerX" secondItem="j73-oQ-Og0" secondAttribute="centerX" id="fbW-m7-fhK"/>
-                                                    <constraint firstAttribute="bottom" secondItem="eKl-ez-gDB" secondAttribute="bottom" constant="25" id="isv-ds-3yN"/>
+                                                    <constraint firstItem="PSR-tG-gbz" firstAttribute="top" secondItem="j73-oQ-Og0" secondAttribute="top" constant="100" id="g2V-qP-MTf"/>
                                                     <constraint firstItem="eKl-ez-gDB" firstAttribute="top" secondItem="PSR-tG-gbz" secondAttribute="bottom" constant="25" id="xEo-Ne-ZhC"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="j73-oQ-Og0" secondAttribute="bottom" id="5N9-Is-Nvn"/>
+                                            <constraint firstAttribute="bottom" secondItem="j73-oQ-Og0" secondAttribute="bottom" id="Ivu-LJ-4bE"/>
                                             <constraint firstItem="IVW-wc-bae" firstAttribute="leading" secondItem="hiV-Qt-WBp" secondAttribute="leading" constant="10" id="N5e-02-2VI"/>
                                             <constraint firstAttribute="trailing" secondItem="peG-JC-pGw" secondAttribute="trailing" constant="10" id="OBb-NK-ILc"/>
                                             <constraint firstAttribute="trailing" secondItem="j73-oQ-Og0" secondAttribute="trailing" id="Rg0-dI-whj"/>
-                                            <constraint firstItem="IVW-wc-bae" firstAttribute="top" secondItem="hiV-Qt-WBp" secondAttribute="top" id="UPu-CH-yqr"/>
+                                            <constraint firstItem="IVW-wc-bae" firstAttribute="top" secondItem="hiV-Qt-WBp" secondAttribute="top" constant="20" id="UPu-CH-yqr"/>
                                             <constraint firstItem="peG-JC-pGw" firstAttribute="leading" secondItem="hiV-Qt-WBp" secondAttribute="leading" constant="10" id="Vvk-pb-ONX"/>
                                             <constraint firstItem="j73-oQ-Og0" firstAttribute="top" secondItem="peG-JC-pGw" secondAttribute="bottom" id="omm-d5-R47"/>
                                             <constraint firstAttribute="trailing" secondItem="IVW-wc-bae" secondAttribute="trailing" constant="10" id="uwS-R7-MMB"/>
                                             <constraint firstItem="j73-oQ-Og0" firstAttribute="leading" secondItem="hiV-Qt-WBp" secondAttribute="leading" id="vM1-ue-xt6"/>
-                                            <constraint firstAttribute="height" constant="852" id="wKc-ih-Emn"/>
-                                            <constraint firstItem="peG-JC-pGw" firstAttribute="top" secondItem="IVW-wc-bae" secondAttribute="bottom" id="z66-jS-bB1"/>
+                                            <constraint firstItem="peG-JC-pGw" firstAttribute="top" secondItem="IVW-wc-bae" secondAttribute="bottom" constant="25" id="z66-jS-bB1"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="hiV-Qt-WBp" firstAttribute="bottom" secondItem="fSf-jO-lbd" secondAttribute="bottom" constant="842" id="1qy-bu-RH3"/>
-                                    <constraint firstItem="hiV-Qt-WBp" firstAttribute="height" secondItem="fSf-jO-lbd" secondAttribute="height" id="5Og-M9-6o6"/>
-                                    <constraint firstItem="hiV-Qt-WBp" firstAttribute="trailing" secondItem="fSf-jO-lbd" secondAttribute="trailing" constant="414" id="QHM-tM-Owr"/>
-                                    <constraint firstItem="hiV-Qt-WBp" firstAttribute="leading" secondItem="fSf-jO-lbd" secondAttribute="leading" id="SZN-aZ-22W"/>
-                                    <constraint firstItem="hiV-Qt-WBp" firstAttribute="top" secondItem="fSf-jO-lbd" secondAttribute="top" id="ZDZ-s8-uLJ"/>
-                                    <constraint firstItem="hiV-Qt-WBp" firstAttribute="width" secondItem="fSf-jO-lbd" secondAttribute="width" id="aXJ-Sc-3d5"/>
+                                    <constraint firstItem="hiV-Qt-WBp" firstAttribute="leading" secondItem="fSf-jO-lbd" secondAttribute="leading" id="72y-yV-PCH"/>
+                                    <constraint firstItem="hiV-Qt-WBp" firstAttribute="top" secondItem="fSf-jO-lbd" secondAttribute="top" id="7f3-Ih-lIW"/>
+                                    <constraint firstAttribute="trailing" secondItem="hiV-Qt-WBp" secondAttribute="trailing" id="Gb5-MF-ASi"/>
+                                    <constraint firstItem="hiV-Qt-WBp" firstAttribute="centerX" secondItem="fSf-jO-lbd" secondAttribute="centerX" id="Wec-de-eog"/>
+                                    <constraint firstAttribute="bottom" secondItem="hiV-Qt-WBp" secondAttribute="bottom" constant="2" id="mrw-Pm-6H2"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="fSf-jO-lbd" firstAttribute="leading" secondItem="HVK-Uz-geq" secondAttribute="leading" id="6BW-Xp-rN4"/>
-                            <constraint firstAttribute="bottom" secondItem="fSf-jO-lbd" secondAttribute="bottom" id="F9h-Ag-fbf"/>
-                            <constraint firstItem="fSf-jO-lbd" firstAttribute="trailing" secondItem="HVK-Uz-geq" secondAttribute="trailing" id="fE9-ej-Sc6"/>
-                            <constraint firstItem="fSf-jO-lbd" firstAttribute="top" secondItem="HVK-Uz-geq" secondAttribute="top" id="obU-9w-oDK"/>
+                            <constraint firstItem="fSf-jO-lbd" firstAttribute="trailing" secondItem="HVK-Uz-geq" secondAttribute="trailing" id="QlT-8N-JS9"/>
+                            <constraint firstItem="fSf-jO-lbd" firstAttribute="top" secondItem="HVK-Uz-geq" secondAttribute="top" id="b6W-Qr-2a3"/>
+                            <constraint firstItem="fSf-jO-lbd" firstAttribute="bottom" secondItem="HVK-Uz-geq" secondAttribute="bottom" id="bFt-Yh-lbL"/>
+                            <constraint firstItem="fSf-jO-lbd" firstAttribute="leading" secondItem="HVK-Uz-geq" secondAttribute="leading" id="wsA-50-r2t"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="HVK-Uz-geq"/>
                     </view>
+                    <size key="freeformSize" width="375" height="800"/>
                     <connections>
                         <outlet property="avatarImageView" destination="tY0-1r-r3g" id="WiV-Er-gsm"/>
                         <outlet property="checkTermImage" destination="bmW-tN-AI5" id="NfJ-37-IS2"/>
@@ -587,7 +588,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cQV-0a-wdc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="94.419642857142847"/>
+            <point key="canvasLocation" x="136.80000000000001" y="93.553223388305852"/>
         </scene>
     </scenes>
     <resources>

@@ -28,10 +28,14 @@ class NotificationViewController: UITableViewController {
         
         self.presenter = NotificationPresenter.init(view: self)
         self.getNotification()
-        
+        self.navigationController?.navigationBar.isHidden = false;
         navigationController?.setNavigationBarHidden(false, animated: true)
         self.navigationItem.title = "Danh sách thông báo"
-        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        self.setBackButtonWithImage("icn_back", withAction: #selector(backButtonAction))
+    }
+    
+    @objc func backButtonAction() {
+        self.navigationController?.popViewController(animated: true)
     }
 }
 
@@ -53,12 +57,19 @@ extension NotificationViewController {
 // MARK: - API CALL
 extension NotificationViewController {
     func getNotification() {
+        let currentUser = User.currentUser()
+        guard let blockID = currentUser.blockID,
+            let floorID = currentUser.floorID,
+            let unitID = currentUser.unitID else {
+                return
+        }
+        
         let param = [
-              kPropertyID: 1,
-              kBlockID: 5,
-              kFloorID: 5,
-              kUnitID: 486
-        ]
+              kPropertyID: 4,
+              kBlockID: blockID,
+              kFloorID: floorID,
+              kUnitID: unitID
+            ] as [String : Any]
         self.presenter?.getNotification(param: param)
     }
 }

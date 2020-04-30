@@ -10,6 +10,6 @@ import Alamofire
 
 extension APIClient {
     func getNotification(param: [String: Any], callBack: @escaping CSCallBack) {
-        requestPath(path: kNotification, param: param, methodRequest: .post, encoding: URLEncoding.httpBody, callback: callBack)
+        requestPath(path: kNotification, param: param, methodRequest: .post, callback: callBack)
     }
 }

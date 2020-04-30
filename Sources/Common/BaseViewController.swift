@@ -129,3 +129,20 @@ class BaseViewController: UIViewController {
     }
 }
 
+extension UITableViewController {
+    func setBackButtonWithImage(_ imageButtonName: String, withAction action: Selector) {
+        let tmpButton = UIButton(type: .custom)
+        //tmpButton.frame.size.width = temBack.size.width + tmpButton.frame.size.width;
+        tmpButton.setImage(UIImage(named: imageButtonName), for: .normal)
+        tmpButton.addTarget(self, action: action, for: .touchUpInside)
+        tmpButton.sizeToFit()
+        if imageButtonName == "" {
+            tmpButton.showsTouchWhenHighlighted = false
+        } else {
+            tmpButton.showsTouchWhenHighlighted = true
+        }
+        tmpButton.adjustsImageWhenHighlighted = false
+        tmpButton.contentEdgeInsets = UIEdgeInsets(top: 0, left: -5, bottom: 0, right: 0)
+        navigationItem.leftBarButtonItem = UIBarButtonItem(customView: tmpButton)
+    }
+}

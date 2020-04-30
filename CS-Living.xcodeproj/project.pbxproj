@@ -57,6 +57,8 @@
 		C30BB2252456E7F3006CB37E /* FeeTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30BB2242456E7F3006CB37E /* FeeTableHeaderView.swift */; };
 		C30BB2272456E7FF006CB37E /* FeeTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C30BB2262456E7FF006CB37E /* FeeTableHeaderView.xib */; };
 		C35DFDB9245B01B1001CF2D1 /* InputUpgradeAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35DFDB8245B01B1001CF2D1 /* InputUpgradeAccountViewController.swift */; };
+		C35DFDBC245B2F0A001CF2D1 /* FileNotifiCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35DFDBA245B2F0A001CF2D1 /* FileNotifiCell.swift */; };
+		C35DFDBF245B34A4001CF2D1 /* FileNotifiCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C35DFDBE245B34A4001CF2D1 /* FileNotifiCell.xib */; };
 		C35FF5662455A4F200AAC9C8 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35FF5652455A4F200AAC9C8 /* HomePresenter.swift */; };
 		C35FF56A2455CA6800AAC9C8 /* CustomFeatureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C35FF5692455CA6800AAC9C8 /* CustomFeatureView.xib */; };
 		C35FF56C2455CC8A00AAC9C8 /* CustomFeatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35FF56B2455CC8A00AAC9C8 /* CustomFeatureView.swift */; };
@@ -161,6 +163,8 @@
 		C30BB2242456E7F3006CB37E /* FeeTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeeTableHeaderView.swift; sourceTree = "<group>"; };
 		C30BB2262456E7FF006CB37E /* FeeTableHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeeTableHeaderView.xib; sourceTree = "<group>"; };
 		C35DFDB8245B01B1001CF2D1 /* InputUpgradeAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputUpgradeAccountViewController.swift; sourceTree = "<group>"; };
+		C35DFDBA245B2F0A001CF2D1 /* FileNotifiCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileNotifiCell.swift; sourceTree = "<group>"; };
+		C35DFDBE245B34A4001CF2D1 /* FileNotifiCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FileNotifiCell.xib; sourceTree = "<group>"; };
 		C35FF5652455A4F200AAC9C8 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomePresenter.swift; path = Sources/Modules/Register/HomePresenter.swift; sourceTree = SOURCE_ROOT; };
 		C35FF5692455CA6800AAC9C8 /* CustomFeatureView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomFeatureView.xib; sourceTree = "<group>"; };
 		C35FF56B2455CC8A00AAC9C8 /* CustomFeatureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFeatureView.swift; sourceTree = "<group>"; };
@@ -636,6 +640,8 @@
 		C3EFE515245939B6001A474A /* PassivewView */ = {
 			isa = PBXGroup;
 			children = (
+				C35DFDBA245B2F0A001CF2D1 /* FileNotifiCell.swift */,
+				C35DFDBE245B34A4001CF2D1 /* FileNotifiCell.xib */,
 				C3EFE522245953C9001A474A /* NotifiTableViewCell.swift */,
 				C3EFE513245939AD001A474A /* NotificationViewController.swift */,
 				C3EFE51A24593B46001A474A /* NotificationDetailViewController.swift */,
@@ -794,6 +800,7 @@
 				489FD7812453F5E400E04771 /* Main.storyboard in Resources */,
 				C3F5D8A92456FBB200A66695 /* FeeTableFooterView.xib in Resources */,
 				1B8CCFC62457B71B006917D2 /* PickerBlurView.xib in Resources */,
+				C35DFDBF245B34A4001CF2D1 /* FileNotifiCell.xib in Resources */,
 				1BD06B3D245492D50024088F /* FeeList.storyboard in Resources */,
 				C35FF56A2455CA6800AAC9C8 /* CustomFeatureView.xib in Resources */,
 				C3EFE51924593A3F001A474A /* Notification.storyboard in Resources */,
@@ -926,6 +933,7 @@
 			files = (
 				1B9C1EEA24552F4800F03A3A /* RegisterViewController.swift in Sources */,
 				C3705E4C2456B6BF00EED37B /* FeeListViewController.swift in Sources */,
+				C35DFDBC245B2F0A001CF2D1 /* FileNotifiCell.swift in Sources */,
 				48B70DCD2454204E00E894D5 /* UIView.swift in Sources */,
 				1B8CCFC82457BDEA006917D2 /* LicenseModel.swift in Sources */,
 				48B70DC624541FC100E894D5 /* DefineKey.swift in Sources */,

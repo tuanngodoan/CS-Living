@@ -32,28 +32,5 @@ class NotificationPresenter {
                 }
             }
     }
-        
-//        let no1 = NotifiModel(id: 36,
-//                              request:"{\"to\":\"/topics/073075082066118088086072102106048061\",\"notification\":{\"body\":\"Xong\",\"title\":\"Thông báo cắt điện\"}}",
-//                              respone:  "",
-//                              timeprocess: "2020-04-25T10:29:45.26",
-//                              createdBy: "support2",
-//                              propertyID: 1,
-//                              blockID: 0, floorID: 0, unitID: 0,
-//                              tilte: "Thông báo cắt điện",
-//                              content: "xong", messageType: "", isRead: 0)
-//
-//        let no2 = NotifiModel(id: 35,
-//        request:"{\"to\":\"/topics/073075082066118088086072102106048061\",\"notification\":{\"body\":\"Thông báo 2504\",\"title\":\"Thông báo 2504\"}}",
-//        respone: "",
-//        timeprocess: "2020-04-25T10:29:45.26",
-//        createdBy: "support2",
-//        propertyID: 1,
-//        blockID: 0, floorID: 0, unitID: 0,
-//        tilte: "Thông báo 2504n",
-//        content: "Thông báo 2504", messageType: "", isRead: 0)
-//
-//        let list = [no1, no2]
-//        self.view?.getNotificationCompletion(listNotifi: list)
     }
 }
