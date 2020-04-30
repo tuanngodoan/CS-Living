@@ -16,7 +16,19 @@ extension APIClient {
     }
     
     func getLicense(callBack: @escaping CSCallBack) {
-        getRequestPath(path: kGetListLicense, param: nil, callback: callBack)
+        getRequestPath(path: kGetListLicense, param: [:], callback: callBack)
+        
+//         AF.request("http://103.101.161.117:8004/api/v1/GetListLicense", method: .get, parameters: nil)
+//            .responseJSON { (response) in
+//
+//                if let data = response.data, let utf8Text = String(data: data, encoding: .utf8)
+//                {
+//                print("LOGGG")
+//                }
+//
+//
+//        }
+        
     }
 }
 

@@ -32,7 +32,7 @@ class LoginPresenter {
                         self?.updateUserDB(user: userObject.data)
                         // save token
                         UserDefaults.standard.set("\(userObject.data.id)", forKey: kID)
-                        UserDefaults.standard.set(userObject.token, forKey: kAccessToken)
+                        UserDefaults.standard.set(userObject.token ?? "", forKey: kAccessToken)
                         UserDefaults.standard.synchronize()
                         // save infor user with coreDat
                         self?.saveUser(userModel: userObject.data)

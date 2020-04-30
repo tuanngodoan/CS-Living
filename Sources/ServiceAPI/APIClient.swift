@@ -126,7 +126,7 @@ private extension APIClient {
         let accessToken: String = UserDefaults.standard.value(forKey: kAccessToken) as? String ?? ""
         parameters = ["Content-Type": "application/json",
                       "Accept": "application/json",
-                      "Authorization":"Bear \(accessToken)"] as HTTPHeaders? ?? HTTPHeaders()
+                      "Authorization":"Bearer \(accessToken)"] as HTTPHeaders? ?? HTTPHeaders()
         
         return parameters
     }

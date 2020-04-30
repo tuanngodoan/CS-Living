@@ -11,7 +11,7 @@ pod 'MBProgressHUD'
 pod 'Firebase/Auth'
 pod 'Firebase/Database'
 pod 'Bagel', '~>  1.3.2'
-
+pod 'IQKeyboardManagerSwift'
   target 'CS-LivingTests' do
     inherit! :search_paths
     # Pods for testing

@@ -16,6 +16,17 @@ class UpgradeAccountViewController: BaseViewController {
         self.title = "Nâng cấp tài khoản"
         self.setBackButtonWithImage("icn_back", withAction: #selector(backButtonAction))
         // Do any additional setup after loading the view.
+       self.tabBarController?.tabBar.isHidden = true
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+         
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.tabBarController?.tabBar.isHidden = false
     }
     
     @IBAction func upgradeAccountDidTouch(_ sender: UIButton) {

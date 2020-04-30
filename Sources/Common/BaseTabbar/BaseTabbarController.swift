@@ -12,9 +12,27 @@ class BaseTabbarController: UITabBarController {
     init() {
         super.init(nibName: nil, bundle: nil)
         let homeVC = HomeViewController.controller(from: "Home", storyboardID: "HomeViewController")
+         homeVC.tabBarItem = UITabBarItem(title: "Trang chủ", image: UIImage(named: "ic_home"), selectedImage: nil)
         let navHome = BaseNavigationController(rootViewController: homeVC)
-        navHome.tabBarItem = UITabBarItem(title: "Trang chủ", image: UIImage(named: "ic_home_outline"), selectedImage: nil)
-        self.viewControllers = [navHome, navHome, navHome, navHome]
+        // khuyến mãi
+        let promotionVC = UIViewController.init()
+        promotionVC.tabBarItem = UITabBarItem(title: "Khuyến mãi", image: UIImage(named: "icon_promotion"), selectedImage: nil)
+      
+        // calendar
+        let calendarVC = UIViewController()
+        calendarVC.tabBarItem = UITabBarItem(title: "Dịch vụ", image: UIImage(named: "icn_calendar"), selectedImage: nil)
+        
+        // Tài khoản
+        let userVC = UIViewController()
+        userVC.tabBarItem = UITabBarItem(title: "Tài khoản", image: UIImage(named: "iconAccount"), selectedImage: nil)
+        
+        let navUser = BaseNavigationController(rootViewController: userVC)
+        
+        let navCalendar = BaseNavigationController(rootViewController: calendarVC)
+        
+        let navPromotion = BaseNavigationController.init(rootViewController: promotionVC)
+       
+        self.viewControllers = [navHome, navPromotion, navCalendar, navUser]
     
     }
     

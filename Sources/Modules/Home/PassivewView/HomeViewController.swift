@@ -28,9 +28,16 @@ class HomeViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.isHidden = true
-        
-
-//        self.title = "Trang chủ"
+        if let id = UserDefaults.standard.value(forKey: kID) as? String {
+             let user: User = User.createUser(withId: id)
+            fullNameLabel.text = user.username ?? ""
+            apartmentLabel.text = user.floor ?? ""
+        }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.isHidden = true
     }
     
     @objc func upgradeAccountDidTouch() {
@@ -81,6 +88,8 @@ class HomeViewController: BaseViewController {
 extension HomeViewController {
     override func initUI() {
         super.initUI()
+        pageControl.transform = CGAffineTransform(scaleX: 1.8, y: 1.8)
+        pageControl.pageIndicatorTintColor = .black
         self.setupAdsCollectionView()
         self.setupUpgradeAccView()
     }

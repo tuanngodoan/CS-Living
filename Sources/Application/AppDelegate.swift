@@ -8,12 +8,15 @@
 import UIKit
 import Firebase
 import Bagel
+import IQKeyboardManagerSwift
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FirebaseApp.configure()
+        IQKeyboardManager.shared.enable = true
         Bagel.start()
         appearance()
         if let accessToken = UserDefaults.standard.value(forKey: kAccessToken) as? String, accessToken.count > 0 {
@@ -52,11 +55,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 private extension AppDelegate {
     func appearance() {
         /* Navigation Bar */
-        UINavigationBar.appearance().barTintColor = UIColor.white
+//        UINavigationBar.appearance().barTintColor = UIColor.white
         UINavigationBar.appearance().tintColor = UIColor.white
         UINavigationBar.appearance().isTranslucent = false
-        UINavigationBar.appearance().setBackgroundImage(UIImage(), for: UIBarMetrics.default)
-        UINavigationBar.appearance().shadowImage = UIImage()
+//        UINavigationBar.appearance().setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+//        UINavigationBar.appearance().shadowImage = UIImage()
         window?.backgroundColor = UIColor.white
     }
     

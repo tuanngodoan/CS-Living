@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -42,7 +42,7 @@
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Tháng 12/2019" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R9u-kz-gCW">
                                                                 <rect key="frame" x="0.0" y="0.0" width="144.5" height="33.5"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                                 <textInputTraits key="textInputTraits"/>
                                                             </textField>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icn_calendar" translatesAutoresizingMaskIntoConstraints="NO" id="tYw-qB-9nS">
@@ -110,7 +110,7 @@
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Tháng 2/2020" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Srq-fr-dWE">
                                                                 <rect key="frame" x="0.0" y="0.0" width="144.5" height="33.5"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                                 <textInputTraits key="textInputTraits"/>
                                                             </textField>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icn_calendar" translatesAutoresizingMaskIntoConstraints="NO" id="x1Y-bC-9Os">
@@ -176,15 +176,15 @@
                                                 <rect key="frame" x="100" y="0.0" width="274" height="33"/>
                                                 <subviews>
                                                     <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chọn dịch vụ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TZ1-3K-Lyp">
-                                                        <rect key="frame" x="8" y="0.0" width="236" height="33"/>
+                                                        <rect key="frame" x="8" y="0.0" width="241" height="33"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icn_drop" translatesAutoresizingMaskIntoConstraints="NO" id="S86-dP-S5M">
-                                                        <rect key="frame" x="244" y="0.0" width="30" height="33"/>
+                                                        <rect key="frame" x="249" y="5" width="25" height="23"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="30" id="XMB-NM-O91"/>
+                                                            <constraint firstAttribute="width" constant="25" id="XMB-NM-O91"/>
                                                         </constraints>
                                                     </imageView>
                                                 </subviews>
@@ -192,8 +192,8 @@
                                                 <constraints>
                                                     <constraint firstItem="TZ1-3K-Lyp" firstAttribute="leading" secondItem="EtZ-S5-TL0" secondAttribute="leading" constant="8" id="5aU-i8-SDg"/>
                                                     <constraint firstItem="S86-dP-S5M" firstAttribute="leading" secondItem="TZ1-3K-Lyp" secondAttribute="trailing" id="Bpy-EX-LB6"/>
-                                                    <constraint firstAttribute="bottom" secondItem="S86-dP-S5M" secondAttribute="bottom" id="EZP-Qf-FLJ"/>
-                                                    <constraint firstItem="S86-dP-S5M" firstAttribute="top" secondItem="EtZ-S5-TL0" secondAttribute="top" id="FrX-Qu-cn7"/>
+                                                    <constraint firstAttribute="bottom" secondItem="S86-dP-S5M" secondAttribute="bottom" constant="5" id="EZP-Qf-FLJ"/>
+                                                    <constraint firstItem="S86-dP-S5M" firstAttribute="top" secondItem="EtZ-S5-TL0" secondAttribute="top" constant="5" id="FrX-Qu-cn7"/>
                                                     <constraint firstAttribute="trailing" secondItem="S86-dP-S5M" secondAttribute="trailing" id="G8S-YK-sdK"/>
                                                     <constraint firstItem="TZ1-3K-Lyp" firstAttribute="top" secondItem="EtZ-S5-TL0" secondAttribute="top" id="WKK-bl-fmI"/>
                                                     <constraint firstItem="TZ1-3K-Lyp" firstAttribute="centerY" secondItem="EtZ-S5-TL0" secondAttribute="centerY" id="WdO-qT-9VY"/>
@@ -239,19 +239,19 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10000000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dDC-Wk-rfH">
-                                                <rect key="frame" x="91" y="6.5" width="245" height="20.5"/>
+                                                <rect key="frame" x="91" y="6.5" width="253" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icn_eye" translatesAutoresizingMaskIntoConstraints="NO" id="UIC-FZ-c8V">
-                                                <rect key="frame" x="344" y="0.0" width="30" height="33.5"/>
+                                                <rect key="frame" x="352" y="0.0" width="22" height="33.5"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="30" id="O4F-T5-CUw"/>
+                                                    <constraint firstAttribute="width" constant="22" id="O4F-T5-CUw"/>
                                                 </constraints>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HyP-ud-byf">
-                                                <rect key="frame" x="336" y="0.0" width="46" height="33.5"/>
+                                                <rect key="frame" x="346" y="0.0" width="34" height="33.5"/>
                                                 <connections>
                                                     <action selector="watchButtonDidTouchWith_sender:" destination="AQL-cr-sLK" eventType="touchUpInside" id="4bC-LG-oZy"/>
                                                 </connections>
@@ -280,7 +280,7 @@
                                 </constraints>
                             </stackView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Cu2-nI-TKy">
-                                <rect key="frame" x="20" y="192" width="374" height="577"/>
+                                <rect key="frame" x="20" y="192" width="374" height="585"/>
                                 <sections/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
@@ -292,13 +292,13 @@
                                 </userDefinedRuntimeAttributes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0UW-Qg-l39">
-                                <rect key="frame" x="69" y="794" width="276" height="48"/>
+                                <rect key="frame" x="124" y="802" width="166" height="40"/>
                                 <color key="backgroundColor" red="0.74901960779999999" green="0.83137254900000002" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="48" id="Q06-Cr-cIG"/>
+                                    <constraint firstAttribute="height" constant="40" id="Q06-Cr-cIG"/>
                                 </constraints>
                                 <state key="normal" title="Thanh toán">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
@@ -327,7 +327,7 @@
                             <constraint firstItem="qFv-Oq-NhX" firstAttribute="trailing" secondItem="K96-aL-35z" secondAttribute="trailing" constant="20" id="dni-xF-pi6"/>
                             <constraint firstItem="0UW-Qg-l39" firstAttribute="centerX" secondItem="nRt-ur-Iyp" secondAttribute="centerX" id="gc0-LG-Emb"/>
                             <constraint firstItem="qFv-Oq-NhX" firstAttribute="bottom" secondItem="0UW-Qg-l39" secondAttribute="bottom" constant="20" id="j0f-WH-eIH"/>
-                            <constraint firstItem="0UW-Qg-l39" firstAttribute="width" secondItem="nRt-ur-Iyp" secondAttribute="width" multiplier="2/3" id="wMk-M2-pHm"/>
+                            <constraint firstItem="0UW-Qg-l39" firstAttribute="width" secondItem="nRt-ur-Iyp" secondAttribute="width" multiplier="2/5" id="wMk-M2-pHm"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qFv-Oq-NhX"/>
                     </view>

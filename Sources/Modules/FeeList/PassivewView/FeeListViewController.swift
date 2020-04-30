@@ -8,8 +8,6 @@
 import UIKit
 
 class FeeListViewController: BaseViewController {
-
-    private var presenter: FeePresenter?
     
     @IBOutlet weak var pickDateView: UIStackView!
     @IBOutlet weak var formDateTextField: UITextField!
@@ -18,24 +16,26 @@ class FeeListViewController: BaseViewController {
     @IBOutlet weak var serviceLabel: UILabel!
     @IBOutlet weak var totalBillView: UIView!
     @IBOutlet weak var tableView: UITableView!
-    
+ 
+    private var presenter: FeePresenter?
     private let datePicker = UIDatePicker()
     private var pickerService: PickerBlurView?
     private var currentDatePicker: UITextField?
-    
     private var heightHeaderTableView: CGFloat = 50.0
     private var heightCell: CGFloat = 38.0
-    
     private var feeList: FeeModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         self.title = "Bảng kê phí"
         self.setBackButtonWithImage("icn_back", withAction: #selector(backButtonAction))
-        
         let tapPickerService = UITapGestureRecognizer(target: self, action: #selector(showPickerService))
         self.pickServiceView?.addGestureRecognizer(tapPickerService)
+        self.navigationController?.navigationBar.isHidden = false;
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
     }
     
     @objc func backButtonAction() {
@@ -81,12 +81,27 @@ extension FeeListViewController {
         let feeCell = UINib(nibName: "FeeTableViewCell", bundle: nil)
         self.tableView.register(feeCell, forCellReuseIdentifier: "FeeTableViewCell")
     }
+    
+    func setupFooterView() {
+        if let footerView = FeeTableFooterView.fromNib() as? FeeTableFooterView,
+            let fee = self.feeList {
+            let originY = self.tableView.bounds.size.height - 50
+            let width = self.tableView.bounds.size.width
+            footerView.frame = CGRect(x: 0, y: originY, width: width, height: heightHeaderTableView)
+            footerView.loanPrevLabel.text = "\(fee.accruedExpense ?? 0)"
+            footerView.endingDebtLabel.text = "\(fee.balnaceVND ?? 0)"
+            footerView.incurredDebtLabel.text = "\(fee.openingDebit ?? 0)"
+            footerView.paidLabel.text = "\(fee.paidAmount ?? 0)"
+            self.tableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 50, right: 0)
+            self.tableView.addSubview(footerView)
+        }
+    }
 }
 
 // MARK: - Init Data
 extension FeeListViewController {
     override func initData() {
-        
+        getDataFromServer()
     }
 }
 
@@ -101,6 +116,11 @@ extension FeeListViewController {
 extension FeeListViewController {
     func showDatePicker(textField: UITextField) {
         textField.delegate = self
+        // show current time
+        let currentDate = Date()
+        let dateStr = AppUtil.convertDateToStringDate(date: currentDate, formatString: "MM/yyyy")
+        textField.text = "Tháng \(dateStr)"
+
         //Formate Date
         datePicker.datePickerMode = .date
         //ToolBar
@@ -132,8 +152,8 @@ extension FeeListViewController {
 
      @objc func donedatePicker() {
         let formatter = DateFormatter()
-        formatter.dateFormat = "dd/MM/yyyy"
-        currentDatePicker?.text = formatter.string(from: datePicker.date)
+        formatter.dateFormat = "MM/yyyy"
+        currentDatePicker?.text = "Tháng" + formatter.string(from: datePicker.date)
         self.view.endEditing(true)
     }
 
@@ -149,13 +169,25 @@ extension FeeListViewController {
 
 // MARK: - API CALL
 extension FeeListViewController {
-    
+    func getDataFromServer() {
+        let currentDate = Date()
+       let currentDateStr = AppUtil.convertDateToStringDate(date: currentDate, formatString: "yyyy-MM-dd HH:mm:ss")
+        print("currentDateStr: \(currentDateStr)")
+        let param = [
+            kFromDate: currentDateStr,
+            kToDate: currentDateStr,
+            kContractId: "541",
+            kUnit: "B2-505"
+            ] as [String : Any]
+        self.presenter?.getListService(param: param)
+    }
 }
 
 // MARK: - FeePresenterView
 extension FeeListViewController: FeePresenterView {
     func getListServiceCompletion(feeList: FeeModel) {
         self.feeList = feeList
+        setupFooterView()
         self.tableView.reloadData()
     }
 }
@@ -182,22 +214,6 @@ extension FeeListViewController: UITableViewDataSource {
         return heightHeaderTableView
     }
     
-    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-        if let footerView = FeeTableFooterView.fromNib() as? FeeTableFooterView,
-            let fee = self.feeList {
-            footerView.loanPrevLabel.text = "\(fee.accruedExpense ?? 0)"
-            footerView.endingDebtLabel.text = "\(fee.balnaceVND ?? 0)"
-            footerView.incurredDebtLabel.text = "\(fee.openingDebit ?? 0)"
-            footerView.paidLabel.text = "\(fee.paidAmount ?? 0)"
-            return footerView
-        }
-        return UIView()
-    }
-    
-    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        return heightHeaderTableView
-    }
-    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return heightCell
     }
@@ -220,5 +236,14 @@ extension FeeListViewController: UITextFieldDelegate {
 extension FeeListViewController: PickerBlurViewDelegate {
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, value: String?) {
         self.serviceLabel.text = value
+    }
+}
+
+extension UIColor {
+    func image(_ size: CGSize = CGSize(width: 1, height: 1)) -> UIImage {
+        return UIGraphicsImageRenderer(size: size).image { rendererContext in
+            self.setFill()
+            rendererContext.fill(CGRect(x: 0, y: 0, width: size.width, height: size.height))
+        }
     }
 }
