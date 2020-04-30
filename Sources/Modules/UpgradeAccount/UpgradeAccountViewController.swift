@@ -14,14 +14,11 @@ class UpgradeAccountViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Nâng cấp tài khoản"
-        self.setBackButtonWithImage("icn_back", withAction: #selector(backButtonAction))
-        // Do any additional setup after loading the view.
        self.tabBarController?.tabBar.isHidden = true
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
-         
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -30,10 +27,11 @@ class UpgradeAccountViewController: BaseViewController {
     }
     
     @IBAction func upgradeAccountDidTouch(_ sender: UIButton) {
-        
+        let upgradeVC = InputUpgradeAccountViewController.controller(from: "Home", storyboardID: "InputUpgradeAccountViewController")
+        self.navigationController?.pushViewController(upgradeVC, animated: true)
     }
-
-    @objc func backButtonAction() {
-        self.navigationController?.popViewController(animated: true)
+    
+    @IBAction func backButtonDidTouch(_ sender: UIButton) {
+         self.navigationController?.popViewController(animated: true)
     }
 }
