@@ -61,7 +61,7 @@ class LoginPresenter {
     func updateUserDB(user: UserModel) {
         let userDB = UserDB(blockID: user.blockID,
                             floorID: user.floorID,
-                            fullName: user.firstName,
+                            fullName: user.firstName ?? "",
                             id: user.id,
                             isOnline: true,
                             nickName: user.username,

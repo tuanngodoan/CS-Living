@@ -56,6 +56,7 @@
 		9ADDC9ED1013FC9AADE84372 /* Pods_CS_LivingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2114A7E1057B671534B90247 /* Pods_CS_LivingTests.framework */; };
 		C30BB2252456E7F3006CB37E /* FeeTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30BB2242456E7F3006CB37E /* FeeTableHeaderView.swift */; };
 		C30BB2272456E7FF006CB37E /* FeeTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C30BB2262456E7FF006CB37E /* FeeTableHeaderView.xib */; };
+		C35DFDB9245B01B1001CF2D1 /* InputUpgradeAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35DFDB8245B01B1001CF2D1 /* InputUpgradeAccountViewController.swift */; };
 		C35FF5662455A4F200AAC9C8 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35FF5652455A4F200AAC9C8 /* HomePresenter.swift */; };
 		C35FF56A2455CA6800AAC9C8 /* CustomFeatureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C35FF5692455CA6800AAC9C8 /* CustomFeatureView.xib */; };
 		C35FF56C2455CC8A00AAC9C8 /* CustomFeatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35FF56B2455CC8A00AAC9C8 /* CustomFeatureView.swift */; };
@@ -159,6 +160,7 @@
 		AACFEA1243093F33BC829386 /* Pods-CS-LivingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CS-LivingTests.debug.xcconfig"; path = "Target Support Files/Pods-CS-LivingTests/Pods-CS-LivingTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C30BB2242456E7F3006CB37E /* FeeTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeeTableHeaderView.swift; sourceTree = "<group>"; };
 		C30BB2262456E7FF006CB37E /* FeeTableHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeeTableHeaderView.xib; sourceTree = "<group>"; };
+		C35DFDB8245B01B1001CF2D1 /* InputUpgradeAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputUpgradeAccountViewController.swift; sourceTree = "<group>"; };
 		C35FF5652455A4F200AAC9C8 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomePresenter.swift; path = Sources/Modules/Register/HomePresenter.swift; sourceTree = SOURCE_ROOT; };
 		C35FF5692455CA6800AAC9C8 /* CustomFeatureView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomFeatureView.xib; sourceTree = "<group>"; };
 		C35FF56B2455CC8A00AAC9C8 /* CustomFeatureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFeatureView.swift; sourceTree = "<group>"; };
@@ -291,6 +293,7 @@
 				1BD06B3524548EBB0024088F /* Router */,
 				1BD06B3624548EC00024088F /* Presenter */,
 				1BD06B3724548ED90024088F /* UpgradeAccountViewController.swift */,
+				C35DFDB8245B01B1001CF2D1 /* InputUpgradeAccountViewController.swift */,
 			);
 			path = UpgradeAccount;
 			sourceTree = "<group>";
@@ -936,6 +939,7 @@
 				C3EFE523245953C9001A474A /* NotifiTableViewCell.swift in Sources */,
 				48B70DCF245421B100E894D5 /* UIImage+Color.swift in Sources */,
 				485C2075245488F3002E5040 /* BaseNavigationController.swift in Sources */,
+				C35DFDB9245B01B1001CF2D1 /* InputUpgradeAccountViewController.swift in Sources */,
 				489FD77A2453F5E400E04771 /* AppDelegate.swift in Sources */,
 				48B70DD82454369B00E894D5 /* UserModel.swift in Sources */,
 				48B70DC424541FB700E894D5 /* DefineText.swift in Sources */,

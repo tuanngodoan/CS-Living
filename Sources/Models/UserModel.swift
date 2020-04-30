@@ -9,7 +9,8 @@ import UIKit
 
 struct UserModel: Codable {
     let id: Int
-    let username, firstName, midName, lastName: String
+    let username: String
+    let firstName, midName, lastName: String?
     let projectID, unitID: Int
     let unitname: String
     let contractID: Int
